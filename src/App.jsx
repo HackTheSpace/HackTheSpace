@@ -6,10 +6,11 @@ function App() {
   return (
     <BrowserRouter>
       <StarsCanvas />
-      <div>
-        <div className="text-3xl font-bold">My react app</div>
-      </div>
       <Navbar />
+      {/* <div >
+        <div className="text-3xl font-bold" >My react app</div>
+      </div> */}
+      
       <Home />
       <About />
     </BrowserRouter>
