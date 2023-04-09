@@ -12,6 +12,18 @@
 }
 
 
+.bg-gradient {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.82) 0%, rgba(0, 46, 115, 0.19) 100%) !important;
+}
+
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+
 /***** Multiple gradients that can be useful in future  *****/
 
 .black-gradient {
