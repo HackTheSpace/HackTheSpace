@@ -45,9 +45,12 @@ const Navbar = () => {
           </ul>
 
         </div>
+        <div className="MLH" style={{width:"200px"}}>
         <Link id="mlh-trust-badge" to="https://mlh.io/apac?utm_source=apac-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2023-season&amp;utm_content=white" target="_blank">
           <img id="img--mlh" style={{ height: "150px" }} src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2023 Hackathon Season" />
         </Link>
+        </div>
+        
       </div>
     </nav>
   );

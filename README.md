@@ -13,6 +13,17 @@
 - /index.css is for extra stylings if needed, all the stylings will be done is tailwind
 - /styles.js is for common tailwind classes
 
+# kirua todo status
+
+- star background -- pending
+- home page -- partially done --- add constellation and planet
+- sponsers page -- pending
+
+# akash todo status
+
+- navbar -- partially done --- responsive fix
+- about page -- pending
+
 # Plan of execution:
 
 - create vite app
