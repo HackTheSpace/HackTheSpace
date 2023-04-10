@@ -112,3 +112,8 @@
   background-clip : text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Navbar */
+.active{
+  color: rgb(29 78 216);
+}
