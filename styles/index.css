@@ -34,19 +34,19 @@ body {
 }
 
 .logo-home {
-	width: 50%;
+	width: 45%;
 	aspect-ratio: auto;
 }
 
 .cost1 {
 	position: absolute;
-	bottom: 5%;
+	bottom: 30%;
 	left: 7%;
 }
 
 .cost2 {
 	position: absolute;
-	top: 5%;
+	top: 20%;
 	right: 6%;
 }
 
@@ -76,14 +76,28 @@ body {
 	transform: scale(1.1);
 
 }
+.cost1 img{
+	width: 60%;
+}
+.cost2 img{
+	width: 70%;
+}
 
 @media only screen and (max-width:768px) {
-	.cost1 {
-		display: none;
+	.cost2 {
+		top: 16%;
+		right: -17%;
 	}
 
-	.cost2 {
-		display: none;
+	.cost1 {
+		bottom: 17%;
+		left: 5%;
+	}
+	.cost1 img{
+		width: 44%;
+	}
+	.cost2 img{
+		width: 42%;
 	}
 
 	.butHolder {
@@ -123,7 +137,7 @@ body {
 .rstar{
 	position:absolute;
 	top: -10%;
-	right: -3%;
+	right: 0%;
 }
 .topstar{
 	width: 80%;
@@ -150,12 +164,36 @@ body {
 }
 
 .abbox h2 {
-	font-size: 2.5rem;
+	font-size: 2.6rem;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .abbox p {
 	padding: 1rem;
-	font-size: 1.69rem;
+	font-size: 1.72rem;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.aconst1{
+	position: absolute;
+	top: 0%;
+	right: 5%;
+}
+.aconst2{
+	position: absolute;
+	top: 0%;
+	left: 20%;
+}
+.aconst3{
+	position: absolute;
+	bottom: 20%;
+	left: 7%;
+	z-index: -1;
+}
+@media only screen and (max-width:768px) {
+	.abbox p{
+		font-size: 1.5rem;
+	}
+	.abbox h2{
+		font-size: 2.5rem;
+	}
 }
