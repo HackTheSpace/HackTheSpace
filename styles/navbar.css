@@ -1,0 +1,67 @@
+:root {
+  --oval-width: 200px;
+  --oval-height: 950px;
+  --child-size: 20px;
+}
+
+.baap {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: 10;
+}
+
+.parent {
+  position: relative;
+  width: var(--oval-width);
+  height: var(--oval-height);
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.child {
+  position: absolute;
+  width: var(--child-size);
+  height: var(--child-size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+  transform: rotate(-90deg);
+}
+
+.child a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.child.active {
+  font-weight: 900;
+}
+
+section {
+  height: 100vh;
+}
+
+.curve-1,
+.curve-2 {
+  height: 500px;
+  border-bottom: 2px solid #fffff4;
+  border-radius: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.curve-1 {
+  width: calc(100% - 12rem);
+  top: -440px;
+}
+
+.curve-2 {
+  width: calc(100% - 16.5rem);
+  top: -360px;
+}

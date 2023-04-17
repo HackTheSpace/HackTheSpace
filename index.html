@@ -1,82 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/react.svg" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Hack The Space</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/particle.css">
-    
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/particle.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+
     <!-- 3rd party js libraries -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
-	
-
-</head>
-<body>
-    <!-- <div id="particles-js"></div> -->
-	<div id="particles-js">
-		<canvas id="3D-particle-effect-canvas"></canvas>
-	</div>
-
-
-                      <!-- ..................HOME......................-->
-    <div class="home" style="height: 100vh; color: white;">
-        <div class="cost1">
-            <img src="assets/home/constellation1.png" alt="const">
-        </div>
-        <div class="logo-div">
-            <img class="logo-home" src="assets/logo-main.png" alt="HAck">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="butHolder">
-                <button class="Btn">Register</button>
-                <button class="Btn">Discord</button>
-            </div>
-        </div>
-        <div class="cost2">
-            <img src="assets/home/constellation2.png" alt="const">
-        </div>
+  </head>
+  <body>
+    <div id="particles-js">
+      <canvas id="3D-particle-effect-canvas"></canvas>
     </div>
 
-                         <!-- .....................About...................... -->
-    <div class="abdiv" style="height: 100vh; color: white;">
-        <div class="abbox">
-           <h2>About Us</h2>
-           <p>Inspired by the famous painting, Hacklytics 2023: A Starry Night will enable you to channel your creative persona, pushing the bounds of imagination and possibility to ideate, innovate, and develop something truly out of the world.</p>
-           <br>
-           <p>Much like Van Gogh's distinctive style of art, we encourage you to look
-            for unique perspectives, and bring them to life with your own touch of
-            colour. Stuck? Use our tracks (Finance, Sports, Healthcare and more!) 
-            to guide you towards data-focused problems worth solving.</p>
+    <!------------------------ Navbar ------------------------>
+    <nav>
+      <div class="curve-1"></div>
+      <div class="curve-2"></div>
+      <div class="baap">
+        <div class="parent">
+          <div class="child"><a href="#1"> About </a></div>
+          <div class="child"><a href="#2"> Tracks </a></div>
+          <div class="child"><a href="#3"> Sponser </a></div>
+          <div class="child"><a href="#4"> FAQs </a></div>
+          <div class="child"><a href="#5"> Contact </a></div>
+          <div class="child"><a href="#6"> About </a></div>
+          <div class="child"><a href="#7"> Tracks </a></div>
+          <div class="child"><a href="#8"> Sponser </a></div>
+          <div class="child"><a href="#9"> FAQs </a></div>
+          <div class="child"><a href="#10"> Contact </a></div>
         </div>
-        <div class="rstar">
-            <img class="topstar" src="./assets/About/Frame 36.png"  alt="Star">
+      </div>
+    </nav>
+    <!------------------------ HOME ------------------------>
+    <section class="home" style="height: 100vh; color: white">
+      <div class="cost1">
+        <img src="assets/home/constellation1.png" alt="const" />
+      </div>
+      <div class="logo-div">
+        <img class="logo-home" src="assets/logo-main.png" alt="HAck" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="butHolder">
+          <button class="Btn">Register</button>
+          <button class="Btn">Discord</button>
         </div>
-        <div class="lstar">
-            <img class="botstar" src="./assets/About/Frame 37.png" alt="star">
-        </div>
-        <div class="aconst1">
-            <img src="./assets/constellation 4 png.png" alt="*">
-        </div>
-        <div class="aconst2">
-            <img style="width:70%" src="./assets/constellation 2 png.png" alt="*">
-        </div>
-        <div class="aconst3">
-            <img  src="./assets/constellation 2 png.png" alt="*">
-        </div>
-    </div>
+      </div>
+      <div class="cost2">
+        <img src="assets/home/constellation2.png" alt="const" />
+      </div>
+    </section>
 
+    <!------------------------ About ------------------------>
+    <section class="abdiv" style="height: 100vh; color: white">
+      <div class="abbox">
+        <h2>About Us</h2>
+        <p>
+          Inspired by the famous painting, Hacklytics 2023: A Starry Night will
+          enable you to channel your creative persona, pushing the bounds of
+          imagination and possibility to ideate, innovate, and develop something
+          truly out of the world.
+        </p>
+        <br />
+        <p>
+          Much like Van Gogh's distinctive style of art, we encourage you to
+          look for unique perspectives, and bring them to life with your own
+          touch of colour. Stuck? Use our tracks (Finance, Sports, Healthcare
+          and more!) to guide you towards data-focused problems worth solving.
+        </p>
+      </div>
+      <div class="rstar">
+        <img class="topstar" src="./assets/About/Frame 36.png" alt="Star" />
+      </div>
+      <div class="lstar">
+        <img class="botstar" src="./assets/About/Frame 37.png" alt="star" />
+      </div>
+      <div class="aconst1">
+        <img src="./assets/constellation 4 png.png" alt="*" />
+      </div>
+      <div class="aconst2">
+        <img
+          style="width: 70%"
+          src="./assets/constellation 2 png.png"
+          alt="*"
+        />
+      </div>
+      <div class="aconst3">
+        <img src="./assets/constellation 2 png.png" alt="*" />
+      </div>
+    </section>
 
-    <div style="height: 100vh; color: white;">xyz</div>
-    <div style="height: 100vh; color: white;">xyz</div>
+    <div style="height: 100vh; color: white">xyz</div>
+    <div style="height: 100vh; color: white">xyz</div>
 
     <!-- custom script js -->
     <script src="./js/script.js"></script>
     <script src="./js/particle.js"></script>
-</body>
+    <script src="./js/navbar.js"></script>
+  </body>
 </html>
