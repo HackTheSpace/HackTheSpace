@@ -1,47 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/react.svg" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Hack The Space</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/particle.css">
-    
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/particle.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+
     <!-- 3rd party js libraries -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
-	
-
-</head>
-<body>
-    <!-- <div id="particles-js"></div> -->
-	<div id="particles-js">
-		<canvas id="3D-particle-effect-canvas"></canvas>
-	</div>
-
-
-                      <!-- ..................HOME......................-->
-    <div class="home" style="height: 100vh; color: white;">
-        <div class="cost1">
-            <img src="assets/home/constellation1.png" alt="const">
-        </div>
-        <div class="logo-div">
-            <img class="logo-home" src="assets/logo-main.png" alt="HAck">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="butHolder">
-                <button class="Btn">Register</button>
-                <button class="Btn">Discord</button>
-            </div>
-        </div>
-        <div class="cost2">
-            <img src="assets/home/constellation2.png" alt="const">
-        </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="particles-js">
+      <canvas id="3D-particle-effect-canvas"></canvas>
     </div>
+
+    <!------------------------ Navbar ------------------------>
+    <nav>
+      <div class="mobile-nav">
+        <div class="mobile-nav-links" id="mobile-nav-links">
+          <!--  -->
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Tracks</a>
+          <a href="#">Sponsers</a>
+          <a href="#">FAQs</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="mobile-nav-icons">
+          <ion-icon
+            name="menu-outline"
+            id="open-mobile-nav"
+            class="show"
+          ></ion-icon>
+          <ion-icon
+            id="close-mobile-nav"
+            name="close-outline"
+            class="hidden"
+          ></ion-icon>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
+      </div>
+      <div class="curve-1"></div>
+      <div class="curve-2"></div>
+      <div class="baap">
+        <div class="parent">
+          <div class="child"><a href="#1"> About </a></div>
+          <div class="child"><a href="#2"> Tracks </a></div>
+          <div class="child"><a href="#3"> Sponser </a></div>
+          <div class="child"><a href="#4"> FAQs </a></div>
+          <div class="child"><a href="#5"> Contact </a></div>
+          <div class="child"><a href="#6"> About </a></div>
+          <div class="child"><a href="#7"> Tracks </a></div>
+          <div class="child"><a href="#8"> Sponser </a></div>
+          <div class="child"><a href="#9"> FAQs </a></div>
+          <div class="child"><a href="#10"> Contact </a></div>
+        </div>
+      </div>
+      <div class="mlh-flag">
+        <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
+      </div>
+    </nav>
+    <!------------------------ HOME ------------------------>
+    <section class="home" style="height: 100vh; color: white">
+      <div class="cost1">
+        <img src="assets/home/constellation1.png" alt="const" />
+      </div>
+      <div class="logo-div">
+        <img class="logo-home" src="assets/logo-main.png" alt="HAck" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="butHolder">
+          <button class="Btn">Register</button>
+          <button class="Btn">Discord</button>
+        </div>
+      </div>
+      <div class="cost2">
+        <img src="assets/home/constellation2.png" alt="const" />
+      </div>
+    </section>
 
                          <!-- .....................About...................... -->
     <div class="abdiv" style="height: 100vh; color: white;">
@@ -109,5 +163,6 @@
     <!-- custom script js -->
     <script src="./js/script.js"></script>
     <script src="./js/particle.js"></script>
-</body>
+    <script src="./js/navbar.js"></script>
+  </body>
 </html>

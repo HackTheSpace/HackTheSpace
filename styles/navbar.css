@@ -1,0 +1,225 @@
+:root {
+  --oval-width: 12.5rem;
+  --oval-height: 59.5rem;
+  /* --oval-width: 200px;
+  --oval-height: 950px; */
+  --child-size: 100px;
+}
+
+nav .logo {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+}
+
+nav .logo img {
+  width: 80px;
+  height: 70px;
+}
+
+nav .mlh-flag {
+  position: fixed;
+  right: 5%;
+}
+
+.baap {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: 10;
+}
+
+.parent {
+  position: relative;
+  width: var(--oval-width);
+  height: var(--oval-height);
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.child {
+  position: absolute;
+  width: var(--child-size);
+  height: var(--child-size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  transform: rotate(-90deg);
+}
+
+.child a {
+  font-size: 1.3rem;
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.child.active {
+  font-weight: 900;
+}
+
+section {
+  height: 100vh;
+}
+
+.curve-1,
+.curve-2 {
+  height: 500px;
+  border-bottom: 2px solid #fffff4;
+  border-radius: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.curve-1 {
+  width: calc(100% - 12rem);
+  top: -440px;
+}
+
+.curve-2 {
+  width: calc(100% - 16.5rem);
+  top: -360px;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+nav .mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .baap,
+  .curve-1,
+  .curve-2 {
+    display: none;
+  }
+
+  nav .mlh-flag {
+    top: 0%;
+  }
+
+  nav .mlh-flag {
+    right: 8%;
+  }
+
+  nav .mobile-nav {
+    display: block;
+    transition: all 0.5s ease-in;
+  }
+
+  nav .mobile-nav-links {
+    transition: all 0.5s ease-in;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    background-color: rgba(0, 0, 0, 1);
+    transform: translate(100%, 0);
+  }
+
+  nav .mobile-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1.2rem 0;
+  }
+
+  nav .mobile-nav-icons {
+    color: #fff;
+    position: fixed;
+    right: 2%;
+    top: 3%;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --oval-width: 12.5rem;
+    --oval-height: 35rem;
+  }
+
+  .curve-1 {
+    width: 70%;
+    top: -440px;
+  }
+
+  .curve-2 {
+    width: 75%;
+    top: -350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --oval-width: 10.5rem;
+    --oval-height: 40.5rem;
+  }
+
+  .baap {
+    top: 1%;
+  }
+
+  .curve-1 {
+    width: 70%;
+    top: -440px;
+  }
+
+  .curve-2 {
+    width: 75%;
+    top: -350px;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  :root {
+    --oval-width: 12.5rem;
+    --oval-height: 44.5rem;
+  }
+
+  .baap {
+    /* top: 2%; */
+  }
+
+  .curve-1 {
+    width: 70%;
+    top: -440px;
+  }
+
+  .curve-2 {
+    width: 75%;
+    top: -350px;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  :root {
+    --oval-width: 12.5rem;
+    --oval-height: 52.5rem;
+  }
+
+  .curve-1 {
+    width: 65%;
+    top: -440px;
+  }
+
+  .curve-2 {
+    width: 69%;
+    top: -350px;
+  }
+}
