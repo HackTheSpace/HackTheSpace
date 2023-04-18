@@ -192,6 +192,17 @@ body {
 	.abbox h2{
 		font-size: 2.1rem;
 	}
+  .aconst1{
+    top: 10%;
+    right: 0%;
+  }
+  .aconst2{
+    display: none;
+  }
+  .rstar{
+    top: 6%;
+    right: -13%;
+  }
 }
 
 /* Whatishackthespace */
@@ -214,4 +225,13 @@ body {
 }
 .frm img{
 	width: 70%;
+}
+@media only screen and (max-width:768px) {
+  .frm{
+    bottom: -20%;
+    right: -40%;
+  }
+  .frm img{
+    width: 50%;
+  }
 }
