@@ -191,9 +191,33 @@ body {
 }
 @media only screen and (max-width:768px) {
 	.abbox p{
-		font-size: 1.5rem;
+		font-size: 1.1rem;
+		padding: 0;
+		padding-top: 1rem;
 	}
 	.abbox h2{
-		font-size: 2.5rem;
+		font-size: 2.1rem;
 	}
+}
+
+/* Whatishackthespace */
+.wihts{
+	background-color: rgba(128, 128, 128, 0.25);
+	border-radius: 50px;
+	border-color: transparent;
+	text-align: center;
+	padding: 2rem;
+	width: 72.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+.frm{
+	position: absolute;
+	bottom: -30%;
+	right: -13%;
+}
+.frm img{
+	width: 70%;
 }
