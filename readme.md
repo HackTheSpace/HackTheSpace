@@ -1,8 +1,6 @@
 todo:
 
-- what is hts
 - add original map in venue section
-- sponser section
 - organisers
 - why sponser us
 - footer
@@ -11,4 +9,6 @@ todo:
 
 done:
 
+- what is hts
 - venue section
+- sponser section

@@ -60,10 +60,6 @@ nav .mlh-flag {
   font-weight: 900;
 }
 
-section {
-  height: 100vh;
-}
-
 .curve-1,
 .curve-2 {
   height: 500px;
@@ -108,7 +104,11 @@ nav .mobile-nav {
   }
 
   nav .mlh-flag {
-    right: 8%;
+    right: 10%;
+  }
+
+  nav .mlh-flag img {
+    width: 100px;
   }
 
   nav .mobile-nav {

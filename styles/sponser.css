@@ -1,0 +1,52 @@
+.sponser-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.sponser-section .title {
+  text-align: center;
+  font-size: 2.5rem;
+  width: 50%;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+.sponser-section .sponser-container {
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.sponser-section .sponser {
+  margin: 3rem 0;
+}
+
+.sponser-section .sponser h2 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.sponser-section .sponser .card .wrapper {
+  background-color: rgba(217, 217, 217, 0.18);
+  padding: 2rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponser-section .sponser .pic {
+  width: 237px;
+  height: 237px;
+}
+
+.sponser-section .sponser .pic img {
+  /* display: none; */
+  border-radius: 37px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
