@@ -41,11 +41,11 @@
 .sponser-section .sponser .pic {
   width: 237px;
   height: 237px;
+  border-radius: 37px;
+  overflow: hidden;
 }
 
 .sponser-section .sponser .pic img {
-  /* display: none; */
-  border-radius: 37px;
   width: 100%;
   height: 100%;
   object-fit: contain;
