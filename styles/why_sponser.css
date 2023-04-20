@@ -1,0 +1,92 @@
+.why-sponser-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.why-sponser-section .title {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+.why-sponser-section .container {
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+
+.why-sponser-section .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(217, 217, 217, 0.18);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 2rem 2rem 1rem;
+  margin: 2rem 0;
+  border-radius: 37px;
+}
+
+.why-sponser-section .card h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.why-sponser-section .card p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  margin: 1rem 0;
+}
+
+.why-sponser-section .btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .why-sponser-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .why-sponser-section .card {
+    width: 40%;
+    height: 250px;
+    justify-content: flex-start;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .why-sponser-section .container {
+    padding: 0 2rem;
+    justify-content: center;
+  }
+
+  .why-sponser-section .card {
+    width: 30%;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 1215px) {
+  .why-sponser-section .card {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .why-sponser-section .card {
+    width: 22%;
+  }
+}
