@@ -1,9 +1,8 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Montserrat:ital,wght@0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Montserrat:ital,wght@0,400;1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -22,20 +21,102 @@ body {
 .logo-div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   position: relative;
-  height: 60vh;
+  height: 70vh;
+  margin-top: 2rem;
 }
 
 .logo-div p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 2rem 0;
   font-size: 1.4rem;
 }
 
 .logo-home {
-  width: 30%;
+  width: 35%;
+}
+
+.logo-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.butHolder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  min-width: 40%;
+  margin-top: 1rem;
+}
+
+.Btn {
+  font-size: 1.2rem;
+  width: 40%;
+  height: 3rem;
+  /* vinit */
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  border: none !important;
+  outline: none !important;
+  transform: scale(1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Btn .icon {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-6%, -50%);
+  color: #fff;
+}
+
+.Btn .text {
+  position: relative;
+  z-index: 1;
+  color: rgb(167 139 250 / 1);
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
+
+.gradient-mask {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: all;
+  position: absolute;
+  inset: 0;
+  width: 25%;
+  height: 100%;
+}
+
+.Btn:hover .gradient-mask {
+  width: 100%;
+}
+
+.Btn:hover .text {
+  color: #fff;
+}
+
+.black-bg {
+  background-image: linear-gradient(to right, #434343, #000000);
+}
+
+.zinc-bg {
+  background-image: linear-gradient(to left, #27272a, #27272b);
+}
+
+.blue-bg {
+  background-image: linear-gradient(to left, #1e40af, #60a5fa);
 }
 
 .cost1 {
@@ -50,31 +131,6 @@ body {
   right: 6%;
 }
 
-.butHolder {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  min-width: 40%;
-}
-
-.Btn {
-  border-radius: 30px;
-  border-color: transparent;
-  height: 3.2rem;
-  width: 12rem;
-  background-color: rgba(128, 128, 128, 0.25);
-  color: white;
-  font-size: 1.2rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.Btn:hover {
-  cursor: pointer;
-  background-color: rgba(128, 128, 128, 1);
-  transform: scale(1.1);
-}
 .cost1 img {
   width: 60%;
 }

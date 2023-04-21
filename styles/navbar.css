@@ -1,9 +1,9 @@
 :root {
   --oval-width: 10.5rem;
-  --oval-height: 38.5rem;
+  --oval-height: 56.5rem;
   /* --oval-width: 200px;
   --oval-height: 950px; */
-  --child-size: 100px;
+  --child-size: 20px;
 }
 
 nav .logo {
@@ -20,6 +20,13 @@ nav .logo img {
 nav .mlh-flag {
   position: fixed;
   right: 5%;
+  z-index: 9999;
+  width: 100px;
+}
+
+nav .mlh-flag img {
+  width: 100%;
+  height: 100%;
 }
 
 .baap {
@@ -34,8 +41,10 @@ nav .mlh-flag {
   position: relative;
   width: var(--oval-width);
   height: var(--oval-height);
-  border-radius: 50%;
+  border-radius: 100%;
   transition: transform 0.5s;
+  box-shadow: -25px 0px 0 10px rgba(0, 0, 0, 0.6) inset;
+  border: 50px solid rgba(0, 0, 0, 0.6);
 }
 
 .child {
@@ -71,11 +80,13 @@ nav .mlh-flag {
 }
 
 .curve-1 {
+  display: none;
   width: calc(100% - 12rem);
   top: -440px;
 }
 
 .curve-2 {
+  display: none;
   width: calc(100% - 16.5rem);
   top: -360px;
 }
@@ -148,7 +159,7 @@ nav .mobile-nav {
   }
 }
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   :root {
     --oval-width: 12.5rem;
     --oval-height: 35rem;
@@ -192,10 +203,6 @@ nav .mobile-nav {
     --oval-height: 44.5rem;
   }
 
-  .baap {
-    /* top: 2%; */
-  }
-
   .curve-1 {
     width: 70%;
     top: -440px;
@@ -222,4 +229,4 @@ nav .mobile-nav {
     width: 69%;
     top: -350px;
   }
-}
+} */
