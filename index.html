@@ -89,7 +89,7 @@
     </button>
 
     <!------------------------ HOME ------------------------>
-    <section class="home" style="height: 100vh; color: white">
+    <section class="home" style="min-height: 100vh; color: white">
       <div class="cost1">
         <img src="assets/home/constellation1.png" alt="const" />
       </div>
@@ -117,7 +117,7 @@
     </section>
 
     <!-------------------------- About -------------------------->
-    <div class="abdiv" style="height: 100vh; color: white">
+    <div class="abdiv" style="min-height: 100vh; color: white">
       <div class="abbox">
         <h2>About Us</h2>
         <p>
@@ -156,7 +156,7 @@
     </div>
 
     <!------------------------What is Hack The Space------------------------>
-    <div class="abdiv" style="height: 100vh; color: white">
+    <div class="abdiv" style="min-height: 100vh; color: white">
       <div class="wihts abbox">
         <h2>What is HackTheSpace?</h2>
         <p>
@@ -188,15 +188,23 @@
       </div>
     </div>
 
-    <section class="venue-section" style="color: white">
+    <section class="venue-section" style="min-height: 100vh; color: white">
       <div class="venue-wrapper">
         <div class="venue">
           <h2>Venue</h2>
-          <p>KK Modi University, Bhiali Chhattisgarh</p>
+          <p>
+            KK Modi University, Bhiali
+            <br />
+            Chhattisgarh
+          </p>
         </div>
         <div class="date">
           <h2>Date and Time</h2>
-          <p>12th August to 13th August 10 AM Onwards</p>
+          <p>
+            12th August to 13th August
+            <br />
+            10 AM Onwards
+          </p>
         </div>
         <div class="extra-info">
           <h2>Extra information</h2>
@@ -212,11 +220,118 @@
       <div class="divider"></div>
 
       <div class="map-wrapper">
-        <img src="./assets/map.png" alt="map" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3153786639155!2d81.23724567521539!3d21.179626980507713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293e9770b94895%3A0x58804a9f509e6a33!2sKK%20Modi%20University!5e0!3m2!1sen!2sin!4v1682119369013!5m2!1sen!2sin"
+          width="400"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
-    <section class="sponser-section" style="color: white">
+    <section class="organiser-section" style="min-height: 100vh; color: white">
+      <h2 class="title">Organisers</h2>
+
+      <div class="container">
+        <div class="card">
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
+          </div>
+          <p class="organiser-name">Himanshu Kumar Sahu</p>
+        </div>
+
+        <div class="card">
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
+          </div>
+          <p class="organiser-name">Ayush Kumar Sahu</p>
+        </div>
+
+        <div class="card">
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
+          </div>
+          <p class="organiser-name">Fanibhushan Sahu</p>
+        </div>
+
+        <div class="card">
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
+          </div>
+          <p class="organiser-name">Vinitpal Singh</p>
+        </div>
+
+        <div class="card">
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
+          </div>
+          <p class="organiser-name">Akash Verma</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="why-sponser-section"
+      style="min-height: 100vh; color: white"
+    >
+      <h2 class="title">Why Sponser Us ?</h2>
+
+      <div class="container">
+        <div class="card">
+          <div class="card-title">
+            <h2>Promotion</h2>
+          </div>
+          <p>
+            Sponsoring events promotes your brand. Higher sponsorship packages
+            offer more exposure. This creates a positive perception of your
+            company.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <h2>Recruitment</h2>
+          </div>
+          <p>
+            Sponsor HackTheSpace, connect with potential employees. Meet bright
+            minds from the region, interview potential candidates. Build your
+            team with HackTheSpace sponsorship.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <h2>New Technology</h2>
+          </div>
+          <p>
+            Use hackathons to test new technologies and incentivize students.
+            Create challenges aligned with your technology to promote it to a
+            wider audience. Drive future industries with HackTheSpace.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <h2>Inspiration</h2>
+          </div>
+          <p>
+            Hackathons bring fresh ideas to challenging problems. Inspire both
+            participants and your team by tackling problems in your field.
+            Exchange of ideas can lead to innovative solutions at HackTheSpace.
+          </p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button class="Btn" type="button">Sponser Us</button>
+        <button class="Btn" type="button">Brochure</button>
+      </div>
+    </section>
+
+    <section class="sponser-section" style="min-height: 100vh; color: white">
       <h2 class="title">Sponsers & partners</h2>
 
       <div class="sponser-container">
@@ -331,102 +446,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="organiser-section" style="color: white">
-      <h2 class="title">Organisers</h2>
-
-      <div class="container">
-        <div class="card">
-          <div class="organiser-image">
-            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-          </div>
-          <p class="organiser-name">Himanshu Kumar Sahu</p>
-        </div>
-
-        <div class="card">
-          <div class="organiser-image">
-            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-          </div>
-          <p class="organiser-name">Ayush Kumar Sahu</p>
-        </div>
-
-        <div class="card">
-          <div class="organiser-image">
-            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-          </div>
-          <p class="organiser-name">Fanibhushan Sahu</p>
-        </div>
-
-        <div class="card">
-          <div class="organiser-image">
-            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-          </div>
-          <p class="organiser-name">Vinitpal Singh</p>
-        </div>
-
-        <div class="card">
-          <div class="organiser-image">
-            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-          </div>
-          <p class="organiser-name">Akash Verma</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="why-sponser-section" style="color: white">
-      <h2 class="title">Why Sponser Us ?</h2>
-
-      <div class="container">
-        <div class="card">
-          <div class="card-title">
-            <h2>Promotion</h2>
-          </div>
-          <p>
-            Sponsoring events promotes your brand. Higher sponsorship packages
-            offer more exposure. This creates a positive perception of your
-            company.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-title">
-            <h2>Recruitment</h2>
-          </div>
-          <p>
-            Sponsor HackTheSpace, connect with potential employees. Meet bright
-            minds from the region, interview potential candidates. Build your
-            team with HackTheSpace sponsorship.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-title">
-            <h2>New Technology</h2>
-          </div>
-          <p>
-            Use hackathons to test new technologies and incentivize students.
-            Create challenges aligned with your technology to promote it to a
-            wider audience. Drive future industries with HackTheSpace.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-title">
-            <h2>Inspiration</h2>
-          </div>
-          <p>
-            Hackathons bring fresh ideas to challenging problems. Inspire both
-            participants and your team by tackling problems in your field.
-            Exchange of ideas can lead to innovative solutions at HackTheSpace.
-          </p>
-        </div>
-      </div>
-
-      <div class="btn-container">
-        <button class="Btn" type="button">Sponser Us</button>
-        <button class="Btn" type="button">Brochure</button>
       </div>
     </section>
 

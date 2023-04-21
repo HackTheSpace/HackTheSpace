@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
+  /* transform: scale(1.1); */
 }
 
 .venue-section h2 {
@@ -31,13 +32,12 @@
 .venue-section .divider {
   height: 5px;
   margin: 2rem 0;
-  background-color: #d9d9d9;
+  background-color: rgb(167 139 250 / 0.7);
 }
 
 .venue-section .map-wrapper {
   width: 100%;
-  height: 400px;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
 }
 
 .venue-section .map-wrapper img {
@@ -64,14 +64,20 @@
 
   .venue-section h2 {
     text-align: right;
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.08em;
+    color: rgb(167 139 250 / 1);
   }
 
   .venue-section p {
+    text-align: right;
     font-size: 1.2rem;
-    text-align: left;
+    line-height: 1.6rem;
     word-break: break-all;
+    letter-spacing: 0.08em;
+    color: #fbeeee;
   }
 
   .venue-section .divider {
@@ -81,7 +87,12 @@
 
   .venue-section .map-wrapper {
     width: 40%;
-    height: 300px;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .venue-section .venue-wrapper .extra-info {
+    width: 65%;
   }
 }
