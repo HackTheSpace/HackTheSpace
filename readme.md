@@ -1,8 +1,6 @@
 todo:
 
-- why sponser us
 - footer
-- back to top btn
 - complete ui improvement looks too overstuffed atm
 - add original map in venue section
 - CTA btns ka look change
@@ -13,6 +11,8 @@ done:
 - venue section
 - sponser section
 - organisers
+- why sponser us
+- back to top btn
 
 -----------------todo after mlh approval ---------------
 

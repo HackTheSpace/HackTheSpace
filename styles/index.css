@@ -9,6 +9,64 @@ body {
   z-index: 1;
 }
 
+.go-to-top-btn {
+  position: fixed;
+  padding: 1.3rem;
+  border: none !important;
+  outline: none !important;
+  display: none;
+  border-radius: 50%;
+  z-index: 9;
+  right: 20px;
+  bottom: 30px;
+  cursor: pointer;
+  transform: rotateZ(-45deg);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: all;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.go-to-top-btn .show {
+  display: block;
+}
+
+.rocket-btn {
+  transition: all 0.4s;
+  font-size: 30px;
+  animation: wave 2s infinite;
+  color: rgb(167 139 250 / 0.7);
+  text-shadow: none;
+}
+
+.go-to-top-btn:hover .rocket-btn {
+  color: rgb(167 139 250 / 1);
+  text-shadow: 10px 10px 80px rgb(167 139 250 / 1);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0%);
+  }
+
+  25% {
+    transform: translateY(-2%);
+  }
+
+  50% {
+    transform: translateY(-4%);
+  }
+
+  75% {
+    transform: translateY(-2%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 /* Home */
 
 .home {
@@ -185,18 +243,19 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .rstar {
   position: absolute;
-  top: -10%;
-  right: 0%;
+  top: 0%;
+  right: -5%;
 }
 .topstar {
   width: 80%;
 }
 .lstar {
   position: absolute;
-  bottom: -10%;
+  bottom: 0%;
   left: 0%;
 }
 .botstar {
@@ -204,27 +263,30 @@ body {
 }
 .abbox {
   background-color: rgba(128, 128, 128, 0.25);
-  border-radius: 50px;
+  border-radius: 86px;
   border-color: transparent;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem;
   width: 72.5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .abbox h2 {
   font-size: 2.6rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 3.2rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 2rem;
 }
 
 .abbox p {
-  padding: 1rem;
-  font-size: 1.72rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0 3rem 0.5rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.08em;
+  color: #fbeeee;
 }
 .aconst1 {
   position: absolute;
@@ -292,5 +354,11 @@ body {
   }
   .frm img {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .abbox {
+    width: 60%;
   }
 }
