@@ -1,131 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/react.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./assets/react.svg" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hack The Space</title>
 
-  <title>Hack The Space</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/particle.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/venue.css" />
+    <link rel="stylesheet" href="./styles/sponser.css" />
+    <link rel="stylesheet" href="./styles/organiser.css" />
+    <link rel="stylesheet" href="./styles/why_sponser.css" />
 
-  <!-- css -->
-  <link rel="stylesheet" href="./styles/index.css" />
-  <link rel="stylesheet" href="./styles/particle.css" />
-  <link rel="stylesheet" href="./styles/navbar.css" />
-  <link rel="stylesheet" href="./styles/venue.css" />
-  <link rel="stylesheet" href="./styles/sponser.css" />
-  <link rel="stylesheet" href="./styles/organiser.css" />
-  <link rel="stylesheet" href="./styles/footer.css">
-  <link rel="stylesheet" href="./styles/why_sponser.css" />
+    <!-- 3rd party js libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="particles-js">
+      <canvas id="3D-particle-effect-canvas"></canvas>
+    </div>
 
-  <!-- 3rd party js libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
+    <!------------------------ Navbar ------------------------>
+    <nav>
+      <div class="mobile-nav">
+        <div class="mobile-nav-links" id="mobile-nav-links">
+          <!--  -->
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Tracks</a>
+          <a href="#">Sponsers</a>
+          <a href="#">FAQs</a>
+          <a href="#">Contact</a>
+        </div>
 
-<body>
-  <div id="particles-js">
-    <canvas id="3D-particle-effect-canvas"></canvas>
-  </div>
-
-  <!------------------------ Navbar ------------------------>
-  <nav>
-    <div class="mobile-nav">
-      <div class="mobile-nav-links" id="mobile-nav-links">
-        <!--  -->
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Tracks</a>
-        <a href="#">Sponsers</a>
-        <a href="#">FAQs</a>
-        <a href="#">Contact</a>
+        <div class="mobile-nav-icons">
+          <ion-icon
+            name="menu-outline"
+            id="open-mobile-nav"
+            class="show"
+          ></ion-icon>
+          <ion-icon
+            id="close-mobile-nav"
+            name="close-outline"
+            class="hidden"
+          ></ion-icon>
+        </div>
       </div>
-
-      <div class="mobile-nav-icons">
-        <ion-icon name="menu-outline" id="open-mobile-nav" class="show"></ion-icon>
-        <ion-icon id="close-mobile-nav" name="close-outline" class="hidden"></ion-icon>
+      <div class="logo">
+        <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
       </div>
-    </div>
-    <div class="logo">
-      <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
-    </div>
-    <div class="curve-1"></div>
-    <div class="curve-2"></div>
-    <div class="baap">
-      <div class="parent">
-        <div class="child"><a href="#1"> About </a></div>
-        <div class="child"><a href="#2"> Tracks </a></div>
-        <div class="child"><a href="#3"> Sponser </a></div>
-        <div class="child"><a href="#4"> FAQs </a></div>
-        <div class="child"><a href="#5"> Contact </a></div>
-        <div class="child"><a href="#6"> About </a></div>
-        <div class="child"><a href="#7"> Tracks </a></div>
-        <div class="child"><a href="#8"> Sponser </a></div>
-        <div class="child"><a href="#9"> FAQs </a></div>
-        <div class="child"><a href="#10"> Contact </a></div>
+      <div class="curve-1"></div>
+      <div class="curve-2"></div>
+      <div class="baap">
+        <div class="parent">
+          <div class="child"><a href="#1"> About </a></div>
+          <div class="child"><a href="#2"> Tracks </a></div>
+          <div class="child"><a href="#3"> Sponser </a></div>
+          <div class="child"><a href="#4"> FAQs </a></div>
+          <div class="child"><a href="#5"> Contact </a></div>
+          <div class="child"><a href="#6"> About </a></div>
+          <div class="child"><a href="#7"> Tracks </a></div>
+          <div class="child"><a href="#8"> Sponser </a></div>
+          <div class="child"><a href="#9"> FAQs </a></div>
+          <div class="child"><a href="#10"> Contact </a></div>
+        </div>
       </div>
-    </div>
-    <div class="mlh-flag">
-      <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
-    </div>
-  </nav>
-
-  <!------------------------ HOME ------------------------>
-  <section class="home" style="height: 100vh; color: white">
-    <div class="cost1">
-      <img src="assets/home/constellation1.png" alt="const" />
-    </div>
-    <div class="logo-div">
-      <img class="logo-home" src="assets/logo-main.png" alt="HAck" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div class="butHolder">
-        <button class="Btn">Register</button>
-        <button class="Btn">Discord</button>
+      <div class="mlh-flag">
+        <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
       </div>
-    </div>
-    <div class="cost2">
-      <img src="assets/home/constellation2.png" alt="const" />
-    </div>
-  </section>
-
-  <!-------------------------- About -------------------------->
-  <div class="abdiv" style="height: 100vh; color: white">
-    <div class="abbox">
-      <h2>About Us</h2>
-      <p>
-        Inspired by the famous painting, Hack the space 2023: A Starry Night will
-        enable you to channel your creative persona, pushing the bounds of
-        imagination and possibility to ideate, innovate, and develop something
-        truly out of the world.
-      </p>
-      <br />
-      <p>
-        Much like Van Gogh's distinctive style of art, we encourage you to
-        look for unique perspectives, and bring them to life with your own
-        touch of colour. Stuck? Use our tracks (Finance, Sports, Healthcare
-        and more!) to guide you towards data-focused problems worth solving.
-      </p>
-    </div>
-    <div class="rstar">
-      <img class="topstar" src="./assets/About/Frame 36.png" alt="Star" />
-    </div>
-    <div class="lstar">
-      <img class="botstar" src="./assets/About/Frame 37.png" alt="star" />
-    </div>
-    <div class="aconst1">
-      <img src="./assets/constellation 4 png.png" alt="*" />
-    </div>
-    <div class="aconst2">
-      <img style="width: 70%" src="./assets/constellation 2 png.png" alt="*" />
-    </div>
-    <div class="aconst3">
-      <img src="./assets/constellation 2 png.png" alt="*" />
-    </div>
-  </div>
-
+    </nav>
 
     <!------------------------ HOME ------------------------>
     <section class="home" style="height: 100vh; color: white">
@@ -206,306 +163,262 @@
         </div>
       </div>
 
-  <!------------------------What is Hack The Space------------------------>
-  <div class="abdiv" style="height: 100vh; color: white">
-    <div class="wihts abbox">
-      <h2>What is HackTheSpace?</h2>
-      <p>
-        Inspired by the famous painting, Hack the space 2023: A Starry Night will
-        enable you to channel your creative persona, pushing the bounds of
-        imagination and possibility to ideate, innovate, and develop something
-        truly out of the world.
-      </p>
-      <br />
-      <p>
-        Much like Van Gogh's distinctive style of art, we encourage you to
-        look for unique perspectives, and bring them to life with your own
-        touch of colour. Stuck? Use our tracks (Finance, Sports, Healthcare
-        and more!) to guide you towards data-focused problems worth solving.
-      </p>
-      <div class="frm">
-        <img src="./assets/Frame 34.png" alt="*" />
+      <div class="aconst1">
+        <img src="./assets/constellation 4 png.png" alt="*" />
+      </div>
+      <div class="aconst2">
+        <img src="./assets/constellation 2 png.png" alt="*" />
+      </div>
+      <div class="aconst3">
+        <img src="./assets/constellation 2 png.png" alt="*" />
       </div>
     </div>
 
-    <div class="aconst1">
-      <img src="./assets/constellation 4 png.png" alt="*" />
-    </div>
-    <div class="aconst2">
-      <img src="./assets/constellation 2 png.png" alt="*" />
-    </div>
-    <div class="aconst3">
-      <img src="./assets/constellation 2 png.png" alt="*" />
-    </div>
-  </div>
-
-
-  <section class="venue-section" style="color: white">
-    <div class="venue-wrapper">
-      <div class="venue">
-        <h2>Venue</h2>
-        <p>KK Modi University, Bhiali Chhattisgarh</p>
+    <section class="venue-section" style="color: white">
+      <div class="venue-wrapper">
+        <div class="venue">
+          <h2>Venue</h2>
+          <p>KK Modi University, Bhiali Chhattisgarh</p>
+        </div>
+        <div class="date">
+          <h2>Date and Time</h2>
+          <p>12th August to 13th August 10 AM Onwards</p>
+        </div>
+        <div class="extra-info">
+          <h2>Extra information</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+            deserunt asperiores delectus iusto vitae, perferendis veniam ipsum
+            ad aspernatur pariatur et fuga itaque odit non error tenetur quo eos
+            molestiae.
+          </p>
+        </div>
       </div>
-      <div class="date">
-        <h2>Date and Time</h2>
-        <p>12th August to 13th August 10 AM Onwards</p>
+
+      <div class="divider"></div>
+
+      <div class="map-wrapper">
+        <img src="./assets/map.png" alt="map" />
       </div>
-      <div class="extra-info">
-        <h2>Extra information</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
-          deserunt asperiores delectus iusto vitae, perferendis veniam ipsum
-          ad aspernatur pariatur et fuga itaque odit non error tenetur quo eos
-          molestiae.
-        </p>
-      </div>
-    </div>
+    </section>
 
-    <div class="divider"></div>
+    <section class="sponser-section" style="color: white">
+      <h2 class="title">Sponsers & partners</h2>
 
-    <div class="map-wrapper">
-      <img src="./assets/map.png" alt="map" />
-    </div>
-  </section>
+      <div class="sponser-container">
+        <div class="sponser">
+          <h2 class="sponser-name">Title Sponser</h2>
+          <div class="card">
+            <div class="wrapper">
+              <div class="pic">
+                <img
+                  src="./assets/sponser/logo_small.png"
+                  alt="title sponser mlh"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <section class="sponser-section" style="color: white">
-    <h2 class="title">Sponsers & partners</h2>
+        <div class="sponser">
+          <h2 class="sponser-name">Hackathon Partner</h2>
+          <div class="card">
+            <div class="wrapper">
+              <div class="pic">
+                <img
+                  src="./assets/sponser/logo_small.png"
+                  alt="title sponser mlh"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="sponser-container">
-      <div class="sponser">
-        <h2 class="sponser-name">Title Sponser</h2>
-        <div class="card">
-          <div class="wrapper">
-            <div class="pic">
-              <img src="./assets/sponser/logo_small.png" alt="title sponser mlh" />
+        <div class="sponser">
+          <h2 class="sponser-name">Diamond</h2>
+          <div class="card">
+            <div class="wrapper">
+              <div class="pic">
+                <img
+                  src="./assets/sponser/logo_small.png"
+                  alt="title sponser mlh"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponser">
+          <h2 class="sponser-name">Gold</h2>
+          <div class="card">
+            <div class="wrapper">
+              <div class="pic">
+                <img
+                  src="./assets/sponser/logo_small.png"
+                  alt="title sponser mlh"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponser">
+          <h2 class="sponser-name">Silver</h2>
+          <div class="card">
+            <div class="wrapper">
+              <div class="pic">
+                <img
+                  src="./assets/sponser/logo_small.png"
+                  alt="title sponser mlh"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponser">
+          <h2 class="sponser-name">Bronze</h2>
+          <div class="card">
+            <div class="wrapper">
+              <div class="pic">
+                <img
+                  src="./assets/sponser/logo_small.png"
+                  alt="title sponser mlh"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponser">
+          <h2 class="sponser-name">Community Partner</h2>
+          <div class="card">
+            <div class="wrapper">
+              <div class="pic">
+                <img
+                  src="./assets/sponser/logo_small.png"
+                  alt="title sponser mlh"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponser">
+          <h2 class="sponser-name">Certificate Partner</h2>
+          <div class="card">
+            <div class="wrapper">
+              <div class="pic">
+                <img
+                  src="./assets/sponser/logo_small.png"
+                  alt="title sponser mlh"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="sponser">
-        <h2 class="sponser-name">Hackathon Partner</h2>
+    <section class="organiser-section" style="color: white">
+      <h2 class="title">Organisers</h2>
+
+      <div class="container">
         <div class="card">
-          <div class="wrapper">
-            <div class="pic">
-              <img src="./assets/sponser/logo_small.png" alt="title sponser mlh" />
-            </div>
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
           </div>
+          <p class="organiser-name">Himanshu Kumar Sahu</p>
         </div>
-      </div>
 
-      <div class="sponser">
-        <h2 class="sponser-name">Diamond</h2>
         <div class="card">
-          <div class="wrapper">
-            <div class="pic">
-              <img src="./assets/sponser/logo_small.png" alt="title sponser mlh" />
-            </div>
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
           </div>
+          <p class="organiser-name">Ayush Kumar Sahu</p>
         </div>
-      </div>
 
-      <div class="sponser">
-        <h2 class="sponser-name">Gold</h2>
         <div class="card">
-          <div class="wrapper">
-            <div class="pic">
-              <img src="./assets/sponser/logo_small.png" alt="title sponser mlh" />
-            </div>
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
           </div>
+          <p class="organiser-name">Fanibhushan Sahu</p>
         </div>
-      </div>
 
-      <div class="sponser">
-        <h2 class="sponser-name">Silver</h2>
         <div class="card">
-          <div class="wrapper">
-            <div class="pic">
-              <img src="./assets/sponser/logo_small.png" alt="title sponser mlh" />
-            </div>
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
           </div>
+          <p class="organiser-name">Vinitpal Singh</p>
         </div>
-      </div>
 
-      <div class="sponser">
-        <h2 class="sponser-name">Bronze</h2>
         <div class="card">
-          <div class="wrapper">
-            <div class="pic">
-              <img src="./assets/sponser/logo_small.png" alt="title sponser mlh" />
-            </div>
+          <div class="organiser-image">
+            <img src="./assets/sponser/logo_small.png" alt="Organisers" />
           </div>
+          <p class="organiser-name">Akash Verma</p>
         </div>
       </div>
+    </section>
 
-      <div class="sponser">
-        <h2 class="sponser-name">Community Partner</h2>
+    <section class="why-sponser-section" style="color: white">
+      <h2 class="title">Why Sponser Us ?</h2>
+
+      <div class="container">
         <div class="card">
-          <div class="wrapper">
-            <div class="pic">
-              <img src="./assets/sponser/logo_small.png" alt="title sponser mlh" />
-            </div>
+          <div class="card-title">
+            <h2>Promotion</h2>
           </div>
+          <p>
+            Sponsoring events promotes your brand. Higher sponsorship packages
+            offer more exposure. This creates a positive perception of your
+            company.
+          </p>
         </div>
-      </div>
 
-      <div class="sponser">
-        <h2 class="sponser-name">Certificate Partner</h2>
         <div class="card">
-          <div class="wrapper">
-            <div class="pic">
-              <img src="./assets/sponser/logo_small.png" alt="title sponser mlh" />
-            </div>
+          <div class="card-title">
+            <h2>Recruitment</h2>
           </div>
+          <p>
+            Sponsor HackTheSpace, connect with potential employees. Meet bright
+            minds from the region, interview potential candidates. Build your
+            team with HackTheSpace sponsorship.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <h2>New Technology</h2>
+          </div>
+          <p>
+            Use hackathons to test new technologies and incentivize students.
+            Create challenges aligned with your technology to promote it to a
+            wider audience. Drive future industries with HackTheSpace.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <h2>Inspiration</h2>
+          </div>
+          <p>
+            Hackathons bring fresh ideas to challenging problems. Inspire both
+            participants and your team by tackling problems in your field.
+            Exchange of ideas can lead to innovative solutions at HackTheSpace.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="organiser-section" style="color: white">
-    <h2 class="title">Organisers</h2>
-
-    <div class="container">
-      <div class="card">
-        <div class="organiser-image">
-          <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Himanshu Kumar Sahu</p>
+      <div class="btn-container">
+        <button class="Btn" type="button">Sponser Us</button>
+        <button class="Btn" type="button">Brochure</button>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="organiser-image">
-          <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Ayush Kumar Sahu</p>
-      </div>
-
-      <div class="card">
-        <div class="organiser-image">
-          <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Fanibhushan Sahu</p>
-      </div>
-
-      <div class="card">
-        <div class="organiser-image">
-          <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Vinitpal Singh</p>
-      </div>
-
-      <div class="card">
-        <div class="organiser-image">
-          <img src="./assets/sponser/logo_small.png" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Akash Verma</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="why-sponser-section" style="color: white">
-    <h2 class="title">Why Sponser Us ?</h2>
-
-    <div class="container">
-      <div class="card">
-        <div class="card-title">
-          <h2>Promotion</h2>
-        </div>
-        <p>
-          Sponsoring events promotes your brand. Higher sponsorship packages
-          offer more exposure. This creates a positive perception of your
-          company.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <h2>Recruitment</h2>
-        </div>
-        <p>
-          Sponsor HackTheSpace, connect with potential employees. Meet bright
-          minds from the region, interview potential candidates. Build your
-          team with HackTheSpace sponsorship.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <h2>New Technology</h2>
-        </div>
-        <p>
-          Use hackathons to test new technologies and incentivize students.
-          Create challenges aligned with your technology to promote it to a
-          wider audience. Drive future industries with HackTheSpace.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <h2>Inspiration</h2>
-        </div>
-        <p>
-          Hackathons bring fresh ideas to challenging problems. Inspire both
-          participants and your team by tackling problems in your field.
-          Exchange of ideas can lead to innovative solutions at HackTheSpace.
-        </p>
-      </div>
-    </div>
-
-    <div class="btn-container">
-      <button class="Btn" type="button">Sponser Us</button>
-      <button class="Btn" type="button">Brochure</button>
-    </div>
-  </section>
-
-  <section class="footer-section" style="color:white;">
-    <div class="imgHolder">
-      <img src="./assets/images/purplePlanet.png" alt="...">
-    </div>
-    <div class="docs">
-      <h3>Documents</h3>
-      <hr>
-      <ul>
-        <li><a href="#">MLH Code of Conduct</a></li>
-        <li><a href="#">Devfolio Code of Conduct</a></li>
-        <li><a href="#">Rule Book</a></li>
-        <li><a href="#">Sponsor-Us</a></li>
-      </ul>
-    </div>
-
-    <div class="socials">
-      <div class="handles">
-        <h3>Social Handles</h3>
-        <hr>
-        <div class="social-links">
-          <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-          <a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-          <a href="mailto:hackthespace2023@gmail.com" target="_blank"><ion-icon name="mail"></ion-icon></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="contactUs">
-      <h3>Contact Us</h3>
-      <hr>
-      <div class="contactList">
-        <h4>Himanshu Kumar Sahu</h4>
-        <p>+914748446</p>
-        <h4>Himanshu Kumar Sahu</h4>
-        <p>+914748446</p>
-      </div>
-    </div>
-
-  </section>
-
-
-
-  <!-- custom script js -->
-  <script src="https://kit.fontawesome.com/5e7d855d69.js" crossorigin="anonymous"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/particle.js"></script>
-  <script src="./js/navbar.js"></script>
-</body>
-
+    <!-- custom script js -->
+    <script src="./js/script.js"></script>
+    <script src="./js/particle.js"></script>
+    <script src="./js/navbar.js"></script>
+  </body>
 </html>
