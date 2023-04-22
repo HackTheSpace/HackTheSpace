@@ -113,7 +113,7 @@ body {
 .Btn {
   font-size: 1.2rem;
   width: 40%;
-  height: 3rem;
+  height: 3.5rem;
   /* vinit */
   box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -135,10 +135,14 @@ body {
   left: 8%;
   transform: translate(-6%, -50%);
   color: #fff;
+  font-size: 1.6rem;
 }
 
 .Btn .text {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-25%, -50%);
   z-index: 1;
   color: rgb(167 139 250 / 1);
 }

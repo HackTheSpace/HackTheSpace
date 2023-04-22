@@ -2,8 +2,6 @@ todo:
 
 - footer
 - complete ui improvement looks too overstuffed atm
-- add original map in venue section
-- CTA btns ka look change
 
 done:
 
@@ -13,6 +11,8 @@ done:
 - organisers
 - why sponser us
 - back to top btn
+- add original map in venue section
+- CTA btns ka look change
 
 -----------------todo after mlh approval ---------------
 
