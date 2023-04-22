@@ -6,21 +6,88 @@
   --child-size: 20px;
 }
 
-nav .logo {
+nav .desktop-nav {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
   position: fixed;
-  top: 2%;
-  left: 2%;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 5%;
+  background: #333;
+  padding: 1rem;
+  z-index: 9999;
+}
+
+nav .logo.shrink {
+  width: 50px;
+  height: 40px;
+}
+
+nav .logo {
+  align-self: flex-start;
+  width: 80px;
+  height: 70px;
+  overflow: hidden;
 }
 
 nav .logo img {
-  width: 80px;
-  height: 70px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+nav .desktop-nav .links {
+  margin-top: 1rem;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 3rem;
+  height: 100%;
+}
+
+nav .desktop-nav .links a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.08em;
+  color: #fff;
+  text-shadow: -0.25px -0.25px 0 transparent, 0.25px 0.25px transparent;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+  position: relative;
+}
+
+nav .desktop-nav .links a:hover {
+  color: rgb(167 139 250 / 1);
+  text-shadow: -0.25px -0.25px 0 rgb(167 139 250 / 1),
+    0.25px 0.25px rgb(167 139 250 / 1);
+}
+
+nav .desktop-nav .links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 10px;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav .desktop-nav .links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 nav .mlh-flag {
-  position: fixed;
-  right: 5%;
-  z-index: 9999;
+  position: relative;
+  top: 3.5rem;
+  right: 2rem;
   width: 100px;
 }
 
@@ -30,7 +97,9 @@ nav .mlh-flag img {
 }
 
 .baap {
-  position: fixed;
+  display: none; /* // temporary */
+
+  position: absolute;
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(90deg);
@@ -159,6 +228,11 @@ nav .mobile-nav {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+}
 /* @media screen and (min-width: 1000px) {
   :root {
     --oval-width: 12.5rem;

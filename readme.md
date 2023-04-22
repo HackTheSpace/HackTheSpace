@@ -2,6 +2,7 @@ todo:
 
 - footer
 - complete ui improvement looks too overstuffed atm
+- navbar fix
 
 done:
 
@@ -19,3 +20,4 @@ done:
 - faq section
 - schedule section
 - prizes section
+- track section
