@@ -1,8 +1,6 @@
 todo:
 
-- footer
-- complete ui improvement looks too overstuffed atm
-- navbar fix
+- minor ui changes
 
 done:
 
@@ -14,6 +12,9 @@ done:
 - back to top btn
 - add original map in venue section
 - CTA btns ka look change
+- footer
+- navbar fix
+- complete ui improvement looks too overstuffed atm
 
 -----------------todo after mlh approval ---------------
 

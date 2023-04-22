@@ -16,7 +16,8 @@ nav .desktop-nav {
   left: 0%;
   width: 100%;
   height: 5%;
-  background: #333;
+  background-color: rgba(0, 0, 0,0.7);
+
   padding: 1rem;
   z-index: 9999;
 }
