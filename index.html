@@ -49,7 +49,11 @@
           <a href="#">Contact</a>
         </div>
 
-        <div class="mobile-nav-icons">
+        <div class="mobile-nav-icons" style="display:flex; justify-content:space-between; width:100%">
+          <div class="logo shrink">
+            <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
+          </div>
+          <div class="burgMlh">
           <ion-icon
             name="menu-outline"
             id="open-mobile-nav"
@@ -60,13 +64,33 @@
             name="close-outline"
             class="hidden"
           ></ion-icon>
+          <div class="mlh-flag2 show" name="menu-outline" id="open-mobile-nav">
+            <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
+          </div>
         </div>
       </div>
-      <div class="logo" >
-        <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
       </div>
-      <div class="curve-1"></div>
-      <div class="curve-2"></div>
+
+      <div class="desktop-nav">
+        <div class="logo shrink">
+          <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
+        </div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Tracks</a>
+          <a href="#">Sponsers</a>
+          <a href="#">FAQs</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="mlh-flag">
+          <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
+        </div>
+      </div>
+
+      <!-- Rotatory navbar -->
+      <!-- <div class="curve-1"></div>
+      <div class="curve-2"></div> -->
       <div class="baap">
         <div class="parent">
           <div class="child"><a href="#1"> About </a></div>
@@ -81,13 +105,13 @@
           <div class="child"><a href="#10"> Contact </a></div>
         </div>
       </div>
-      <div class="mlh-flag">
+      <!-- <div class="mlh-flag">
         <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
-      </div>
+      </div> -->
     
     </nav>
 
-    <button class="go-to-top-btn black-bg">
+    <button type="button" class="go-to-top-btn black-bg">
       <ion-icon class="rocket-btn" name="rocket-outline"></ion-icon>
     </button>
 
@@ -120,7 +144,7 @@
     </section>
 
     <!-------------------------- About -------------------------->
-    <div class="abdiv" style="min-height: 100vh; color: white">
+    <div class="abdiv" >
       <div class="abbox">
         <h2>About Us</h2>
         <p>
@@ -136,13 +160,14 @@
           touch of colour. Stuck? Use our tracks (Finance, Sports, Healthcare
           and more!) to guide you towards data-focused problems worth solving.
         </p>
+        <div class="rstar">
+          <img class="topstar" src="./assets/About/Frame 36.png" alt="Star" />
+        </div>
+        <div class="lstar">
+          <img class="botstar" src="./assets/About/Frame 37.png" alt="star" />
+        </div>
       </div>
-      <div class="rstar">
-        <img class="topstar" src="./assets/About/Frame 36.png" alt="Star" />
-      </div>
-      <div class="lstar">
-        <img class="botstar" src="./assets/About/Frame 37.png" alt="star" />
-      </div>
+      
       <div class="aconst1">
         <img src="./assets/constellation 4 png.png" alt="*" />
       </div>
@@ -159,7 +184,10 @@
     </div>
 
     <!------------------------What is Hack The Space------------------------>
-    <div class="abdiv" style="min-height: 100vh; color: white">
+    <div
+      class="abdiv"
+      style="min-height: 100vh; color: white; padding-bottom: 6rem"
+    >
       <div class="wihts abbox">
         <h2>What is HackTheSpace?</h2>
         <p>
@@ -191,50 +219,58 @@
       </div>
     </div>
 
-    <section class="venue-section" style="min-height: 100vh; color: white">
-      <div class="venue-wrapper">
-        <div class="venue">
-          <h2>Venue</h2>
-          <p>
-            KK Modi University, Bhiali
-            <br />
-            Chhattisgarh
-          </p>
+    <!------------------------ Venue ------------------------>
+    <section
+      class="venue-section-container"
+      style="min-height: 100vh; color: white"
+    >
+      <h2 class="title">Destination</h2>
+      <div class="venue-section">
+        <div class="venue-wrapper">
+          <div class="venue">
+            <h2>Venue</h2>
+            <p>
+              KK Modi University, Bhiali
+              <br />
+              Chhattisgarh
+            </p>
+          </div>
+          <div class="date">
+            <h2>Date and Time</h2>
+            <p>
+              12th August to 13th August
+              <br />
+              10 AM Onwards
+            </p>
+          </div>
+          <div class="extra-info">
+            <h2>Extra information</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio deserunt asperiores delectus iusto vitae, perferendis
+              veniam ipsum ad aspernatur pariatur et fuga itaque odit non error
+              tenetur quo eos molestiae.
+            </p>
+          </div>
         </div>
-        <div class="date">
-          <h2>Date and Time</h2>
-          <p>
-            12th August to 13th August
-            <br />
-            10 AM Onwards
-          </p>
-        </div>
-        <div class="extra-info">
-          <h2>Extra information</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
-            deserunt asperiores delectus iusto vitae, perferendis veniam ipsum
-            ad aspernatur pariatur et fuga itaque odit non error tenetur quo eos
-            molestiae.
-          </p>
-        </div>
-      </div>
 
-      <div class="divider"></div>
+        <div class="divider"></div>
 
-      <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3153786639155!2d81.23724567521539!3d21.179626980507713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293e9770b94895%3A0x58804a9f509e6a33!2sKK%20Modi%20University!5e0!3m2!1sen!2sin!4v1682119369013!5m2!1sen!2sin"
-          width="400"
-          height="400"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3153786639155!2d81.23724567521539!3d21.179626980507713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293e9770b94895%3A0x58804a9f509e6a33!2sKK%20Modi%20University!5e0!3m2!1sen!2sin!4v1682119369013!5m2!1sen!2sin"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </section>
 
+    <!------------------------ Organisers ------------------------>
     <section class="organiser-section" style="min-height: 100vh; color: white">
       <h2 class="title">Organisers</h2>
 
@@ -276,6 +312,7 @@
       </div>
     </section>
 
+    <!------------------------ Why Sponser ------------------------>
     <section
       class="why-sponser-section"
       style="min-height: 100vh; color: white"
@@ -350,6 +387,7 @@
       </div>
     </section>
 
+    <!------------------------ Sponsers ------------------------>
     <section class="sponser-section" style="min-height: 100vh; color: white">
       <h2 class="title">Sponsers & partners</h2>
 

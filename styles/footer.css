@@ -54,6 +54,7 @@
     .footer-section{
         flex-direction: column;
         padding: 2rem;
+        text-align: center;
     }
     .imgHolder{
         display: none;
@@ -67,4 +68,13 @@
 .contactUs{
     padding-top: 1rem;
 }
+.footer-section hr{
+    width: 100%;
+}
+}
+
+@media only screen and (max-width:1000px){
+    .imgHolder{
+        display: none;
+    }
 }

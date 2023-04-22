@@ -10,13 +10,13 @@
 .why-sponser-section .title {
   text-align: center;
   font-size: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   text-transform: uppercase;
+  color: rgb(167 139 250 / 1);
 }
 
 .why-sponser-section .container {
-  padding: 0 2rem;
-  margin: 4rem 0 2rem;
+  margin: 0rem 0 2rem;
 }
 
 .why-sponser-section .card {
@@ -27,16 +27,22 @@
   text-align: center;
   background: rgba(217, 217, 217, 0.18);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 2rem 2rem 4rem;
+  padding: 2rem 2rem 3rem;
   margin: 2rem 0;
   border-radius: 37px;
+  transition: all 0.3s linear;
+}
+
+.why-sponser-section .card:hover {
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px,
+    rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
 }
 
 .why-sponser-section .card .card-title {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   width: 100%;
 }
 
@@ -68,13 +74,20 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  width: 40%;
+  width: 90%;
+  gap: 1rem;
   margin: 2rem 0;
 }
 
+@media screen and (min-width: 500px) {
+  .why-sponser-section .btn-container {
+    width: 50%;
+    gap: 1rem;
+  }
+}
 @media screen and (min-width: 800px) {
   .why-sponser-section .container {
+    padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -82,10 +95,15 @@
   }
 
   .why-sponser-section .card {
-    width: 40%;
-    height: 280px;
+    width: 37%;
+    height: 320px;
     justify-content: flex-start;
-    margin: 1rem;
+    margin: 1rem 0;
+  }
+
+  .why-sponser-section .btn-container {
+    width: 40%;
+    gap: 1rem;
   }
 }
 
@@ -95,15 +113,27 @@
     justify-content: center;
   }
 
+  .why-sponser-section .container {
+    margin: 1rem 0 2rem;
+  }
+
   .why-sponser-section .card {
-    width: 30%;
+    height: 300px;
+    width: 35%;
     margin: 1rem;
+  }
+  .why-sponser-section .btn-container {
+    width: 60%;
   }
 }
 
 @media screen and (min-width: 1215px) {
   .why-sponser-section .card {
     width: 30%;
+  }
+
+  .why-sponser-section .btn-container {
+    width: 50%;
   }
 }
 

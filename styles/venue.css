@@ -1,4 +1,12 @@
+.venue-section-container .title {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
 .venue-section {
+  margin-top: 2rem;
   padding: 1rem 2rem;
   display: block;
 }
@@ -9,13 +17,13 @@
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-  /* transform: scale(1.1); */
 }
 
 .venue-section h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.3rem;
   text-align: center;
+  color: rgb(167 139 250 / 1);
 }
 
 .venue-section p {
@@ -36,7 +44,7 @@
 }
 
 .venue-section .map-wrapper {
-  width: 100%;
+  /* max-width: 400px; */
   margin: 0 auto 2rem;
 }
 
