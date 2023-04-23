@@ -72,7 +72,7 @@
     width: 100%;
 }
 }
-.contactUs a{
+.contactUs .contactList a{
     text-decoration: none;
     color: white;
 } 
