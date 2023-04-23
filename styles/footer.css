@@ -72,6 +72,10 @@
     width: 100%;
 }
 }
+.contactUs a{
+    text-decoration: none;
+    color: white;
+} 
 
 @media only screen and (max-width:1000px){
     .imgHolder{

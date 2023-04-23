@@ -1,3 +1,4 @@
+
 const goToTopButton = document.querySelector(".go-to-top-btn");
 
 goToTopButton.addEventListener("click", () => {

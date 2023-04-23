@@ -9,6 +9,7 @@
     <title>Hack The Space</title>
 
     <!-- css -->
+    
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/particle.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
@@ -16,7 +17,8 @@
     <link rel="stylesheet" href="./styles/sponser.css" />
     <link rel="stylesheet" href="./styles/organiser.css" />
     <link rel="stylesheet" href="./styles/why_sponser.css" />
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"/>
 
     <!-- 3rd party js libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -145,7 +147,7 @@
 
     <!-------------------------- About -------------------------->
     <div class="abdiv" >
-      <div class="abbox">
+      <div class="abbox wow animate__animated animate__fadeInUp" data-wow-duration="2s">
         <h2>About Us</h2>
         <p>
           Inspired by the famous painting, Hack The Space 2023: A Starry Night
@@ -188,7 +190,7 @@
       class="abdiv"
       style="min-height: 100vh; color: white; padding-bottom: 6rem"
     >
-      <div class="wihts abbox">
+      <div class="wihts abbox wow animate__animated animate__fadeInUp" data-wow-duration="2s">
         <h2>What is HackTheSpace?</h2>
         <p>
           Inspired by the famous painting, Hack The Space 2023: A Starry Night
@@ -221,7 +223,8 @@
 
     <!------------------------ Venue ------------------------>
     <section
-      class="venue-section-container"
+      class="venue-section-container wow animate__animated animate__fadeInUp"
+      data-wow-duration="2s"
       style="min-height: 100vh; color: white"
     >
       <h2 class="title">Destination</h2>
@@ -230,7 +233,7 @@
           <div class="venue">
             <h2>Venue</h2>
             <p>
-              KK Modi University, Bhiali
+              KK Modi University, Bhilai
               <br />
               Chhattisgarh
             </p>
@@ -271,7 +274,8 @@
     </section>
 
     <!------------------------ Organisers ------------------------>
-    <section class="organiser-section" style="min-height: 100vh; color: white">
+    <section class="organiser-section wow animate__animated animate__fadeInUp"
+    data-wow-duration="2s" style="min-height: 100vh; color: white">
       <h2 class="title">Organisers</h2>
 
       <div class="container">
@@ -314,7 +318,8 @@
 
     <!------------------------ Why Sponser ------------------------>
     <section
-      class="why-sponser-section"
+      class="why-sponser-section wow animate__animated animate__fadeInUp"
+      data-wow-duration="2s"
       style="min-height: 100vh; color: white"
     >
       <h2 class="title">Why Sponser Us ?</h2>
@@ -388,7 +393,7 @@
     </section>
 
     <!------------------------ Sponsers ------------------------>
-    <section class="sponser-section" style="min-height: 100vh; color: white">
+    <!-- <section class="sponser-section" style="min-height: 100vh; color: white">
       <h2 class="title">Sponsers & partners</h2>
 
       <div class="sponser-container">
@@ -504,10 +509,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
-    <section class="footer-section" style="color:white;">
+    <section class="footer-section wow animate__animated animate__fadeInUp"
+    data-wow-duration="2s" 
+    style="color:white;">
       <div class="imgHolder">
         <img src="./assets/images/purplePlanet.png" alt="...">
       </div>
@@ -530,7 +537,7 @@
             <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             <a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="mailto:hackthespace2023@gmail.com" target="_blank"><ion-icon name="mail"></ion-icon></a>
+            <!-- <a href="mailto:hackthespace2023@gmail.com" target="_blank"><ion-icon name="mail"></ion-icon></a> -->
           </div>
         </div>
       </div>
@@ -541,6 +548,7 @@
         <div class="contactList">
           <h4>Himanshu Kumar Sahu</h4>
           <p>+91 9977374211</p>
+          <a href="mailto:hackthespace2023@gmail.com" target="_blank">hackthespace2023@gmail.com</ion-icon></a>
         </div>
       </div>
   
@@ -550,5 +558,10 @@
     <script src="./js/script.js"></script>
     <script src="./js/particle.js"></script>
     <script src="./js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>
