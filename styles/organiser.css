@@ -33,7 +33,7 @@
 .organiser-section .card .organiser-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: revert;
 }
 
 .organiser-section .card .organiser-name {
