@@ -201,13 +201,15 @@ nav .mobile-nav {
     transition: all 0.5s ease-in;
     z-index: 1000;
     position: fixed;
-    width: 100%;
+    width: 65%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 2.3rem;
+    justify-content: flex-start;
+    padding-top: 15%;
+    right: 0;
+    
     background-color: rgba(0, 0, 0, 1);
     transform: translate(100%, 0);
   }
@@ -216,6 +218,7 @@ nav .mobile-nav {
     color: #fff;
     text-decoration: none;
     margin: 1.2rem 0;
+    font-size: 1rem;
   }
 
   nav .mobile-nav-icons {
