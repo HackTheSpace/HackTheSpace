@@ -2,7 +2,7 @@
 const parent = document.querySelector(".parent");
 const children = document.querySelectorAll(".child");
 
-console.log(parent);
+// console.log(parent);
 
 // Calculate the angle between each child element
 const angle = (2 * Math.PI) / children.length;
@@ -72,7 +72,7 @@ window.addEventListener("scroll", () => {
     if (rect.bottom <= window.innerHeight) {
       sectionIndex = 10 - i;
     }
-    console.log("check", sectionIndex);
+    // console.log("check", sectionIndex);
   }
 
   // Calculate the new angle for each child element based on the section index

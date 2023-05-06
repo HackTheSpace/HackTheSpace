@@ -184,16 +184,48 @@ body {
   background-image: linear-gradient(to left, #1e40af, #60a5fa);
 }
 
+.cost1.build-in-animate {
+  animation-play-state: running;
+}
+
 .cost1 {
   position: absolute;
   /* bottom: 30%; */
   left: 7%;
-  animation: wobble 10s infinite;
+  /* animation: wobble 10s infinite; */
+  animation: floaty 4s ease infinite;
 }
-@keyframes constmove{
-  0% {top: 30%;}
-  50% {top: 50%;}
-  100% {top: 30%;}
+
+@keyframes floatx {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes constmove {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 30%;
+  }
 }
 
 .cost2 {
@@ -201,6 +233,7 @@ body {
   top: 40%;
   right: 6%;
   width: fit-content;
+  animation: floaty 6s ease infinite;
 }
 
 .cost1 img {
@@ -269,7 +302,7 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  color: white
+  color: white;
 }
 .rstar {
   position: absolute;
@@ -278,11 +311,13 @@ body {
 }
 .topstar {
   width: 100%;
+  animation: pulse 2s linear infinite;
 }
 .lstar {
   position: absolute;
   bottom: -12%;
   left: -8%;
+  animation: pulse 3s linear infinite;
 }
 .botstar {
   width: 60%;
@@ -320,19 +355,21 @@ body {
   position: absolute;
   top: 5%;
   right: 5%;
+  animation: floatx 3s linear infinite;
 }
 .aconst2 {
   position: absolute;
   top: 0%;
   left: 20%;
+  animation: floaty 4s linear infinite;
 }
 .aconst3 {
   position: absolute;
   bottom: 30%;
   left: 7%;
   z-index: -1;
+  animation: floatx 3.2s linear infinite;
 }
-
 
 @media only screen and (max-width: 768px) {
   .abdiv {
@@ -367,7 +404,7 @@ body {
     top: -10%;
     right: -13%;
   }
-  .lstar{
+  .lstar {
     left: -15%;
     bottom: -8%;
   }
@@ -409,5 +446,3 @@ body {
     width: 60%;
   }
 }
-
-
