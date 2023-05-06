@@ -55,6 +55,13 @@ a {
   rotate:46deg;
 }
 
+@media only screen and (max-width: 768px)  {
+  .go-to-top-btn{
+    right: -8%;
+    bottom: 0px;
+  }
+}
+
 .rocket-btn {
   transition: all 0.4s;
   font-size: 30px;
