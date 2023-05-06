@@ -12,14 +12,14 @@ let mesh;
 const controls = new OrbitControls(camera, renderer.domElement);
 
 renderer.setSize(window.innerWidth, window.innerHeight);
-scene.background = new THREE.Color("rgba(220,220, 220, 0.1)");
+scene.background = new THREE.Color("rgba(0,0,0,0");
 camera.position.set(0, 2, 10);
 
 // Set up lights
-const spotLight = new THREE.SpotLight(0xeffffff, 10, 1000, Math.PI / 2);
+const spotLight = new THREE.SpotLight(0xeff0000, 10, 1000, Math.PI / 2);
 scene.add(spotLight);
 
-const hemisphereLight = new THREE.HemisphereLight(0xffffff, 1);
+const hemisphereLight = new THREE.HemisphereLight(0xff0000, 1);
 scene.add(hemisphereLight);
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 1);

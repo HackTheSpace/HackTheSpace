@@ -6,8 +6,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   z-index: 1;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .go-to-top-btn {
@@ -435,11 +444,28 @@ body {
 }
 .frm img {
   width: 70%;
+  animation: rotate 3s infinite;
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(25deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
 .asrt {
   position: absolute;
   top: -10%;
   left: -6%;
+  animation: floaty 3s linear infinite;
 }
 .asrt img {
   width: 75%;

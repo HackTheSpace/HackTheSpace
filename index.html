@@ -9,7 +9,7 @@
     <title>Hack The Space</title>
 
     <!-- css -->
-    
+
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/particle.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
@@ -17,8 +17,11 @@
     <link rel="stylesheet" href="./styles/sponser.css" />
     <link rel="stylesheet" href="./styles/organiser.css" />
     <link rel="stylesheet" href="./styles/why_sponser.css" />
-    <link rel="stylesheet" href="./styles/footer.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"/>
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"
+    />
 
     <!-- 3rd party js libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -39,38 +42,48 @@
 
     <!------------------------ Navbar ------------------------>
     <nav>
-      
       <div class="mobile-nav">
         <div class="mobile-nav-links" id="mobile-nav-links">
           <!--  -->
-          <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
           <a href="#">Tracks</a>
-          <a href="#">Sponsers</a>
+          <a href="#sponser">Sponsers</a>
           <a href="#">FAQs</a>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
 
-        <div class="mobile-nav-icons" style="display:flex; justify-content:space-between; width:100%">
+        <div
+          class="mobile-nav-icons"
+          style="display: flex; justify-content: space-between; width: 100%"
+        >
           <div class="logo shrink">
             <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
           </div>
           <div class="burgMlh">
-          <ion-icon
-            name="menu-outline"
-            id="open-mobile-nav"
-            class="show"
-          ></ion-icon>
-          <ion-icon
-            id="close-mobile-nav"
-            name="close-outline"
-            class="hidden"
-          ></ion-icon>
-          <div class="mlh-flag2 show" style="display:none" name="menu-outline" id="open-mobile-nav">
-            <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
+            <ion-icon
+              name="menu-outline"
+              id="open-mobile-nav"
+              class="show"
+            ></ion-icon>
+            <ion-icon
+              id="close-mobile-nav"
+              name="close-outline"
+              class="hidden"
+            ></ion-icon>
+            <div
+              class="mlh-flag2 show"
+              style="display: none"
+              name="menu-outline"
+              id="open-mobile-nav"
+            >
+              <img
+                src="./assets/navbar/mlh_flag.png"
+                alt="mlh hack the space"
+              />
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
       <div class="desktop-nav">
@@ -78,14 +91,14 @@
           <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
         </div>
         <div class="links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
           <a href="#">Tracks</a>
-          <a href="#">Sponsers</a>
+          <a href="#sponser">Sponsers</a>
           <a href="#">FAQs</a>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div class="mlh-flag" style="opacity:0">
+        <div class="mlh-flag" style="opacity: 0">
           <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
         </div>
       </div>
@@ -110,7 +123,6 @@
       <!-- <div class="mlh-flag">
         <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
       </div> -->
-    
     </nav>
 
     <button type="button" class="go-to-top-btn black-bg">
@@ -147,8 +159,11 @@
     </section>
 
     <!-------------------------- About -------------------------->
-    <div class="abdiv" >
-      <div class="abbox wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+    <div id="about" class="abdiv">
+      <div
+        class="abbox wow animate__animated animate__fadeInUp"
+        data-wow-duration="2s"
+      >
         <h2>About Us</h2>
         <p>
           Inspired by the famous painting, Hack The Space 2023: A Starry Night
@@ -170,7 +185,7 @@
           <img class="botstar" src="./assets/About/Frame 37.png" alt="star" />
         </div> -->
       </div>
-      
+
       <div class="aconst1">
         <img src="./assets/constellation 4 png.png" alt="*" />
       </div>
@@ -187,10 +202,11 @@
     </div>
 
     <!------------------------What is Hack The Space------------------------>
-    <div
-      class="abdiv"
-    >
-      <div class="wihts abbox wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+    <div id="wihts" class="abdiv">
+      <div
+        class="wihts abbox wow animate__animated animate__fadeInUp"
+        data-wow-duration="2s"
+      >
         <h2>What is HackTheSpace?</h2>
         <p>
           Inspired by the famous painting, Hack The Space 2023: A Starry Night
@@ -226,6 +242,7 @@
 
     <!------------------------ Venue ------------------------>
     <section
+      id="venue"
       class="venue-section-container wow animate__animated animate__fadeInUp"
       data-wow-duration="2s"
       style="min-height: 100vh; color: white"
@@ -277,8 +294,12 @@
     </section>
 
     <!------------------------ Organisers ------------------------>
-    <section class="organiser-section wow animate__animated animate__fadeInUp"
-    data-wow-duration="2s" style="min-height: 100vh; color: white">
+    <section
+      id="organiser"
+      class="organiser-section wow animate__animated animate__fadeInUp"
+      data-wow-duration="2s"
+      style="min-height: 100vh; color: white"
+    >
       <h2 class="title">Organisers</h2>
 
       <div class="container">
@@ -321,6 +342,7 @@
 
     <!------------------------ Why Sponser ------------------------>
     <section
+      id="sponser"
       class="why-sponser-section wow animate__animated animate__fadeInUp"
       data-wow-duration="2s"
       style="min-height: 100vh; color: white"
@@ -383,9 +405,11 @@
 
       <div class="btn-container">
         <button type="button" class="Btn zinc-bg">
-          <div class="gradient-mask black-bg"></div>
-          <ion-icon name="planet-outline" class="icon"></ion-icon>
-          <span class="text">Sponser Us</span>
+          <a href="mailto:sponser@hackthespace.co">
+            <div class="gradient-mask black-bg"></div>
+            <ion-icon name="planet-outline" class="icon"></ion-icon>
+            <span class="text"> Sponser Us </span>
+          </a>
         </button>
         <button type="button" class="Btn zinc-bg">
           <div class="gradient-mask blue-bg"></div>
@@ -514,16 +538,18 @@
       </div>
     </section> -->
 
-
-    <section class="footer-section wow animate__animated animate__fadeInUp"
-    data-wow-duration="2s" 
-    style="color:white;">
+    <section
+      id="contact"
+      class="footer-section wow animate__animated animate__fadeInUp"
+      data-wow-duration="2s"
+      style="color: white"
+    >
       <div class="imgHolder">
-        <img src="./assets/images/purplePlanet.png" alt="...">
+        <img src="./assets/images/purplePlanet.png" alt="..." />
       </div>
       <div class="docs">
         <h3>Documents</h3>
-        <hr>
+        <hr />
         <ul>
           <li><a href="#">MLH Code of Conduct</a></li>
           <li><a href="#">Devfolio Code of Conduct</a></li>
@@ -531,30 +557,38 @@
           <li><a href="#">Sponsor-Us</a></li>
         </ul>
       </div>
-  
+
       <div class="socials">
         <div class="handles">
           <h3>Social Handles</h3>
-          <hr>
+          <hr />
           <div class="social-links">
-            <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+              <ion-icon name="logo-discord" class="icon"></ion-icon>
+            </a>
             <!-- <a href="mailto:hackthespace2023@gmail.com" target="_blank"><ion-icon name="mail"></ion-icon></a> -->
           </div>
         </div>
       </div>
-  
+
       <div class="contactUs">
         <h3>Contact Us</h3>
-        <hr>
+        <hr />
         <div class="contactList">
-          <h4>Himanshu Kumar Sahu</h4>
-          <p>+91 9977374211</p>
-          <a href="mailto:hackthespace2023@gmail.com" target="_blank">hackthespace2023@gmail.com</ion-icon></a>
+          <a href="mailto:support@hackthespace.co" target="_blank"
+            >support@hackthespace.co</a
+          >
         </div>
       </div>
-  
     </section>
 
     <!-- custom script js -->
@@ -566,7 +600,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
-    new WOW().init();
+      new WOW().init();
     </script>
   </body>
 </html>
