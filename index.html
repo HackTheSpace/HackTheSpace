@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/react.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/navbar/nav_logo.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -58,7 +58,7 @@
           style="display: flex; justify-content: space-between; width: 100%"
         >
           <div class="logo shrink">
-            <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
+           <a href="#home"> <img src="./assets/navbar/nav_logo.png" alt="hack the space" /> </a>
           </div>
           <div class="burgMlh">
             <ion-icon
@@ -88,7 +88,7 @@
 
       <div class="desktop-nav">
         <div class="logo shrink">
-          <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
+         <a href="#home"> <img src="./assets/navbar/nav_logo.png" alt="hack the space" /> </a>
         </div>
         <div class="links">
           <a href="#home">Home</a>
@@ -125,8 +125,12 @@
       </div> -->
     </nav>
 
-    <button type="button" class="go-to-top-btn black-bg">
+    <!-- <button type="button" class="go-to-top-btn black-bg">
       <ion-icon class="rocket-btn" name="rocket-outline"></ion-icon>
+    </button> -->
+    <button type="button" class="go-to-top-btn">
+      <lottie-player class="rocketSmoke" src="./assets/Rocket/Rocket with smoke.json" background="rgba(0,0,0,0)"  speed="1"  style="width: 100px; height: 100px; rotate:46deg;"  loop  autoplay></lottie-player>
+      <lottie-player class="rocketFire" src="./assets/Rocket/Rocket with fire.json" background="rgba(0,0,0,0)"  speed="1"  style="width: 100px; height: 100px; rotate:46deg;"  loop  autoplay></lottie-player>
     </button>
  
 
@@ -162,7 +166,7 @@
     <div id="about" class="abdiv">
       <div
         class="abbox wow animate__animated animate__fadeInUp"
-        data-wow-duration="2s"
+        data-wow-duration="1s"
       >
         <h2>About Us</h2>
         <p>
@@ -205,7 +209,7 @@
     <div id="wihts" class="abdiv">
       <div
         class="wihts abbox wow animate__animated animate__fadeInUp"
-        data-wow-duration="2s"
+        data-wow-duration="1s"
       >
         <h2>What is HackTheSpace?</h2>
         <p>
@@ -244,7 +248,7 @@
     <section
       id="venue"
       class="venue-section-container wow animate__animated animate__fadeInUp"
-      data-wow-duration="2s"
+      data-wow-duration="1s"
       style="min-height: 100vh; color: white"
     >
       <h2 class="title">Destination</h2>
@@ -281,7 +285,7 @@
 
         <div class="map-wrapper">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3153786639155!2d81.23724567521539!3d21.179626980507713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293e9770b94895%3A0x58804a9f509e6a33!2sKK%20Modi%20University!5e0!3m2!1sen!2sin!4v1682119369013!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3153786639155!2d81.23724567521539!3d21.179626980507713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293e9770b94895%3A0x58804a9f509e6a33!1sKK%20Modi%20University!5e0!3m2!1sen!1sin!4v1682119369013!5m2!1sen!1sin"
             width="100%"
             height="400"
             style="border: 0"
@@ -297,7 +301,7 @@
     <section
       id="organiser"
       class="organiser-section wow animate__animated animate__fadeInUp"
-      data-wow-duration="2s"
+      data-wow-duration="1s"
       style="min-height: 100vh; color: white"
     >
       <h2 class="title">Organisers</h2>
@@ -344,7 +348,7 @@
     <section
       id="sponser"
       class="why-sponser-section wow animate__animated animate__fadeInUp"
-      data-wow-duration="2s"
+      data-wow-duration="1s"
       style="min-height: 100vh; color: white"
     >
       <h2 class="title">Why Sponser Us ?</h2>
@@ -541,7 +545,7 @@
     <section
       id="contact"
       class="footer-section wow animate__animated animate__fadeInUp"
-      data-wow-duration="2s"
+      data-wow-duration="1s"
       style="color: white"
     >
       <div class="imgHolder">

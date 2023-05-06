@@ -36,10 +36,23 @@ a {
   transition-property: all;
   box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
+    background: none;
 }
 
 .go-to-top-btn .show {
   display: block;
+}
+.rocketSmoke{
+
+  width: 100px; 
+  height: 100px; 
+  rotate:46deg;
+}
+.rocketFire{
+  display: none;
+  width: 100px; 
+  height: 100px; 
+  rotate:46deg;
 }
 
 .rocket-btn {
@@ -247,7 +260,6 @@ a {
 
 .cost1 img {
   width: 60%;
-  opacity: 0.7;
 }
 .cost2 img {
   width: 70%;
