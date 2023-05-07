@@ -36,27 +36,26 @@ a {
   transition-property: all;
   box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
-    background: none;
+  background: none;
 }
 
 .go-to-top-btn .show {
   display: block;
 }
-.rocketSmoke{
-
-  width: 100px; 
-  height: 100px; 
-  rotate:46deg;
+.rocketSmoke {
+  width: 100px;
+  height: 100px;
+  rotate: 46deg;
 }
-.rocketFire{
+.rocketFire {
   display: none;
-  width: 100px; 
-  height: 100px; 
-  rotate:46deg;
+  width: 100px;
+  height: 100px;
+  rotate: 46deg;
 }
 
-@media only screen and (max-width: 768px)  {
-  .go-to-top-btn{
+@media only screen and (max-width: 768px) {
+  .go-to-top-btn {
     right: -8%;
     bottom: 0px;
   }
@@ -466,6 +465,16 @@ a {
   animation: rotate 3s infinite;
 }
 
+.frm.about-frm {
+  bottom: -18%;
+}
+
+.frm.about-frm img {
+  width: 60%;
+  transform: rotate(25deg);
+  animation: floaty 3.5s infinite;
+}
+
 @keyframes rotate {
   0% {
     transform: rotateZ(0deg);
@@ -495,6 +504,12 @@ a {
     right: -40%;
   }
   .frm img {
+    width: 50%;
+  }
+  .frm.about-frm {
+    bottom: -10%;
+  }
+  .frm.about-frm img {
     width: 50%;
   }
   .asrt {
