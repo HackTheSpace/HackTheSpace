@@ -387,7 +387,7 @@ a {
 }
 .aconst2 {
   position: absolute;
-  top: 0%;
+  top: 2%;
   left: 20%;
   animation: floaty 4s linear infinite;
 }
@@ -403,6 +403,11 @@ a {
   .abdiv {
     margin: 4rem 0;
     height: 130vh;
+  }
+
+  .abdiv#wihts {
+    margin: 4rem 0;
+    height: 180vh;
   }
 
   .abbox {
@@ -462,7 +467,7 @@ a {
 }
 .frm img {
   width: 70%;
-  animation: rotate 3s infinite;
+  animation: rotate 7s infinite;
 }
 
 .frm.about-frm {
@@ -472,7 +477,21 @@ a {
 .frm.about-frm img {
   width: 60%;
   transform: rotate(25deg);
-  animation: floaty 3.5s infinite;
+  animation: rotatefull 20s linear infinite;
+}
+
+@keyframes rotatefull {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
 @keyframes rotate {
