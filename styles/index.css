@@ -327,9 +327,10 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-height: 100vh;
   color: white;
+  margin: 5rem 0;
 }
 .rstar {
   position: absolute;
@@ -374,7 +375,7 @@ a {
 
 .abbox p {
   padding: 0 3rem 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   line-height: 1.9rem;
   letter-spacing: 0.08em;
   color: #fbeeee;
