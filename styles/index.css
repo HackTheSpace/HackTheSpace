@@ -327,7 +327,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* overflow: hidden; */
+  overflow-x: hidden;
   min-height: 100vh;
   color: white;
   margin: 5rem 0;
