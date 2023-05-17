@@ -98,6 +98,7 @@ a {
 
 /* Home */
 
+
 .home {
   display: flex;
   align-items: center;
@@ -117,7 +118,7 @@ a {
 
 .logo-div p {
   margin: 2rem 0;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .logo-home {
@@ -305,13 +306,14 @@ a {
   }
 
   .logo-home {
-    width: 60%;
+    width: 85%;
   }
 
   .logo-div p {
     padding-right: 1rem;
     padding-left: 1rem;
     text-align: center;
+    font-size: 1.4rem;
   }
 }
 
