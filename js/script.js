@@ -18,3 +18,20 @@ window.onscroll = () => {
     rocketSmoke.classList.remove("hidden");
   }
 };
+
+//  Tagline Text 
+
+const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Think.";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Build.";
+            }, 2000);
+            setTimeout(() => {
+                text.textContent = "Launch.";
+            }, 4000); //1s = 1000 milliseconds
+        }
+        textLoad();
+        setInterval(textLoad, 6000);
