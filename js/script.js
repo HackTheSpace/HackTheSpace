@@ -1,4 +1,3 @@
-
 const goToTopButton = document.querySelector(".go-to-top-btn");
 const rocketSmoke = document.querySelector(".rocketSmoke");
 const rocketFire = document.querySelector(".rocketFire");
@@ -18,3 +17,23 @@ window.onscroll = () => {
     rocketSmoke.classList.remove("hidden");
   }
 };
+
+const textEl = document.getElementById("title");
+
+const text = "Think. Build. Launch.";
+let idx = 6;
+let speed = 100;
+
+function writeText() {
+  console.log(textEl);
+  textEl.innerText = text.slice(0, idx);
+  idx++;
+
+  if (idx > text.length) {
+    idx = 1;
+  }
+
+  setTimeout(writeText, speed);
+}
+
+writeText();
