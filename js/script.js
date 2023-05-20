@@ -20,12 +20,12 @@ window.onscroll = () => {
 
 const textEl = document.getElementById("title");
 
-const text = "Think. Build. Launch.";
+const text = "Think. Build. Launch.               ";
 let idx = 6;
 let speed = 100;
 
 function writeText() {
-  console.log(textEl);
+  // console.log(textEl);
   textEl.innerText = text.slice(0, idx);
   idx++;
 
