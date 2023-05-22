@@ -1,4 +1,3 @@
-
 const goToTopButton = document.querySelector(".go-to-top-btn");
 const rocketSmoke = document.querySelector(".rocketSmoke");
 const rocketFire = document.querySelector(".rocketFire");
@@ -19,19 +18,22 @@ window.onscroll = () => {
   }
 };
 
-//  Tagline Text 
+const textEl = document.getElementById("title");
 
-const text = document.querySelector(".sec-text");
-        const textLoad = () => {
-            setTimeout(() => {
-                text.textContent = "Think.";
-            }, 0);
-            setTimeout(() => {
-                text.textContent = "Build.";
-            }, 2000);
-            setTimeout(() => {
-                text.textContent = "Launch.";
-            }, 4000); //1s = 1000 milliseconds
-        }
-        textLoad();
-        setInterval(textLoad, 6000);
+const text = "Think. Build. Launch.";
+let idx = 6;
+let speed = 100;
+
+function writeText() {
+  console.log(textEl);
+  textEl.innerText = text.slice(0, idx);
+  idx++;
+
+  if (idx > text.length) {
+    idx = 1;
+  }
+
+  setTimeout(writeText, speed);
+}
+
+writeText();
