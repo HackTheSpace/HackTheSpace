@@ -17,6 +17,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .why-sponser-section .container {
@@ -53,6 +55,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .why-sponser-section .card h2 {
