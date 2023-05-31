@@ -142,6 +142,7 @@ a {
 }
 
 .home #title {
+  height: 39px;
   animation: blink-caret 0.75s step-end infinite;
   border-right: 0.15em solid rgb(167 139 250 / 1); /* The typwriter cursor */
 }
@@ -392,6 +393,8 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .abbox p {

@@ -94,8 +94,8 @@
 
         //----
         document.addEventListener("mousemove", onDocumentMouseMove, false);
-        document.addEventListener("touchstart", onDocumentTouchStart, false);
-        document.addEventListener("touchmove", onDocumentTouchMove, false);
+        // document.addEventListener("touchstart", onDocumentTouchStart, false);
+        // document.addEventListener("touchmove", onDocumentTouchMove, false);
 
         document.addEventListener("mousedown", onDocumentMouseDown, false);
         document.addEventListener("mouseup", onDocumentMouseUp, false);

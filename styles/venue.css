@@ -3,10 +3,16 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   text-transform: uppercase;
-  background-image: -webkit-linear-gradient(to right, #592ee1 0%, #9636d9 100%);
-  background-image: linear-gradient(to right, #592ee1 0%, #9636d9 100%);
+  background-image: -webkit-linear-gradient(
+    to right,
+    #592ee1 50%,
+    #9636d9 100%
+  );
+  background-image: linear-gradient(to right, #592ee1 50%, #9636d9 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  width: fit-content;
+  margin: 0 auto;
   -webkit-text-fill-color: transparent;
 }
 
