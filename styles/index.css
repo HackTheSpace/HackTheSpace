@@ -119,6 +119,9 @@ a {
   margin: 2rem 0;
   font-size: 2rem;
 }
+.sec-text {
+  font-size: 2rem;
+}
 
 .logo-home {
   width: 35%;
@@ -287,6 +290,30 @@ a {
 .cost2 img {
   width: 70%;
 }
+.TagContainer .tagText{
+  position: relative;
+}
+
+.tagText.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+ /* background-color: #010718;  */
+  border-left: 2px solid white;
+  animation: animate 2s steps(6) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
+}
+
 
 @media screen and (max-width: 1000px) {
   .Btn {
@@ -329,6 +356,9 @@ a {
     padding-right: 1rem;
     padding-left: 1rem;
     text-align: center;
+    font-size: 1.4rem;
+  }
+  .sec-text {
     font-size: 1.4rem;
   }
 }
