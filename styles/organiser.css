@@ -35,7 +35,7 @@
   overflow: hidden;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to right, #592ee1 0%, #9636d9 100%) border-box;
-  border: 7px solid transparent;
+  border: 4px solid transparent;
   position: relative;
 }
 
