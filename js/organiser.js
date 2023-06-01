@@ -1,21 +1,60 @@
-const team1 = document.querySelector(".team-akash")
-const para =  document.querySelector(".team-para")
-const head = document.querySelector(".team-name")
+const team1 = document.querySelectorAll(".marquee a");
+const para = document.querySelector(".team-para");
+const head = document.querySelector(".team-name");
 
-team1.addEventListener("mouseover",() =>{
-    console.log("123");
-    para.innerHTML = "Tech Team Lead";
-    head.innerText = "Akash Kumar Verma";
-}, false);
-team1.addEventListener("mouseout",() =>{
-    console.log("agfg");
-    para.innerHTML = "Lead";
-    head.innerText = "Akash";
-}, false);
+const defaultHeadText = head.innerText;
+const defaultParaText = para.innerHTML;
 
+let isHovered = false;
 
- function func () {
-    console.log("123");
-    para.innerHTML = "Tech Team Lead";
-    head.innerText = "Akash Kumar Verma";
-} ;
+team1.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    isHovered = true;
+    console.log(item.dataset.head, item.dataset.para);
+    updateContent(item.dataset.head, item.dataset.para);
+  });
+
+  item.addEventListener("mouseleave", () => {
+    isHovered = false;
+    updateContent(defaultHeadText, defaultParaText);
+  });
+});
+
+function updateContent(headText, paraText) {
+  console.log(headText, paraText);
+
+  requestAnimationFrame(() => {
+    para.textContent = paraText;
+    head.textContent = headText;
+  });
+}
+
+// const team1 = document.querySelectorAll(".marquee a img");
+// const para = document.querySelector(".team-para");
+// const head = document.querySelector(".team-name");
+
+// console.log(team1);
+
+// team1.forEach((item) => {
+//   item.addEventListener(
+//     "mouseenter",
+//     () => {
+//       console.log("123");
+//       para.innerHTML = item.dataset.para;
+//       head.innerText = item.dataset.head;
+//     },
+//     false
+//   );
+// });
+
+// team1.forEach((item) => {
+//   item.addEventListener(
+//     "mouseleave",
+//     () => {
+//       console.log("123");
+//       head.innerText = "Core Team";
+//       para.innerHTML = "Thanks to all who worked for it";
+//     },
+//     false
+//   );
+// });

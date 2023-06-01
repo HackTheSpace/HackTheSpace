@@ -1,126 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/navbar/nav_logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./assets/navbar/nav_logo.png" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hack The Space</title>
 
-  <title>Hack The Space</title>
+    <!-- css -->
 
-  <!-- css -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/particle.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/venue.css" />
+    <link rel="stylesheet" href="./styles/sponser.css" />
+    <link rel="stylesheet" href="./styles/organiser.css" />
+    <link rel="stylesheet" href="./styles/why_sponser.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"
+    />
 
-  <link rel="stylesheet" href="./styles/index.css" />
-  <link rel="stylesheet" href="./styles/particle.css" />
-  <link rel="stylesheet" href="./styles/navbar.css" />
-  <link rel="stylesheet" href="./styles/venue.css" />
-  <link rel="stylesheet" href="./styles/sponser.css" />
-  <link rel="stylesheet" href="./styles/organiser.css" />
-  <link rel="stylesheet" href="./styles/why_sponser.css" />
-  <link rel="stylesheet" href="./styles/footer.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css" />
+    <!-- 3rd party js libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
 
-  <!-- 3rd party js libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
+  <body>
+    <div id="particles-js">
+      <canvas id="3D-particle-effect-canvas"></canvas>
+    </div>
 
-<body>
-  <div id="particles-js">
-    <canvas id="3D-particle-effect-canvas"></canvas>
-  </div>
+    <!------------------------ Navbar ------------------------>
+    <nav>
+      <div class="mobile-nav">
+        <div class="mobile-nav-links" id="mobile-nav-links">
+          <!--  -->
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#">Tracks</a>
+          <a href="#sponser">Sponsers</a>
+          <a href="#">FAQs</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-  <!------------------------ Navbar ------------------------>
-  <nav>
-    <div class="mobile-nav">
-      <div class="mobile-nav-links" id="mobile-nav-links">
-        <!--  -->
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#">Tracks</a>
-        <a href="#sponser">Sponsers</a>
-        <a href="#">FAQs</a>
-        <a href="#contact">Contact</a>
+        <div
+          class="mobile-nav-icons"
+          style="display: flex; justify-content: space-between; width: 100%"
+        >
+          <div class="logo shrink">
+            <a href="#home">
+              <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
+            </a>
+          </div>
+          <div class="burgMlh">
+            <ion-icon
+              name="menu-outline"
+              id="open-mobile-nav"
+              class="show"
+            ></ion-icon>
+            <ion-icon
+              id="close-mobile-nav"
+              name="close-outline"
+              class="hidden"
+            ></ion-icon>
+            <div
+              class="mlh-flag2 show"
+              style="display: none"
+              name="menu-outline"
+              id="open-mobile-nav"
+            >
+              <img
+                src="./assets/navbar/mlh_flag.png"
+                alt="mlh hack the space"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="mobile-nav-icons" style="display: flex; justify-content: space-between; width: 100%">
+      <div class="desktop-nav">
         <div class="logo shrink">
           <a href="#home">
             <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
           </a>
         </div>
-        <div class="burgMlh">
-          <ion-icon name="menu-outline" id="open-mobile-nav" class="show"></ion-icon>
-          <ion-icon id="close-mobile-nav" name="close-outline" class="hidden"></ion-icon>
-          <div class="mlh-flag2 show" style="display: none" name="menu-outline" id="open-mobile-nav">
-            <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
-          </div>
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#">Tracks</a>
+          <a href="#sponser">Sponsers</a>
+          <a href="#">FAQs</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="mlh-flag" style="opacity: 0">
+          <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
         </div>
       </div>
-    </div>
 
-    <div class="desktop-nav">
-      <div class="logo shrink">
-        <a href="#home">
-          <img src="./assets/navbar/nav_logo.png" alt="hack the space" />
-        </a>
-      </div>
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#">Tracks</a>
-        <a href="#sponser">Sponsers</a>
-        <a href="#">FAQs</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="mlh-flag" style="opacity: 0">
-        <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
-      </div>
-    </div>
-
-    <!-- Rotatory navbar -->
-    <!-- <div class="curve-1"></div>
+      <!-- Rotatory navbar -->
+      <!-- <div class="curve-1"></div>
       <div class="curve-2"></div> -->
-    <div class="baap">
-      <div class="parent">
-        <div class="child"><a href="#1"> About </a></div>
-        <div class="child"><a href="#2"> Tracks </a></div>
-        <div class="child"><a href="#3"> Sponser </a></div>
-        <div class="child"><a href="#4"> FAQs </a></div>
-        <div class="child"><a href="#5"> Contact </a></div>
-        <div class="child"><a href="#6"> About </a></div>
-        <div class="child"><a href="#7"> Tracks </a></div>
-        <div class="child"><a href="#8"> Sponser </a></div>
-        <div class="child"><a href="#9"> FAQs </a></div>
-        <div class="child"><a href="#10"> Contact </a></div>
+      <div class="baap">
+        <div class="parent">
+          <div class="child"><a href="#1"> About </a></div>
+          <div class="child"><a href="#2"> Tracks </a></div>
+          <div class="child"><a href="#3"> Sponser </a></div>
+          <div class="child"><a href="#4"> FAQs </a></div>
+          <div class="child"><a href="#5"> Contact </a></div>
+          <div class="child"><a href="#6"> About </a></div>
+          <div class="child"><a href="#7"> Tracks </a></div>
+          <div class="child"><a href="#8"> Sponser </a></div>
+          <div class="child"><a href="#9"> FAQs </a></div>
+          <div class="child"><a href="#10"> Contact </a></div>
+        </div>
       </div>
-    </div>
-    <!-- <div class="mlh-flag">
+      <!-- <div class="mlh-flag">
         <img src="./assets/navbar/mlh_flag.png" alt="mlh hack the space" />
       </div> -->
-  </nav>
+    </nav>
 
-  <!-- <button type="button" class="go-to-top-btn black-bg">
+    <!-- <button type="button" class="go-to-top-btn black-bg">
       <ion-icon class="rocket-btn" name="rocket-outline"></ion-icon>
     </button> -->
-  <button type="button" class="go-to-top-btn">
-    <lottie-player class="rocketSmoke" src="./assets/Rocket/Rocket with smoke.json" background="rgba(0,0,0,0)" speed="1"
-      style="width: 100px; height: 100px; rotate: 46deg" loop autoplay></lottie-player>
-    <lottie-player class="rocketFire" src="./assets/Rocket/Rocket with fire.json" background="rgba(0,0,0,0)" speed="1"
-      style="width: 100px; height: 100px; rotate: 46deg" loop autoplay></lottie-player>
-  </button>
+    <button type="button" class="go-to-top-btn">
+      <lottie-player
+        class="rocketSmoke"
+        src="./assets/Rocket/Rocket with smoke.json"
+        background="rgba(0,0,0,0)"
+        speed="1"
+        style="width: 100px; height: 100px; rotate: 46deg"
+        loop
+        autoplay
+      ></lottie-player>
+      <lottie-player
+        class="rocketFire"
+        src="./assets/Rocket/Rocket with fire.json"
+        background="rgba(0,0,0,0)"
+        speed="1"
+        style="width: 100px; height: 100px; rotate: 46deg"
+        loop
+        autoplay
+      ></lottie-player>
+    </button>
 
-  <!------------------------ HOME ------------------------>
-  <section id="home" class="home" style="min-height: 100vh; color: white">
-    <div class="cost1">
-      <img src="assets/home/constellation1.png" alt="const" />
+    <!------------------------ HOME ------------------------>
+    <section id="home" class="home" style="min-height: 100vh; color: white">
+      <div class="cost1">
+        <img src="assets/home/constellation1.png" alt="const" />
+      </div>
+      <div class="logo-div">
+        <div class="logo-home">
+          <img src="assets/logo-main.png" alt="HAck" />
+        </div>
+        <p class="title" id="title">Think. Build. Launch.</p>
+        <p style="margin-top: 0">11 - 12 AUGUST, 2023</p>
+        <div class="butHolder">
+          <button type="button" class="Btn zinc-bg">
+            <a href="https://forms.gle/59jFZbiBsetLpSqs5" target="_blank">
+              <div class="gradient-mask black-bg"></div>
+              <ion-icon name="rocket-outline" class="icon"></ion-icon>
+              <span class="text">Register</span>
+            </a>
+          </button>
+          <button type="button" class="Btn zinc-bg">
+            <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
+              <div class="gradient-mask blue-bg"></div>
+              <ion-icon name="logo-discord" class="icon"></ion-icon>
+              <span class="text">Discord</span>
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="cost2">
+        <img src="assets/home/constellation2.png" alt="const" />
+      </div>
+    </section>
+
+    <!-------------------------- About -------------------------->
+    <div id="about" class="abdiv">
+      <div
+        class="abbox wow animate__animated animate__fadeInUp"
+        data-wow-duration="1s"
+      >
+        <h2>About Us</h2>
+        <p>
+          We are active community leaders & passionate community builders who
+          work towards a collective goal of strengthening the region to get all
+          the tech enthusiasts and career aspirants equal opportunities and
+          exposure as people in metro cities or all around the world get!
+        </p>
+        <br />
+        <p>
+          So, here we are, organizing the biggest hackathon of central India,
+          with enormous amounts of opportunities and capabilities to level up
+          the community reach of the region.
+        </p>
+        <div class="rstar">
+          <img class="topstar" src="./assets/images/spaceship.png" alt="Star" />
+        </div>
+        <div class="frm about-frm">
+          <img class="botstar" src="./assets/About/planet.png" alt="star" />
+        </div>
+      </div>
+
+      <div class="aconst1">
+        <img src="./assets/constellation 4 png.png" alt="*" />
+      </div>
+      <div class="aconst2">
+        <img
+          style="width: 70%"
+          src="./assets/Constellation 2 png.png"
+          alt="*"
+        />
+      </div>
+      <div class="aconst3">
+        <img src="./assets/Constellation 2 png.png" alt="*" />
+      </div>
     </div>
-    <div class="logo-div">
-      <div class="logo-home">
-        <img src="assets/logo-main.png" alt="HAck" />
+
+    <!------------------------What is Hack The Space------------------------>
+    <div id="wihts" class="abdiv">
+      <div
+        class="wihts abbox wow animate__animated animate__fadeInUp"
+        data-wow-duration="1s"
+      >
+        <h2>What is HackTheSpace?</h2>
+        <p>
+          HackTheSpace 2023 is an exciting 24-hour event that will take place
+          across India. It is a time-limited event that encourages participants
+          to brainstorm, develop, and present their ideas to a panel of judges.
+          This event is designed to foster creativity, collaboration, and
+          innovation among participants. It offers an excellent opportunity for
+          participants to showcase their skills, network with peers, and
+          potentially win prizes and recognition for their work.
+        </p>
+        <br />
+        <p>
+          During the event, participants will work in teams to develop
+          innovative ideas that can solve real-world problems. They will be
+          encouraged to use their creativity, technical skills, and critical
+          thinking abilities to develop solutions that are both practical and
+          effective.
+        </p>
+        <div class="frm">
+          <img src="./assets/images/greenplanet.png" alt="*" />
+        </div>
+        <div class="asrt">
+          <img src="./assets/images/astronaut (1).png" alt="*" />
+        </div>
       </div>
 
       <div class="aconst1">
@@ -202,24 +340,6 @@
             <img src="./assets/images/Himanshu.jpg" alt="Organisers" />
           </div>
           <p class="organiser-name">Himanshu Kumar Sahu</p>
-          <p class="organiser-work">Organizing Lead</p>
-          <div class="organiser-social">
-            <a href="https://twitter.com/HackTheSpace_" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/hackthespace/"
-              target="_blank"
-            >
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://instagram.com/hack.the.space" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </div>
         </div>
 
         <div class="card">
@@ -227,24 +347,6 @@
             <img src="./assets/images/Cropped for DP.jpg" alt="Organisers" />
           </div>
           <p class="organiser-name">Ayush Kumar Sahu</p>
-          <p class="organiser-work">Operation & PR Lead</p>
-          <div class="organiser-social">
-            <a href="https://twitter.com/HackTheSpace_" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/hackthespace/"
-              target="_blank"
-            >
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://instagram.com/hack.the.space" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </div>
         </div>
 
         <div class="card">
@@ -256,24 +358,6 @@
             />
           </div>
           <p class="organiser-name">Fanibhushan Sahu</p>
-          <p class="organiser-work">Graphic Team Lead</p>
-          <div class="organiser-social">
-            <a href="https://twitter.com/HackTheSpace_" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/hackthespace/"
-              target="_blank"
-            >
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://instagram.com/hack.the.space" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </div>
         </div>
 
         <div class="card">
@@ -285,24 +369,6 @@
             />
           </div>
           <p class="organiser-name">Vinitpal Singh</p>
-          <p class="organiser-work">Tech Team Lead</p>
-          <div class="organiser-social">
-            <a href="https://twitter.com/HackTheSpace_" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/hackthespace/"
-              target="_blank"
-            >
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://instagram.com/hack.the.space" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </div>
         </div>
 
         <div class="card">
@@ -310,26 +376,92 @@
             <img src="./assets/images/Akash.jpg" alt="Organisers" />
           </div>
           <p class="organiser-name">Akash Kumar Verma</p>
-          <p class="organiser-work">Tech Team Lead</p>
-          <div class="organiser-social">
-            <a href="https://twitter.com/HackTheSpace_" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+      </div>
+
+      <article class="Core_Team">
+        <div class="marquee marquee--reverse">
+          <div class="marquee__group">
+            <a
+              href="#"
+              data-head="Akash Kumar Verma"
+              data-para="Tech Team Lead"
+            >
+              <img
+                class="links team-akash"
+                src="./assets/images/Akash.jpg"
+                alt="Team"
+              />
             </a>
-            <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
+            <a href="#" data-head="Vinitpal Singh" data-para="Tech Team Lead">
+              <img class="links" src="./assets/images/vinit.jpg" alt="Team" />
             </a>
             <a
-              href="https://www.linkedin.com/company/hackthespace/"
-              target="_blank"
+              href="#"
+              data-head="Fanibhushan Sahu"
+              data-para="Graphic Team Lead"
             >
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <img class="links" src="./assets/images/Fani 2.jpg" alt="Team" />
             </a>
-            <a href="https://instagram.com/hack.the.space" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="#" data-head="Ayush Sahu" data-para="Operations & PR Lead">
+              <img
+                class="links"
+                src="./assets/images/Cropped for DP.jpg"
+                alt="Team"
+              />
+            </a>
+            <a href="#" data-head="Himanshu Sahu" data-para="Organizing Lead">
+              <img
+                class="links"
+                src="./assets/images/Himanshu.jpg"
+                alt="Team"
+              />
+            </a>
+          </div>
+
+          <div aria-hidden="true" class="marquee__group">
+            <a
+              href="#"
+              data-head="Akash Kumar Verma"
+              data-para="Tech Team Lead"
+            >
+              <img
+                class="links team-akash"
+                src="./assets/images/Akash.jpg"
+                alt="Team"
+              />
+            </a>
+            <a href="#" data-head="Vinitpal Singh" data-para="Tech Team Lead">
+              <img class="links" src="./assets/images/vinit.jpg" alt="Team" />
+            </a>
+            <a
+              href="#"
+              data-head="Fanibhushan Sahu"
+              data-para="Graphic Team Lead"
+            >
+              <img class="links" src="./assets/images/Fani 2.jpg" alt="Team" />
+            </a>
+            <a href="#" data-head="Ayush Sahu" data-para="Operations & PR Lead">
+              <img
+                class="links"
+                src="./assets/images/Cropped for DP.jpg"
+                alt="Team"
+              />
+            </a>
+            <a href="#" data-head="Himanshu Sahu" data-para="Organizing Lead">
+              <img
+                class="links"
+                src="./assets/images/Himanshu.jpg"
+                alt="Team"
+              />
             </a>
           </div>
         </div>
-      </div>
+        <div class="Text-area-core">
+          <h2 class="team-name">Core Team</h2>
+          <p class="team-para">Thanks to all who worked for it</p>
+        </div>
+      </article>
     </section>
 
     <!------------------------ Why Sponser ------------------------>
@@ -396,300 +528,25 @@
       </div>
 
       <div class="btn-container">
-      <p class="title" id="title">Think. Build. Launch.</p>
-      <p style="margin-top: 0">11 - 12 AUGUST, 2023</p>
-      <div class="butHolder">
         <button type="button" class="Btn zinc-bg">
-          <a href="https://forms.gle/59jFZbiBsetLpSqs5" target="_blank">
+          <a href="mailto:sponser@hackthespace.co">
             <div class="gradient-mask black-bg"></div>
-            <ion-icon name="rocket-outline" class="icon"></ion-icon>
-            <span class="text">Register</span>
+            <ion-icon name="planet-outline" class="icon"></ion-icon>
+            <span class="text"> Sponser Us </span>
           </a>
         </button>
         <button type="button" class="Btn zinc-bg">
-          <a href="./assets/sponser/Brochure.pdf" download="brochure_HTS.pdf">
-          <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
+          <a href="./assets/sponser/Brochure.pdf" download="brochure.pdf">
             <div class="gradient-mask blue-bg"></div>
-            <ion-icon name="logo-discord" class="icon"></ion-icon>
-            <span class="text">Discord</span>
+            <ion-icon name="arrow-down-circle-outline" class="icon"></ion-icon>
+            <span class="text">Brochure</span>
           </a>
         </button>
       </div>
-    </div>
-    <div class="cost2">
-      <img src="assets/home/constellation2.png" alt="const" />
-    </div>
-  </section>
+    </section>
 
-  <!-------------------------- About -------------------------->
-  <div id="about" class="abdiv">
-    <div class="abbox wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-      <h2>About Us</h2>
-      <p>
-        We are active community leaders & passionate community builders who
-        work towards a collective goal of strengthening the region to get all
-        the tech enthusiasts and career aspirants equal opportunities and
-        exposure as people in metro cities or all around the world get!
-      </p>
-      <br />
-      <p>
-        So, here we are, organizing the biggest hackathon of central India,
-        with enormous amounts of opportunities and capabilities to level up
-        the community reach of the region.
-      </p>
-      <div class="rstar">
-        <img class="topstar" src="./assets/images/spaceship.png" alt="Star" />
-      </div>
-      <div class="frm about-frm">
-        <img class="botstar" src="./assets/About/planet.png" alt="star" />
-      </div>
-    </div>
-
-    <div class="aconst1">
-      <img src="./assets/constellation 4 png.png" alt="*" />
-    </div>
-    <div class="aconst2">
-      <img style="width: 70%" src="./assets/Constellation 2 png.png" alt="*" />
-    </div>
-    <div class="aconst3">
-      <img src="./assets/Constellation 2 png.png" alt="*" />
-    </div>
-  </div>
-
-  <!------------------------What is Hack The Space------------------------>
-  <div id="wihts" class="abdiv">
-    <div class="wihts abbox wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-      <h2>What is HackTheSpace?</h2>
-      <p>
-        HackTheSpace 2023 is an exciting 24-hour event that will take place
-        across India. It is a time-limited event that encourages participants
-        to brainstorm, develop, and present their ideas to a panel of judges.
-        This event is designed to foster creativity, collaboration, and
-        innovation among participants. It offers an excellent opportunity for
-        participants to showcase their skills, network with peers, and
-        potentially win prizes and recognition for their work.
-      </p>
-      <br />
-      <p>
-        During the event, participants will work in teams to develop
-        innovative ideas that can solve real-world problems. They will be
-        encouraged to use their creativity, technical skills, and critical
-        thinking abilities to develop solutions that are both practical and
-        effective.
-      </p>
-      <div class="frm">
-        <img src="./assets/images/greenplanet.png" alt="*" />
-      </div>
-      <div class="asrt">
-        <img src="./assets/images/astronaut (1).png" alt="*" />
-      </div>
-    </div>
-
-    <div class="aconst1">
-      <img src="./assets/constellation 4 png.png" alt="*" />
-    </div>
-    <div class="aconst2">
-      <img src="./assets/Constellation 2 png.png" alt="*" />
-    </div>
-    <div class="aconst3">
-      <img src="./assets/Constellation 2 png.png" alt="*" />
-    </div>
-  </div>
-
-  <!------------------------ Venue ------------------------>
-  <section id="venue" class="venue-section-container wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-    style="min-height: 100vh; color: white">
-    <h2 class="title">Destination</h2>
-    <div class="venue-section">
-      <div class="venue-wrapper">
-        <div class="venue">
-          <h2>Venue</h2>
-          <p>
-            Shri Shankaracharya Technical Campus, Bhilai
-            <br />
-            Chhattisgarh
-          </p>
-        </div>
-        <div class="date">
-          <h2>Date and Time</h2>
-          <p>
-            11th August to 12th August
-            <br />
-            10 AM Onwards
-          </p>
-        </div>
-        <div class="extra-info">
-          <h2>Extra information</h2>
-          <p>
-            This is where innovation meets inspiration! Idea convert into
-            Impact! A 4 - time hackathon venue with ample space and high speed
-            internet connectivity, will unleash your inner hacker to build
-            something “space” - breaking. 🚀
-          </p>
-        </div>
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14877.578089888093!2d81.3077697!3d21.2161986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293d0fd98b5f0f%3A0xf5808c843a7ce7e2!2sSSTC!5e0!3m2!1sen!2sin!4v1683534612631!5m2!1sen!2sin"
-          width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!------------------------ Organisers ------------------------>
-  <section id="organiser" class="organiser-section wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-    style="min-height: 100vh; color: white">
-    <h2 class="title">Organisers</h2>
-
-    <div class="container">
-      <div class="card">
-        <div class="organiser-image">
-          <img src="./assets/images/Himanshu.jpg" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Himanshu Kumar Sahu</p>
-      </div>
-
-      <div class="card">
-        <div class="organiser-image">
-          <img src="./assets/images/Cropped for DP.jpg" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Ayush Kumar Sahu</p>
-      </div>
-
-      <div class="card">
-        <div class="organiser-image">
-          <img style="object-position: top" src="./assets/images/Fani 2.jpg" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Fanibhushan Sahu</p>
-      </div>
-
-      <div class="card">
-        <div class="organiser-image">
-          <img style="object-position: top" src="./assets/images/vinit.jpg" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Vinitpal Singh</p>
-      </div>
-
-      <div class="card">
-        <div class="organiser-image">
-          <img src="./assets/images/Akash.jpg" alt="Organisers" />
-        </div>
-        <p class="organiser-name">Akash Kumar Verma</p>
-      </div>
-    </div>
-
-    <article class="Core_Team">
-      <div class="marquee marquee--reverse">
-        <div class="marquee__group">
-          <a href="#"> <img class="links team-akash" src='./assets/images/Akash.jpg' alt='Team'> </a>
-          <a href="#"> <img class="links" src='./assets/images/vinit.jpg' alt='Team'> </a>
-          <a href="#"> <img class="links" src='./assets/images/Fani 2.jpg' alt='Team'> </a>
-          <a href="#"> <img class="links" src='./assets/images/Cropped for DP.jpg' alt='Team'> </a>
-          <a href="#"> <img class="links" src='./assets/images/Himanshu.jpg' alt='Team'> </a>
-
-        </div>
-
-        <div aria-hidden="true" class="marquee__group">
-          <a href="#"> <img class="links team-akash" src='./assets/images/Akash.jpg' alt='Team'> </a>
-          <a href="#"> <img class="links" src='./assets/images/vinit.jpg' alt='Team'> </a>
-          <a href="#"> <img class="links" src='./assets/images/Fani 2.jpg' alt='Team'> </a>
-          <a href="#"> <img class="links" src='./assets/images/Cropped for DP.jpg' alt='Team'> </a>
-          <a href="#"> <img class="links" src='./assets/images/Himanshu.jpg' alt='Team'> </a>
-        </div>
-      </div>
-      <div class="Text-area-core">
-        <h2 class="team-name">Core Team</h2>
-        <p class="team-para">Thanks to all who worked for it</p>
-      </div>
-    </article>
-
-  </section>
-
-
-
-
-
-
-
-  <!------------------------ Why Sponser ------------------------>
-  <section id="sponser" class="why-sponser-section wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-    style="min-height: 100vh; color: white">
-    <h2 class="title">Why Sponser Us ?</h2>
-
-    <div class="container">
-      <div class="card">
-        <div class="card-title">
-          <ion-icon class="icon zinc-bg" style="transform: rotate(-25deg)" name="megaphone-outline"></ion-icon>
-          <h2>Promotion</h2>
-        </div>
-        <p>
-          Sponsoring events promotes your brand. Higher sponsorship packages
-          offer more exposure. This creates a positive perception of your
-          company.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <ion-icon class="icon zinc-bg" name="people-outline"></ion-icon>
-          <h2>Recruitment</h2>
-        </div>
-        <p>
-          Sponsor HackTheSpace, connect with potential employees. Meet bright
-          minds from the region, interview potential candidates. Build your
-          team with HackTheSpace sponsorship.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <ion-icon class="icon zinc-bg" name="albums-outline"></ion-icon>
-          <h2>New Technology</h2>
-        </div>
-        <p>
-          Use hackathons to test new technologies and incentivize students.
-          Create challenges aligned with your technology to promote it to a
-          wider audience. Drive future industries with HackTheSpace.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <ion-icon class="icon zinc-bg" name="flash-outline"></ion-icon>
-          <h2>Inspiration</h2>
-        </div>
-        <p>
-          Hackathons bring fresh ideas to challenging problems. Inspire both
-          participants and your team by tackling problems in your field.
-          Exchange of ideas can lead to innovative solutions at HackTheSpace.
-        </p>
-      </div>
-    </div>
-
-    <div class="btn-container">
-      <button type="button" class="Btn zinc-bg">
-        <a href="mailto:sponser@hackthespace.co">
-          <div class="gradient-mask black-bg"></div>
-          <ion-icon name="planet-outline" class="icon"></ion-icon>
-          <span class="text"> Sponser Us </span>
-        </a>
-      </button>
-      <button type="button" class="Btn zinc-bg">
-        <a href="./assets/sponser/Brochure.pdf" download="brochure.pdf">
-          <div class="gradient-mask blue-bg"></div>
-          <ion-icon name="arrow-down-circle-outline" class="icon"></ion-icon>
-          <span class="text">Brochure</span>
-        </a>
-      </button>
-    </div>
-  </section>
-
-  <!------------------------ Sponsers ------------------------>
-  <!-- <section class="sponser-section" style="min-height: 100vh; color: white">
+    <!------------------------ Sponsers ------------------------>
+    <!-- <section class="sponser-section" style="min-height: 100vh; color: white">
       <h2 class="title">Sponsers & partners</h2>
 
       <div class="sponser-container">
@@ -807,69 +664,81 @@
       </div>
     </section> -->
 
-  <section id="contact" class="footer-section wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-    style="color: white">
-    <div class="imgHolder">
-      <img src="./assets/images/purplePlanet.png" alt="..." />
-    </div>
-    <div class="docs">
-      <h3>Documents</h3>
-      <hr />
-      <ul>
-        <li>
-          <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
-        </li>
-        <li>
-          <a href="https://devfolio.co/code-of-conduct">Devfolio Code of Conduct</a>
-        </li>
-        <li><a href="#">Rule Book</a></li>
-        <li><a href="mailto:sponser@hackthespace.co">Sponsor-Us</a></li>
-      </ul>
-    </div>
-
-    <div class="socials">
-      <div class="handles">
-        <h3>Social Handles</h3>
+    <section
+      id="contact"
+      class="footer-section wow animate__animated animate__fadeInUp"
+      data-wow-duration="1s"
+      style="color: white"
+    >
+      <div class="imgHolder">
+        <img src="./assets/images/purplePlanet.png" alt="..." />
+      </div>
+      <div class="docs">
+        <h3>Documents</h3>
         <hr />
-        <div class="social-links">
-          <a href="https://instagram.com/hack.the.space" target="_blank">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-          <a href="https://www.linkedin.com/company/hackthespace/" target="_blank">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-          <a href="https://twitter.com/HackTheSpace_" target="_blank">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-          <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
-            <ion-icon name="logo-discord" class="icon"></ion-icon>
-          </a>
+        <ul>
+          <li>
+            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              >MLH Code of Conduct</a
+            >
+          </li>
+          <li>
+            <a href="https://devfolio.co/code-of-conduct"
+              >Devfolio Code of Conduct</a
+            >
+          </li>
+          <li><a href="#">Rule Book</a></li>
+          <li><a href="mailto:sponser@hackthespace.co">Sponsor-Us</a></li>
+        </ul>
+      </div>
+
+      <div class="socials">
+        <div class="handles">
+          <h3>Social Handles</h3>
+          <hr />
+          <div class="social-links">
+            <a href="https://instagram.com/hack.the.space" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/hackthespace/"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://twitter.com/HackTheSpace_" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://discord.gg/FJKTSgdxPX" target="_blank">
+              <ion-icon name="logo-discord" class="icon"></ion-icon>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="contactUs">
-      <h3>Contact Us</h3>
-      <hr />
-      <div class="contactList">
-        <a href="mailto:support@hackthespace.co" target="_blank">support@hackthespace.co</a>
+      <div class="contactUs">
+        <h3>Contact Us</h3>
+        <hr />
+        <div class="contactList">
+          <a href="mailto:support@hackthespace.co" target="_blank"
+            >support@hackthespace.co</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- custom script js -->
-  <!-- <script type="module" src="./js/model-render.js"></script> -->
-  <script src="./js/script.js"></script>
-  <script src="./js/particle.js"></script>
-  <!-- <script src="./js/constanime.js"></script> -->
-  <script src="./js/navbar.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="./js/organiser.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-</body>
-
+    <!-- custom script js -->
+    <!-- <script type="module" src="./js/model-render.js"></script> -->
+    <script src="./js/script.js"></script>
+    <script src="./js/particle.js"></script>
+    <!-- <script src="./js/constanime.js"></script> -->
+    <script src="./js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./js/organiser.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>

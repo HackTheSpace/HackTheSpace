@@ -111,8 +111,6 @@
   }
 }
 
-
-
 /* Core-Team */
 .marquee {
   width: 70%;
@@ -181,14 +179,14 @@ a {
 }
 
 .links:hover {
-    transform: scale(1.1)!important;
-    -webkit-transform: scale(1.1)!important;
-    opacity: .9;
-    cursor: pointer;
+  transform: scale(1.1) !important;
+  -webkit-transform: scale(1.1) !important;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .marquee:hover .marquee__group {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .Core_Team {
@@ -198,16 +196,17 @@ a {
   width: 90%;
   align-items: center;
   border-radius: 10px;
-  height:150px
+  height: 150px;
 }
 
-.Text-area-core{
+.Text-area-core {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 60px;
+  width: 300px;
 }
 
-.team-akash{
+.team-akash {
   z-index: 999;
 }
