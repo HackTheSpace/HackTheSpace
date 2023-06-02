@@ -40,16 +40,19 @@
 .sponser-section .sponser .card .wrapper {
   background-color: rgba(217, 217, 217, 0.18);
   padding: 2rem;
-  border-radius: 50px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1rem;
+  /* border-style: solid; */
+  /* border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 5; */
 }
 
 .sponser-section .sponser .pic {
-  width: 237px;
-  height: 237px;
-  border-radius: 37px;
+  width: 150px;
+  height: 40px;   /*237*/
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
@@ -57,4 +60,11 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.sponser-section .sponser .card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
