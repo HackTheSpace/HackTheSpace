@@ -210,3 +210,13 @@ a {
 .team-akash {
   z-index: 999;
 }
+
+@media only screen and (max-width: 768px)  {
+  .Core_Team{
+    flex-direction: column;
+  }
+  .Text-area-core{
+    align-items: center;
+    padding: 1rem;
+  }
+}
