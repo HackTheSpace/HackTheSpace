@@ -38,20 +38,57 @@
 }
 
 .sponser-section .sponser .card .wrapper {
-  background-color: rgba(217, 217, 217, 0.18);
+  /* background: rgba(217, 217, 217, 0.18); */
+  background: #2d2f32;
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem;
-  /* border-style: solid; */
-  /* border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 5; */
+  position: relative;
+}
+
+.sponser-section .sponser .card .wrapper::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  /* left: -2px; */
+  width: 105%;
+  height: 110%;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: 11px;
+  z-index: -1;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .sponser-section .sponser .pic {
   width: 150px;
-  height: 40px;   /*237*/
+  height: 40px; /*237*/
   /* border-radius: 20px; */
   overflow: hidden;
 }
@@ -62,7 +99,7 @@
   object-fit: contain;
 }
 
-.sponser-section .sponser .card{
+.sponser-section .sponser .card {
   display: flex;
   flex-direction: row;
   align-items: center;

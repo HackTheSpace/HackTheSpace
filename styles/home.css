@@ -1,0 +1,272 @@
+/* Home */
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+  margin-top: 2rem;
+}
+
+.logo-div p {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.sec-text {
+  font-size: 2rem;
+}
+
+.logo-home {
+  width: 35%;
+}
+
+.logo-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.butHolder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  min-width: 40%;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home #title {
+  height: 39px;
+  animation: blink-caret 0.75s step-end infinite;
+  border-right: 0.15em solid rgb(167 139 250 / 1); /* The typwriter cursor */
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  10% {
+    border-color: rgb(167 139 250 / 1);
+  }
+}
+
+.Btn {
+  font-size: 1.2rem;
+  width: 40%;
+  height: 3.5rem;
+  /* vinit */
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  border: none !important;
+  outline: none !important;
+  transform: scale(1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Btn .icon {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-6%, -50%);
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.Btn .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-25%, -50%);
+  z-index: 1;
+  color: rgb(167 139 250 / 1);
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
+
+.gradient-mask {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: all;
+  position: absolute;
+  inset: 0;
+  width: 25%;
+  height: 100%;
+}
+
+.Btn:hover .gradient-mask {
+  width: 100%;
+}
+
+.Btn:hover .text {
+  color: #fff;
+}
+
+.black-bg {
+  background-image: linear-gradient(to right, #434343, #000000);
+}
+
+.zinc-bg {
+  background-image: linear-gradient(to left, #27272a, #27272b);
+}
+
+.blue-bg {
+  background-image: linear-gradient(to left, #1e40af, #60a5fa);
+}
+
+.cost1.build-in-animate {
+  animation-play-state: running;
+}
+
+.cost1 {
+  position: absolute;
+  /* bottom: 30%; */
+  left: 7%;
+  /* animation: wobble 10s infinite; */
+  animation: floaty 4s ease infinite;
+}
+
+@keyframes floatx {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes constmove {
+  0% {
+    top: 30%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+.cost2 {
+  position: absolute;
+  top: 40%;
+  right: 6%;
+  width: fit-content;
+  animation: floaty 6s ease infinite;
+}
+
+.cost1 img {
+  width: 60%;
+}
+.cost2 img {
+  width: 70%;
+}
+.TagContainer .tagText {
+  position: relative;
+}
+
+.tagText.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #010718;  */
+  border-left: 2px solid white;
+  animation: animate 2s steps(6) infinite;
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Btn {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cost2 {
+    top: 16%;
+    right: 0%;
+    width: 75px;
+  }
+
+  .cost1 {
+    bottom: 17%;
+    left: 5%;
+    opacity: 0.7;
+  }
+  .cost1 img {
+    width: 44%;
+  }
+  .cost2 img {
+    width: 82%;
+  }
+
+  .Btn {
+    width: 100%;
+  }
+
+  .logo-div {
+    height: 50vh;
+  }
+
+  .logo-home {
+    width: 85%;
+  }
+
+  .logo-div p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .sec-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .butHolder {
+    width: 70%;
+  }
+}
