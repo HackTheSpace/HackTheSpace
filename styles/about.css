@@ -6,7 +6,7 @@
   position: relative;
   overflow-x: hidden;
   min-height: 100vh;
-  color: white;
+  color: #fbeeee;
   margin: 5rem 0;
 }
 .rstar {
@@ -54,6 +54,7 @@
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .abbox p {

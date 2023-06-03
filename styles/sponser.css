@@ -49,26 +49,50 @@
   position: relative;
 }
 
-.sponser-section .sponser .card .wrapper::after {
+.sponser-section .sponser.silver .card .wrapper::after,
+.sponser-section .sponser.bronze .card .wrapper::after {
   content: "";
   position: absolute;
   top: -5px;
-  /* left: -2px; */
   width: 105%;
   height: 110%;
-  background: linear-gradient(
-    60deg,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82
-  );
   border-radius: 11px;
   z-index: -1;
+}
+
+.sponser-section .sponser.diamond .card .wrapper::after {
+  background: linear-gradient(60deg, #b7f1fd, #d0f8ff, #b7f1fd, #dffcff);
+  box-shadow: 0 0 15px #b7f1fd;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.sponser-section .sponser.gold .card .wrapper::after {
+  background: linear-gradient(60deg, #ebd197, #b48811, #a2790d, #bb9b49);
+  box-shadow: 0 0 15px #bb9b49;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.sponser-section .sponser.silver .card .wrapper::after {
+  background: linear-gradient(
+    60deg,
+    #70706f,
+    #7d7d7a,
+    #8e8d8d,
+    #a1a2a3,
+    #b3b6b5,
+    #bec0c2
+  );
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.sponser-section .sponser.bronze .card .wrapper::after {
+  background: linear-gradient(60deg, #804a00, #895e1a, #9c7a3c, #b08d57);
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;

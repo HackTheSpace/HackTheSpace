@@ -40,7 +40,7 @@ nav .desktop-nav .links a {
   font-size: 1rem;
   line-height: 2rem;
   letter-spacing: 0.08em;
-  color: #fff;
+  color: #fbeeee;
   text-shadow: -0.25px -0.25px 0 transparent, 0.25px 0.25px transparent;
   text-decoration: none;
   transition: all 0.25s ease-out;
@@ -61,7 +61,7 @@ nav .desktop-nav .links a::after {
   height: 3px;
   bottom: 15px;
   left: 0;
-  background-color: #0087ca;
+  background-color: rgb(0, 135, 202);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -126,19 +126,19 @@ nav .mobile-nav {
     padding-top: 15%;
     right: 0;
 
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #000;
     transform: translate(100%, 0);
   }
 
   nav .mobile-nav-links a {
-    color: #fff;
+    color: #fbeeee;
     text-decoration: none;
     margin: 1.2rem 0;
     font-size: 1rem;
   }
 
   nav .mobile-nav-icons {
-    color: #fff;
+    color: #fbeeee;
     position: fixed;
     right: 0%;
     top: 1%;
