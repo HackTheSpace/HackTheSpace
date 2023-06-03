@@ -11,6 +11,7 @@
     <!-- css -->
 
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/preloader.css" />
     <link rel="stylesheet" href="./styles/particle.css" />
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/about.css">
@@ -39,7 +40,17 @@
     ></script>
   </head>
 
-  <body>
+  <body onload="loadcomplete()">
+    <div id="preloader">
+      <div class="text-container">
+
+        <svg class="text-stroke" viewBox="0 0 900 100" width="80%" height="100%">
+          <text class="text" x="20" y="75">HACK THE SPACE</text>
+        </svg>
+      </div>
+    </div>
+
+
     <div id="particles-js">
       <canvas id="3D-particle-effect-canvas"></canvas>
     </div>
@@ -277,7 +288,7 @@
           <div class="date">
             <h2>Date and Time</h2>
             <p>
-              11 - 12 August
+              11 - 12 August 2023
               <br />
               10 AM Onwards
             </p>
