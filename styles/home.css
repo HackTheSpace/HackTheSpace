@@ -87,7 +87,7 @@
   top: 50%;
   left: 8%;
   transform: translate(-6%, -50%);
-  color: #fff;
+  color: #fbeeee;
   font-size: 1.6rem;
 }
 
@@ -119,7 +119,7 @@
 }
 
 .Btn:hover .text {
-  color: #fff;
+  color: #fbeeee;
 }
 
 .black-bg {
@@ -203,8 +203,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  /* background-color: #010718;  */
-  border-left: 2px solid white;
+  border-left: 2px solid #fbeeee;
   animation: animate 2s steps(6) infinite;
 }
 @keyframes animate {
