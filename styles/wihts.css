@@ -1,0 +1,98 @@
+/* Whatishackthespace */
+.wihts {
+  background-color: rgba(128, 128, 128, 0.25);
+  border-radius: 50px;
+  border-color: transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  width: 72.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.frm {
+  position: absolute;
+  bottom: -10%;
+  right: -12%;
+}
+.frm img {
+  width: 70%;
+  animation: rotate 7s infinite;
+}
+
+.frm.about-frm {
+  bottom: -18%;
+}
+
+.frm.about-frm img {
+  width: 60%;
+  transform: rotate(25deg);
+  animation: rotatefull 20s linear infinite;
+}
+
+@keyframes rotatefull {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(25deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.asrt {
+  position: absolute;
+  top: -10%;
+  left: -6%;
+  animation: floaty 3s linear infinite;
+}
+.asrt img {
+  width: 75%;
+}
+@media only screen and (max-width: 768px) {
+  .frm {
+    bottom: -2%;
+    right: -40%;
+  }
+  .frm img {
+    width: 50%;
+  }
+  .frm.about-frm {
+    bottom: -10%;
+  }
+  .frm.about-frm img {
+    width: 50%;
+  }
+  .asrt {
+    top: -2%;
+    left: -17%;
+  }
+  .asrt img {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .abbox {
+    width: 60%;
+  }
+}

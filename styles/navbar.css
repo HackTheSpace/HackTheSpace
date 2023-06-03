@@ -1,11 +1,3 @@
-:root {
-  --oval-width: 10.5rem;
-  --oval-height: 56.5rem;
-  /* --oval-width: 200px;
-  --oval-height: 950px; */
-  --child-size: 20px;
-}
-
 nav .desktop-nav {
   display: none;
   align-items: center;
@@ -17,20 +9,13 @@ nav .desktop-nav {
   width: 100%;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.7);
-
-  /* padding: 1rem; */
   z-index: 9999;
-}
-
-nav .logo.shrink {
-  width: 80px;
-  height: 50px;
 }
 
 nav .logo {
   align-self: flex-start;
   width: 80px;
-  height: 70px;
+  height: 50px;
   overflow: hidden;
   margin-left: 0.5rem;
 }
@@ -74,7 +59,7 @@ nav .desktop-nav .links a::after {
   width: 100%;
   transform: scaleX(0);
   height: 3px;
-  bottom: 10px;
+  bottom: 15px;
   left: 0;
   background-color: #0087ca;
   transform-origin: bottom right;
@@ -98,70 +83,6 @@ nav .mlh-flag img {
   height: 100%;
 }
 
-.baap {
-  display: none; /* // temporary */
-
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(90deg);
-  z-index: 10;
-}
-
-.parent {
-  position: relative;
-  width: var(--oval-width);
-  height: var(--oval-height);
-  border-radius: 100%;
-  transition: transform 0.5s;
-  box-shadow: -25px 0px 0 10px rgba(0, 0, 0, 0.6) inset;
-  border: 50px solid rgba(0, 0, 0, 0.6);
-}
-
-.child {
-  position: absolute;
-  width: var(--child-size);
-  height: var(--child-size);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s;
-  transform: rotate(-90deg);
-}
-
-.child a {
-  font-size: 1.3rem;
-  color: #f4f4f4;
-  text-decoration: none;
-}
-
-.child.active {
-  font-weight: 900;
-}
-
-.curve-1,
-.curve-2 {
-  height: 500px;
-  border-bottom: 2px solid #fffff4;
-  border-radius: 50%;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.curve-1 {
-  display: none;
-  width: calc(100% - 12rem);
-  top: -440px;
-}
-
-.curve-2 {
-  display: none;
-  width: calc(100% - 16.5rem);
-  top: -360px;
-}
-
 .show {
   display: block;
 }
@@ -175,12 +96,6 @@ nav .mobile-nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .baap,
-  .curve-1,
-  .curve-2 {
-    display: none;
-  }
-
   nav .mlh-flag {
     top: 0%;
   }
@@ -238,85 +153,17 @@ nav .mobile-nav {
     display: flex !important;
   }
 }
-/* @media screen and (min-width: 1000px) {
-  :root {
-    --oval-width: 12.5rem;
-    --oval-height: 35rem;
-  }
 
-  .curve-1 {
-    width: 70%;
-    top: -440px;
-  }
-
-  .curve-2 {
-    width: 75%;
-    top: -350px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  :root {
-    --oval-width: 10.5rem;
-    --oval-height: 40.5rem;
-  }
-
-  .baap {
-    top: 1%;
-  }
-
-  .curve-1 {
-    width: 70%;
-    top: -440px;
-  }
-
-  .curve-2 {
-    width: 75%;
-    top: -350px;
-  }
-}
-
-@media screen and (min-width: 1365px) {
-  :root {
-    --oval-width: 12.5rem;
-    --oval-height: 44.5rem;
-  }
-
-  .curve-1 {
-    width: 70%;
-    top: -440px;
-  }
-
-  .curve-2 {
-    width: 75%;
-    top: -350px;
-  }
-}
-
-@media screen and (min-width: 1640px) {
-  :root {
-    --oval-width: 12.5rem;
-    --oval-height: 52.5rem;
-  }
-
-  .curve-1 {
-    width: 65%;
-    top: -440px;
-  }
-
-  .curve-2 {
-    width: 69%;
-    top: -350px;
-  }
-} */
 .mlh-flag2 {
   width: fit-content;
   top: 0%;
 }
+
 .mlh-flag2 img {
   width: 70px;
   z-index: 500;
 }
+
 .burgMlh {
   display: flex;
   margin-right: 1rem;

@@ -211,11 +211,11 @@ a {
   z-index: 999;
 }
 
-@media only screen and (max-width: 768px)  {
-  .Core_Team{
+@media only screen and (max-width: 768px) {
+  .Core_Team {
     flex-direction: column;
   }
-  .Text-area-core{
+  .Text-area-core {
     align-items: center;
     padding: 1rem;
   }

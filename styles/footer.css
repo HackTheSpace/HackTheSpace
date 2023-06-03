@@ -5,12 +5,15 @@
   justify-content: space-between;
   padding: 5rem;
 }
+
 .imgHolder {
   width: 15%;
 }
+
 .imgHolder img {
   width: 90%;
 }
+
 .footer-section h3 {
   font-size: 2rem;
 }
@@ -19,39 +22,48 @@
   list-style: none;
   padding-top: 1rem;
 }
+
 .docs ul li {
   padding-top: 0.7rem;
 }
+
 .docs ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
   transition: all 0.2s ease;
 }
+
 .docs ul li a:hover {
   color: rgb(167 139 250 / 1);
 }
+
 .footer-section hr {
   height: 1px;
   border: none;
   width: 70%;
   background-color: purple;
 }
+
 .social-links {
   padding-top: 2rem;
 }
+
 .social-links a {
   font-size: 2rem;
   color: white;
   padding-right: 1rem;
   transition: all 0.3s ease;
 }
+
 .social-links a:hover {
   color: rgb(167 139 250 / 1);
 }
+
 .contactList {
   padding-top: 1rem;
 }
+
 .contactList h4 {
   padding-top: 1rem;
 }
@@ -62,22 +74,28 @@
     padding: 2rem;
     text-align: center;
   }
+
   .imgHolder {
     display: none;
   }
+
   .docs {
     padding-top: 1rem;
   }
+
   .socials {
     padding-top: 1rem;
   }
+
   .contactUs {
     padding-top: 1rem;
   }
+
   .footer-section hr {
     width: 100%;
   }
 }
+
 .contactUs .contactList a {
   text-decoration: none;
   color: white;
