@@ -19,7 +19,8 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
-  margin: 0 auto;
+  width: -moz-fit-content;
+  margin: 0 auto 0;
 }
 
 .sponser-section .sponser-container {

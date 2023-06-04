@@ -18,28 +18,6 @@ window.onscroll = () => {
   }
 };
 
-// const textEl = document.getElementById("title");
-
-// const text = "Think. Build. Launch.               ";
-// let idx = 6;
-// let speed = 100;
-
-// console.log(text.slice(text.length, 0));
-
-// function writeText() {
-//   textEl.innerText = text.slice(0, idx);
-//   idx++;
-
-//   // console.log(textEl, idx);
-//   if (idx > text.length) {
-//     idx = 1;
-//   }
-
-//   setTimeout(writeText, speed);
-// }
-
-// writeText();
-
 const textEl = document.getElementById("title");
 const text = "Think. Build. Launch.";
 let idx = 0;
@@ -72,3 +50,15 @@ function writeText() {
 }
 
 writeText();
+
+const load = document.getElementById("preloader");
+const body = document.getElementById("body");
+
+setTimeout(function loadcomplete() {
+  load.style.opacity = 0;
+  body.style.overflow = "unset";
+}, 6000);
+
+setTimeout(function loadcomplete() {
+  load.style.display = "none";
+}, 6200);
