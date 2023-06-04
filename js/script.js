@@ -60,5 +60,5 @@ setTimeout(function loadcomplete() {
 }, 5000);
 
 setTimeout(function loadcomplete() {
-  load.style.display = none;
-}, 5100);
+  load.style.display = "none";
+}, 5200);
