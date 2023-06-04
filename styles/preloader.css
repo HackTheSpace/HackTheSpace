@@ -42,7 +42,7 @@
     stroke-dashoffset: 100%;
     fill: #0000;
   }
-  90% {
+  99% {
     stroke-dasharray: 0%;
     stroke-dashoffset: 95%;
     fill: #0000;

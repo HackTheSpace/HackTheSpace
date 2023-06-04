@@ -57,8 +57,8 @@ const body = document.getElementById("body");
 setTimeout(function loadcomplete() {
   load.style.opacity = 0;
   body.style.overflow = "unset";
-}, 5000);
+}, 6000);
 
 setTimeout(function loadcomplete() {
   load.style.display = "none";
-}, 5200);
+}, 6200);

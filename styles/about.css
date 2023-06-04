@@ -100,9 +100,10 @@
   }
 
   .abbox h2 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
-    margin-bottom: 0;
+    width: 100%;
+    margin: 0;
   }
 
   .abbox p {
@@ -129,5 +130,11 @@
   .lstar {
     left: -15%;
     bottom: -8%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .abbox h2 {
+    font-size: 1.6rem;
   }
 }
