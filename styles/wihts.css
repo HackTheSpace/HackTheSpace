@@ -13,8 +13,8 @@
 }
 .frm {
   position: absolute;
-  bottom: -10%;
-  right: -12%;
+  bottom: -5%;
+  right: -8%;
 }
 .frm img {
   width: 70%;
@@ -22,11 +22,11 @@
 }
 
 .frm.about-frm {
-  bottom: -18%;
+  bottom: -12%;
 }
 
 .frm.about-frm img {
-  width: 60%;
+  width: 50%;
   transform: rotate(25deg);
   animation: rotatefull 20s linear infinite;
 }
