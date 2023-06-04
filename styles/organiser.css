@@ -71,6 +71,10 @@
   font-size: 1.4rem;
 }
 
+.organiser-section .card .organiser-social a:hover {
+  color: #9b5bf5;
+}
+
 @media screen and (min-width: 1000px) {
   .organiser-section .container {
     display: flex;
@@ -82,14 +86,14 @@
   }
 
   .organiser-section .container .card {
-    margin: 2rem;
+    margin: 2rem 3rem;
   }
 }
 
 @media screen and (min-width: 1160px) {
   .organiser-section .container {
     width: 100%;
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 
   .organiser-section .container .card {
@@ -100,14 +104,12 @@
 @media screen and (min-width: 1440px) {
   .organiser-section .container {
     width: 100%;
-    padding: 2rem;
   }
 }
 
 @media screen and (min-width: 1880px) {
   .organiser-section .container {
     width: 90%;
-    padding: 2rem;
   }
 }
 
@@ -123,6 +125,17 @@
   user-select: none;
   gap: var(--gap);
   /*   transform: skewY(-3deg); */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black,
+    black,
+    black,
+    black,
+    black,
+    black,
+    transparent
+  );
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,
@@ -214,6 +227,10 @@ a {
 @media only screen and (max-width: 768px) {
   .Core_Team {
     flex-direction: column;
+    padding-top: 1rem;
+  }
+  .Core_Team .marquee {
+    width: 100%;
   }
   .Text-area-core {
     align-items: center;
