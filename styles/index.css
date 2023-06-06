@@ -6,13 +6,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* tranparent gray: rgba(128, 128, 128, 0.25) */
-/* primary blue : rgb(167 139 250 / 1) */
-/* secondary blue : rgb(167 139 250 / 0.7); */
-/* primary black: rgba(0, 0, 0, 0.7); */
-/* secondary black: rgba(0, 0, 0, 0.3) */
-/* primary pink: #9b5bf5 */
-/* white: #fbeeee */
+:root {
+  --tranparent-gray: rgba(128, 128, 128, 0.25);
+  --primary-blue: rgb(167 139 250 / 1);
+  --secondary-blue: rgb(167 139 250 / 0.7);
+  --primary-black: rgba(0, 0, 0, 0.7);
+  --secondary-black: rgba(0, 0, 0, 0.3);
+  --primary-pink: #9b5bf5;
+  --white: #fbeeee;
+}
 
 html {
   scroll-behavior: smooth;
