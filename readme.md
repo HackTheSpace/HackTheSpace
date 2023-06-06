@@ -16,9 +16,27 @@ done:
 - navbar fix
 - complete ui improvement looks too overstuffed atm
 
------------------todo after mlh approval ---------------
+-----------------todo---------------
 
-- faq section
-- schedule section
-- prizes section
-- track section
+=========================================
+Unassigned
+
+- rocket page ( how hts was built )
+- rocket animation in loading screen
+- scrollbar
+- css variable
+
+=========================================
+
+Lead todo
+
+- schedule
+- tracks (priority)
+
+=========================================
+core team todo
+
+- faq (priority) : sidd
+- prizes
+- speaker
+- constellation ko failana h
