@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: clip;
   min-height: 100vh;
   color: #fbeeee;
   margin: 5rem 0;
