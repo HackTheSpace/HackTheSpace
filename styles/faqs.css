@@ -37,7 +37,8 @@
   padding: 1rem;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  background: rgba(217, 217, 217, 0.18);
+  /* background: rgba(217, 217, 217, 0.18); */
+  background: var(--transparent-gray);
   border-radius: 0.5rem;
 }
 

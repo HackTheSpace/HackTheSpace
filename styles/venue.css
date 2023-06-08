@@ -34,7 +34,7 @@
   font-size: 1.8rem;
   line-height: 2.3rem;
   text-align: center;
-  color: rgb(167 139 250 / 1);
+  color: var(--primary-blue);
 }
 
 .venue-section p {
@@ -51,7 +51,7 @@
 .venue-section .divider {
   height: 5px;
   margin: 2rem 0;
-  background-color: rgb(167 139 250 / 0.7);
+  background-color: var(--secondary-blue);
 }
 
 .venue-section .map-wrapper {
@@ -87,7 +87,7 @@
     font-size: 1.5rem;
     line-height: 1.9rem;
     letter-spacing: 0.08em;
-    color: rgb(167 139 250 / 1);
+    color: var(--primary-blue);
   }
 
   .venue-section p {
@@ -95,7 +95,7 @@
     font-size: 1.2rem;
     line-height: 1.6rem;
     letter-spacing: 0.08em;
-    color: #fbeeee;
+    color: var(--white);
   }
 
   .venue-section .divider {
