@@ -6,7 +6,7 @@
   position: relative;
   overflow-x: clip;
   min-height: 100vh;
-  color: #fbeeee;
+  color: var(--white);
   margin: 5rem 0;
 }
 .rstar {
@@ -29,7 +29,7 @@
   width: 60%;
 }
 .abbox {
-  background-color: rgba(128, 128, 128, 0.25);
+  background-color: var(--transparent-gray);
   border-radius: 86px;
   border-color: transparent;
   text-align: center;
@@ -62,7 +62,7 @@
   font-size: 1.1rem;
   line-height: 1.9rem;
   letter-spacing: 0.08em;
-  color: #fbeeee;
+  color: var(--white);
   text-align: justify;
 }
 .aconst1 {

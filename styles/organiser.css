@@ -33,7 +33,7 @@
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  background: linear-gradient(#fbeeee, #fbeeee) padding-box,
+  background: linear-gradient(var(--white), var(--white)) padding-box,
     linear-gradient(to right, #592ee1 0%, #9636d9 100%) border-box;
   border: 4px solid transparent;
   position: relative;
@@ -58,7 +58,7 @@
   text-align: center;
   letter-spacing: 0.08em;
   margin: 0;
-  color: #9b5bf5;
+  color: var(--primary-pink);
 }
 
 .organiser-section .card .organiser-social {
@@ -72,7 +72,7 @@
 }
 
 .organiser-section .card .organiser-social a:hover {
-  color: #9b5bf5;
+  color: var(--primary-pink);
 }
 
 @media screen and (min-width: 1000px) {
@@ -211,7 +211,6 @@ a {
   align-items: center;
   border-radius: 10px;
   min-height: 150px;
- 
 }
 
 .Text-area-core {
@@ -226,8 +225,8 @@ a {
   z-index: 999;
 }
 
-.Core_Team_Hr{
-  width:80%;
+.Core_Team_Hr {
+  width: 80%;
   text-align: center;
   border: 1px solid rgb(128, 125, 125);
   margin: 1rem 0 0 0;
@@ -237,7 +236,6 @@ a {
   .Core_Team {
     flex-direction: column;
     padding-top: 1rem;
-    
   }
   .Core_Team .marquee {
     width: 100%;
@@ -247,18 +245,17 @@ a {
     padding: 1rem;
     height: 50px;
   }
-  .marquee{
+  .marquee {
     gap: 1rem;
   }
-  .marquee__group{
-    gap:1rem;
+  .marquee__group {
+    gap: 1rem;
   }
   .marquee__group img {
     width: 50px;
     height: 50px;
-    
   }
-  .Core_Team_Hr{
+  .Core_Team_Hr {
     display: block;
   }
 }

@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  color: rgb(167 139 250 / 1);
+  color: var(--primary-blue);
   width: fit-content;
   margin: 0 auto;
 }
@@ -61,21 +61,21 @@
   line-height: 2rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: rgb(167 139 250 / 1);
+  color: var(--primary-blue);
 }
 
 .why-sponser-section .card .icon {
   font-size: 2rem;
   border-radius: 50%;
   padding: 1rem;
-  color: rgb(167 139 250 / 1);
+  color: var(--primary-blue);
 }
 
 .why-sponser-section .card p {
   font-size: 1.1rem;
   line-height: 1.6rem;
   letter-spacing: 0.08em;
-  color: #fbeeee;
+  color: var(--white);
   margin: 1rem 0;
   text-align: justify;
 }
