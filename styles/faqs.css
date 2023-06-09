@@ -25,11 +25,16 @@
 .faqs-section .container {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .faqs-section .container .col {
   padding: 10px;
   width: 45%;
+}
+
+.faqs-section .container .col > .question-box:first-child {
+  margin-top: 0;
 }
 
 .faqs-section .container .question-box {
@@ -40,6 +45,10 @@
   /* background: rgba(217, 217, 217, 0.18); */
   background: var(--transparent-gray);
   border-radius: 0.5rem;
+}
+
+.faqs-section .container .question-box:hover {
+  background: rgba(178, 178, 178, 0.3);
 }
 
 .faqs-section .container .question-box .question {
@@ -78,15 +87,16 @@
 }
 
 .faqs-section .container .question-box .answer {
-  margin-top: 1rem;
   font-size: 1rem;
-  display: none;
   text-align: justify;
+  max-height: 0px;
+  overflow: hidden;
 }
 
 .faqs-section .container .question-box .answer.active {
-  transition: display 500ms;
-  display: block;
+  max-height: 300px;
+  margin-top: 1rem;
+  transition: max-height 1000ms ease-in-out;
 }
 
 @media screen and (max-width: 800px) {

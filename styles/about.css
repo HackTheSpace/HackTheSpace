@@ -63,6 +63,7 @@
   line-height: 1.9rem;
   letter-spacing: 0.08em;
   color: var(--white);
+  text-align: justify;
 }
 .aconst1 {
   position: absolute;
