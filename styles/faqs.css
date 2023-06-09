@@ -91,13 +91,17 @@
   text-align: justify;
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 500ms ease-in-out, margin-top 500ms ease-in-out;
+  opacity: 0;
+  transition: max-height 500ms ease-in-out, margin-top 400ms ease-in-out,
+    opacity 500ms ease-in-out;
 }
 
 .faqs-section .container .question-box .answer.active {
   max-height: 300px;
-  transition: max-height 1000ms ease-in-out, margin-top 500ms ease-in-out;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  opacity: 1;
+  transition: max-height 1000ms ease-in-out, margin-top 400ms ease-in-out,
+    opacity 800ms ease-in-out;
 }
 
 @media screen and (max-width: 800px) {
