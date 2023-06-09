@@ -53,10 +53,12 @@
 
 .faqs-section .container .question-box .question {
   width: 100%;
+  height: 46px;
   color: var(--white);
   text-decoration: none;
-  font-size: 1.43rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  text-align: left;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -113,5 +115,11 @@
   .faqs-section .container .col {
     width: 100%;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .faqs-section .container .question-box .question {
+    height: auto;
   }
 }
