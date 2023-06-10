@@ -15,7 +15,7 @@
 }
 
 .footer-section h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .docs ul {
@@ -51,7 +51,7 @@
   height: 3px;
   border: none;
   width: 70%;
-  background-color: purple;
+  background-color: var(--primary-blue);
 }
 
 .social-links {
@@ -88,8 +88,12 @@
     text-align: center;
   }
 
+  .footer-section h3 {
+    font-size: 2rem;
+  }
+
   .footer-section hr {
-    height: 1px;
+    height: 1.5px;
   }
 
   .imgHolder {

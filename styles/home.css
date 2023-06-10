@@ -20,8 +20,29 @@
 
 .logo-div p {
   margin: 2rem 0;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
+
+.home #title {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  min-height: 31px;
+  font-weight: 600;
+  animation: blink-caret 0.75s step-end infinite;
+  border-right: 0.15em solid var(--primary-blue); /* The typwriter cursor */
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  10% {
+    border-color: var(--primary-blue);
+  }
+}
+
 .sec-text {
   font-size: 2rem;
 }
@@ -54,23 +75,6 @@
   margin-top: 1rem;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-.home #title {
-  min-height: 39px;
-  animation: blink-caret 0.75s step-end infinite;
-  border-right: 0.15em solid var(--primary-blue); /* The typwriter cursor */
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  10% {
-    border-color: var(--primary-blue);
-  }
 }
 
 .Btn {
@@ -233,9 +237,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .home #title {
-    min-height: 25px;
-  }
   .cost2 {
     top: 16%;
     right: 0%;

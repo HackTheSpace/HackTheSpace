@@ -19,7 +19,7 @@ window.onscroll = () => {
 };
 
 const textEl = document.getElementById("title");
-const text = "Think. Build. Launch.";
+const text = "THINK. BUILD. LAUNCH.";
 let idx = 0;
 let direction = 1;
 let animationDelay = 100; // milliseconds
