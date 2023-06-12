@@ -50,8 +50,12 @@
 .footer-section hr {
   height: 3px;
   border: none;
-  width: 70%;
+  width: 100%;
   background-color: var(--primary-blue);
+}
+
+.footer-section .docs hr {
+  width: 50%;
 }
 
 .social-links {
@@ -110,6 +114,10 @@
 
   .contactUs {
     padding-top: 1rem;
+  }
+
+  .footer-section .docs hr {
+    width: 100%;
   }
 
   .footer-section hr {
