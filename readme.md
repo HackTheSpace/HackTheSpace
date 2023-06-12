@@ -24,20 +24,25 @@ done:
 =========================================
 Unassigned
 
-- rocket page ( how hts was built )
-- rocket animation in loading screen
-- footer me planet hta ke logo chipkana hai
-- footer me made with love wala tagline
-- schedule
-- tracks
-- prizes
 - speaker
-- navbar mobile
+- rocket page ( how hts was built )
 - constellation ko failana h
+
+- rocket animation in loading screen
+- footer me planet hts ke logo chipkana hai
+- footer me made with love wala tagline
+- prizes
+- tracks
+- schedule ++
 
 =========================================
 
 Lead todo
 
+- sponser prizes ++
+
 =========================================
+
 core team todo
+
+- navbar mobile
