@@ -1,0 +1,38 @@
+.Built-Section{
+    display:flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.Built-Container{
+    min-height: 100vh;
+     color: #fff
+}
+
+.Built-Section img{
+    width: 50%;
+}
+
+@media only screen and (min-width: 1440px){
+.Built-Section img{
+    width: 40%;
+}
+}
+@media only screen and (max-width: 1000px){
+    .Built-Section img{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Built-Section img{
+        width: 100%;
+    }
+    .Built-Section{
+        align-items: center;
+    }
+    .Built-Container{
+       min-height: 85vh;
+       
+    }
+}
