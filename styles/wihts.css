@@ -1,6 +1,6 @@
 /* Whatishackthespace */
 .wihts {
-  background-color: rgba(128, 128, 128, 0.25);
+  background-color: var(--transparent-gray);
   border-radius: 50px;
   border-color: transparent;
   text-align: justify;

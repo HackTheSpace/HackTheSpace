@@ -1,5 +1,5 @@
 .footer-section {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary-black);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 
 .footer-section h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .docs ul {
@@ -27,22 +27,35 @@
   padding-top: 0.7rem;
 }
 
-.docs ul li a {
-  color: white;
+.docs ul li a,
+.contactUs .contactList a {
+  color: var(--white);
   text-decoration: none;
   font-size: 1.2rem;
-  transition: all 0.2s ease;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  text-shadow: -0.25px -0.25px 0 transparent, 0.25px 0.25px transparent;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+  position: relative;
 }
 
-.docs ul li a:hover {
-  color: rgb(167 139 250 / 1);
+.docs ul li a:hover,
+.contactUs .contactList a:hover {
+  color: var(--primary-blue);
+  text-shadow: -0.25px -0.25px 0 var(--primary-blue),
+    0.25px 0.25px var(--primary-blue);
 }
 
 .footer-section hr {
-  height: 1px;
+  height: 3px;
   border: none;
-  width: 70%;
-  background-color: purple;
+  width: 100%;
+  background-color: var(--primary-blue);
+}
+
+.footer-section .docs hr {
+  width: 50%;
 }
 
 .social-links {
@@ -51,13 +64,13 @@
 
 .social-links a {
   font-size: 2rem;
-  color: #ffffff;
+  color: var(--white);
   padding-right: 1rem;
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  color: rgb(167 139 250 / 1);
+  color: var(--primary-blue);
 }
 
 .contactList {
@@ -68,11 +81,23 @@
   padding-top: 1rem;
 }
 
+.contactUs .contactList a {
+  font-size: 0.9rem;
+}
+
 @media only screen and (max-width: 768px) {
   .footer-section {
     flex-direction: column;
     padding: 2rem;
     text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 2rem;
+  }
+
+  .footer-section hr {
+    height: 1.5px;
   }
 
   .imgHolder {
@@ -91,19 +116,13 @@
     padding-top: 1rem;
   }
 
+  .footer-section .docs hr {
+    width: 100%;
+  }
+
   .footer-section hr {
     width: 100%;
   }
-}
-
-.contactUs .contactList a {
-  text-decoration: none;
-  color: white;
-  transition: all 0.2s ease;
-}
-
-.contactUs .contactList a:hover {
-  color: rgb(167 139 250 / 1);
 }
 
 @media only screen and (max-width: 1000px) {

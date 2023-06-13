@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Aldrich", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-  --tranparent-gray: rgba(128, 128, 128, 0.25);
+  --transparent-gray: rgba(128, 128, 128, 0.25);
   --primary-blue: rgb(167 139 250 / 1);
   --secondary-blue: rgb(167 139 250 / 0.7);
   --primary-black: rgba(0, 0, 0, 0.7);
   --secondary-black: rgba(0, 0, 0, 0.3);
   --primary-pink: #9b5bf5;
-  --white: #fbeeee;
+  --white: #fff;
 }
 
 html {
@@ -77,13 +81,13 @@ a {
   transition: all 0.4s;
   font-size: 30px;
   animation: wave 2s infinite;
-  color: rgb(167 139 250 / 0.7);
+  color: var(--secondary-blue);
   text-shadow: none;
 }
 
 .go-to-top-btn:hover .rocket-btn {
-  color: rgb(167 139 250 / 1);
-  text-shadow: 10px 10px 80px rgb(167 139 250 / 1);
+  color: var(--primary-blue);
+  text-shadow: 10px 10px 80px var(--primary-blue);
 }
 
 @keyframes wave {
@@ -106,4 +110,34 @@ a {
   100% {
     transform: translateY(0%);
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  background-image: radial-gradient(
+    farthest-corner at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(2, 0, 34) 81.3%
+  );
+  /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  opacity: 0.7;
+  background: rgb(255, 255, 255);
+  /* background: var(--primary-blue); */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgb(167 139 250) 35%,
+
+    rgba(255, 255, 255, 0) 100%
+  );
 }

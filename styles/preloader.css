@@ -5,7 +5,6 @@
 #preloader {
   transition: all 0.4s ease-in;
   opacity: 1;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +33,10 @@
   stroke-dashoffset: 100%;
   animation: textStrokeAnim 4000ms linear both;
   animation-iteration-count: 1;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 @keyframes textStrokeAnim {

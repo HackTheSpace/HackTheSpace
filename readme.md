@@ -15,28 +15,34 @@ done:
 - footer
 - navbar fix
 - complete ui improvement looks too overstuffed atm
+- css variable
+- scrollbar
+- faq
 
 -----------------todo---------------
 
 =========================================
 Unassigned
 
+- speaker
 - rocket page ( how hts was built )
+- constellation ko failana h
+
 - rocket animation in loading screen
-- scrollbar
-- css variable
+- footer me planet hts ke logo chipkana hai
+- footer me made with love wala tagline
+- prizes
+- tracks
+- schedule ++
 
 =========================================
 
 Lead todo
 
-- schedule
-- tracks (priority)
+- sponser prizes ++
 
 =========================================
+
 core team todo
 
-- faq (priority) : sidd
-- prizes
-- speaker
-- constellation ko failana h
+- navbar mobile
