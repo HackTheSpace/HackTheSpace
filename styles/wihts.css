@@ -3,7 +3,7 @@
   background-color: rgba(128, 128, 128, 0.25);
   border-radius: 50px;
   border-color: transparent;
-  text-align: center;
+  text-align: justify;
   padding: 3rem 2rem;
   width: 72.5%;
   display: flex;
@@ -23,6 +23,7 @@
 
 .frm.about-frm {
   bottom: -12%;
+  right: -15%;
 }
 
 .frm.about-frm img {

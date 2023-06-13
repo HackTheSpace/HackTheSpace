@@ -28,7 +28,7 @@
 }
 
 .docs ul li a {
-  color: #fbeeee;
+  color: white;
   text-decoration: none;
   font-size: 1.2rem;
   transition: all 0.2s ease;
@@ -51,7 +51,7 @@
 
 .social-links a {
   font-size: 2rem;
-  color: #fbeeee;
+  color: #ffffff;
   padding-right: 1rem;
   transition: all 0.3s ease;
 }
@@ -98,7 +98,7 @@
 
 .contactUs .contactList a {
   text-decoration: none;
-  color: #fbeeee;
+  color: white;
   transition: all 0.2s ease;
 }
 

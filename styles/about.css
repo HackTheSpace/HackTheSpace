@@ -2,7 +2,7 @@
 .abdiv {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   position: relative;
   overflow-x: clip;
   min-height: 100vh;
@@ -32,7 +32,7 @@
   background-color: rgba(128, 128, 128, 0.25);
   border-radius: 86px;
   border-color: transparent;
-  text-align: center;
+  text-align: justify;
   padding: 2rem 2rem 4rem;
   width: 72.5%;
   display: flex;
