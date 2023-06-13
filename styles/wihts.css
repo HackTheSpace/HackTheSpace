@@ -14,7 +14,7 @@
 .frm {
   position: absolute;
   bottom: -5%;
-  right: -8%;
+  right: -16%;
 }
 .frm img {
   width: 70%;
@@ -23,7 +23,7 @@
 
 .frm.about-frm {
   bottom: -12%;
-  right: -15%;
+  right: -20%;
 }
 
 .frm.about-frm img {

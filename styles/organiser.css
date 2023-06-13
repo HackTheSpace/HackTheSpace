@@ -6,22 +6,6 @@
   padding: 2rem;
 }
 
-.organiser-section .title {
-  text-align: center;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif !important;
-
-  background-image: -webkit-linear-gradient(to right, #592ee1 0%, #9636d9 100%);
-  background-image: linear-gradient(to right, #592ee1 0%, #9636d9 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
-  margin: 0 auto;
-}
-
 .organiser-section .card {
   display: flex;
   flex-direction: column;
@@ -84,7 +68,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 0 3rem;
   }
 
   .organiser-section .container .card {
@@ -95,7 +79,6 @@
 @media screen and (min-width: 1160px) {
   .organiser-section .container {
     width: 100%;
-    padding: 4rem 0;
   }
 
   .organiser-section .container .card {

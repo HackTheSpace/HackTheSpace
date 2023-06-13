@@ -3,30 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  margin: 3rem 0;
-}
-
-.sponser-section .title {
-  text-align: center;
-  font-size: 2.5rem;
-  /* width: 50%; */
-  line-height: 2.5rem;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif !important;
-
-  background-image: -webkit-linear-gradient(to right, #592ee1 0%, #9636d9 100%);
-  background-image: linear-gradient(to right, #592ee1 0%, #9636d9 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
-  width: -moz-fit-content;
-  margin: 0 auto 0;
+  padding: 0 2rem;
+  /* padding: 2rem; */
+  /* margin: 3rem 0; */
 }
 
 .sponser-section .sponser-container {
-  margin: 0 0 2rem;
+  /* margin: 0 0 2rem; */
   text-align: center;
 }
 
@@ -40,7 +23,7 @@
   margin-bottom: 1rem;
 }
 
-.sponser-section .sponser .card .wrapper {
+.sponser-section .sponser .wrapper .card {
   /* background: rgba(217, 217, 217, 0.18); */
   background: transparent;
   padding: 2rem;
@@ -52,8 +35,8 @@
   position: relative;
 }
 
-.sponser-section .sponser.silver .card .wrapper::after,
-.sponser-section .sponser.bronze .card .wrapper::after {
+.sponser-section .sponser.silver .wrapper .card::after,
+.sponser-section .sponser.bronze .wrapper .card::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -63,7 +46,7 @@
   z-index: -1;
 }
 
-.sponser-section .sponser.diamond .card .wrapper::after {
+.sponser-section .sponser.diamond .wrapper .card::after {
   background: linear-gradient(60deg, #b7f1fd, #d0f8ff, #b7f1fd, #dffcff);
   box-shadow: 0 0 15px #b7f1fd;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
@@ -71,7 +54,7 @@
   background-size: 300% 300%;
 }
 
-.sponser-section .sponser.gold .card .wrapper::after {
+.sponser-section .sponser.gold .wrapper .card::after {
   background: linear-gradient(60deg, #ebd197, #b48811, #a2790d, #bb9b49);
   box-shadow: 0 0 15px #bb9b49;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
@@ -79,7 +62,7 @@
   background-size: 300% 300%;
 }
 
-.sponser-section .sponser.silver .card .wrapper::after {
+.sponser-section .sponser.silver .wrapper .card::after {
   background: linear-gradient(
     60deg,
     /* #70706f, */ rgba(112, 112, 111, 0.3),
@@ -94,7 +77,7 @@
   background-size: 300% 300%;
 }
 
-.sponser-section .sponser.bronze .card .wrapper::after {
+.sponser-section .sponser.bronze .wrapper .card::after {
   background: linear-gradient(
     60deg,
     rgba(128, 74, 0, 0.3),
@@ -132,7 +115,7 @@
   object-fit: contain;
 }
 
-.sponser-section .sponser .card {
+.sponser-section .sponser .wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;

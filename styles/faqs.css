@@ -1,27 +1,5 @@
 .faqs-section {
-  min-height: 100vh;
-  padding: 2rem;
-}
-
-.faqs-section .title {
-  text-align: center;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif !important;
-
-  background-image: -webkit-linear-gradient(
-    to right,
-    #592ee1 40%,
-    #9636d9 100%
-  );
-  background-image: linear-gradient(to right, #592ee1 40%, #9636d9 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
-  width: -moz-fit-content;
-  margin: 0 auto 0;
+  padding: 0 2rem;
 }
 
 .faqs-section .container {

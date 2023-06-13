@@ -33,6 +33,30 @@ a {
   color: inherit;
 }
 
+.section {
+  height: 100%;
+  margin: 10rem 0;
+  color: var(--white);
+}
+
+.section-title {
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.08em;
+  font-family: "Montserrat", sans-serif !important;
+
+  background: -webkit-linear-gradient(180deg, #b741dd 40%, #7d00f2 100%);
+  background: linear-gradient(180deg, #b741dd 47.2%, #7d00f2 90.1%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
 .go-to-top-btn {
   position: fixed;
   padding: 1.3rem;
@@ -74,6 +98,17 @@ a {
   .go-to-top-btn {
     right: -8%;
     bottom: 0px;
+  }
+
+  .section {
+    margin: 5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem !important;
+    line-height: 2.5rem !important;
+    width: 90%;
+    text-align: center;
   }
 }
 
