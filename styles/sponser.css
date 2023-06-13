@@ -13,6 +13,8 @@
   /* width: 50%; */
   line-height: 2.5rem;
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif !important;
+
   background-image: -webkit-linear-gradient(to right, #592ee1 0%, #9636d9 100%);
   background-image: linear-gradient(to right, #592ee1 0%, #9636d9 100%);
   -webkit-background-clip: text;
@@ -80,13 +82,12 @@
 .sponser-section .sponser.silver .card .wrapper::after {
   background: linear-gradient(
     60deg,
-    /* #70706f, */
-    rgba(112, 112, 111,0.3), 
-    rgba(125, 125, 122,0.3),
-    rgba(142, 141, 141,0.3),
-    rgba(161, 162, 163,0.3),
-    rgba(179, 182, 181,0.3),
-    rgba(190, 192, 194,0.3)
+    /* #70706f, */ rgba(112, 112, 111, 0.3),
+    rgba(125, 125, 122, 0.3),
+    rgba(142, 141, 141, 0.3),
+    rgba(161, 162, 163, 0.3),
+    rgba(179, 182, 181, 0.3),
+    rgba(190, 192, 194, 0.3)
   );
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 3s ease alternate infinite;
@@ -94,7 +95,13 @@
 }
 
 .sponser-section .sponser.bronze .card .wrapper::after {
-  background: linear-gradient(60deg, rgba(128, 74, 0,0.3), rgba(137, 94, 26,0.3), rgba(156, 122, 60,0.3), rgba(176, 141, 87,0.3));
+  background: linear-gradient(
+    60deg,
+    rgba(128, 74, 0, 0.3),
+    rgba(137, 94, 26, 0.3),
+    rgba(156, 122, 60, 0.3),
+    rgba(176, 141, 87, 0.3)
+  );
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
