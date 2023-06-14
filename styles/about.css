@@ -83,6 +83,17 @@
   animation: floatx 3.2s linear infinite;
 }
 
+.frm.about-frm {
+  bottom: -12%;
+  right: -20%;
+}
+
+.frm.about-frm img {
+  width: 50%;
+  transform: rotate(25deg);
+  animation: rotatefull 20s linear infinite;
+}
+
 @media only screen and (max-width: 768px) {
   /* .about-section {
     margin: 4rem 0;
@@ -125,8 +136,8 @@
   }
 
   .rstar {
-    top: -6%;
-    left: -29%;
+    top: -7%;
+    left: -14%;
     max-width: 80%;
   }
 
@@ -137,5 +148,13 @@
   .lstar {
     left: -15%;
     bottom: -8%;
+  }
+
+  .frm.about-frm {
+    right: -60%;
+    bottom: -7%;
+  }
+  .frm.about-frm img {
+    width: 44%;
   }
 }

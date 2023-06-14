@@ -21,16 +21,7 @@
   animation: rotate 7s infinite;
 }
 
-.frm.about-frm {
-  bottom: -12%;
-  right: -20%;
-}
 
-.frm.about-frm img {
-  width: 50%;
-  transform: rotate(25deg);
-  animation: rotatefull 20s linear infinite;
-}
 
 @keyframes rotatefull {
   0% {
@@ -71,21 +62,17 @@
 }
 @media only screen and (max-width: 768px) {
   .frm {
-    bottom: -2%;
-    right: -40%;
+    bottom: -3%;
+    right: -60%;
   }
+
   .frm img {
     width: 50%;
   }
-  .frm.about-frm {
-    bottom: -10%;
-  }
-  .frm.about-frm img {
-    width: 50%;
-  }
+ 
   .asrt {
-    top: -2%;
-    left: -17%;
+    top: -3%;
+    left: -2%;
   }
   .asrt img {
     width: 40%;

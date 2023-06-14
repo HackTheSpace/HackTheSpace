@@ -7,7 +7,10 @@
 }
 
 .imgHolder {
-  width: 15%;
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgHolder img {
@@ -96,6 +99,23 @@
 
 .contactUs .contactList a {
   font-size: 0.9rem;
+}
+
+.footer-ke-neeche{
+background-color: var(--secondary-black);
+color: rgb(255, 255, 255,0.7);
+text-align: center;
+line-height: 3rem;
+}
+
+
+@media only screen and (max-width: 1200px){
+.footer-section{
+  padding: 1rem;
+}
+.footer-section .footer-title {
+  font-size: 1.5rem;
+}
 }
 
 @media only screen and (max-width: 768px) {
