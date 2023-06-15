@@ -19,8 +19,15 @@
 }
 
 .logo-div p {
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   font-size: 1.4rem;
+  text-align: center;
+}
+
+.logo-div .venue-text {
+  margin: 0;
+  margin-bottom: 2rem;
+  /* font-size: 1.4rem; */
 }
 
 .home #title {
@@ -77,10 +84,21 @@
   gap: 1rem;
 }
 
+/* .butHolder iframe,
+.butHolder button {
+  height: 56px !important;
+}
+
+iframe html,
+iframe body,
+iframe button {
+  height: 100%;
+} */
+
 .Btn {
   font-size: 1.2rem;
   width: 40%;
-  height: 3.5rem;
+  height: 56px;
   /* vinit */
   box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -267,11 +285,15 @@
     width: 85%;
   }
 
+  .home #title {
+    margin: 2rem 0 0.5rem;
+  }
+
   .logo-div p {
     padding-right: 1rem;
     padding-left: 1rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .sec-text {
     font-size: 1.4rem;
