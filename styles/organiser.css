@@ -73,6 +73,7 @@
 
   .organiser-section .container .card {
     margin: 2rem 3rem;
+    width: 23%;
   }
 }
 
@@ -82,19 +83,20 @@
   }
 
   .organiser-section .container .card {
+    width: 30%;
     margin: 2rem 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .organiser-section .container {
-    width: 100%;
+    width: 75%;
   }
 }
 
 @media screen and (min-width: 1880px) {
   .organiser-section .container {
-    width: 90%;
+    width: 55%;
   }
 }
 

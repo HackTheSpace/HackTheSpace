@@ -6,14 +6,18 @@
 
 .built-section {
   margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .built-section .section-title {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .super-outer-circle {
-  margin: 0 auto;
   width: var(--circle-size);
   height: var(--circle-size);
   border: 2px solid;
@@ -177,10 +181,44 @@
   line-height: 1rem;
 }
 
-@media only screen and (min-width: 1440px) {
-}
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 1800px) {
+  .built-section .section-title {
+    margin-bottom: 3rem;
+  }
+
+  .super-outer-circle {
+    scale: 1;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+  .built-section .section-title {
+    margin-bottom: 0rem;
+  }
+
+  .super-outer-circle {
+    scale: 0.7;
+    margin-top: -4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .super-outer-circle {
+    scale: 0.6;
+    margin-top: -7rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .super-outer-circle {
+    scale: 0.55;
+    margin-top: -9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .super-outer-circle {
+    scale: 0.45;
+    margin-top: -10rem;
+  }
 }
