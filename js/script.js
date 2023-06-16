@@ -56,7 +56,7 @@ const body = document.getElementById("body");
 
 setTimeout(function loadcomplete() {
   load.style.opacity = 0;
-  body.style.overflow = "unset";
+  body.style.overflow = "auto";
 }, 6000);
 
 setTimeout(function loadcomplete() {
