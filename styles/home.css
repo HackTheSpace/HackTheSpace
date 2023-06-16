@@ -250,7 +250,8 @@ iframe button {
 
 @media screen and (max-width: 1000px) {
   .Btn {
-    width: 80%;
+    height: 44px;
+  width: 312px;
   }
 }
 
@@ -274,7 +275,8 @@ iframe button {
   }
 
   .Btn {
-    width: 100%;
+    height: 44px;
+    width: 312px;
   }
 
   .logo-div {
@@ -300,8 +302,8 @@ iframe button {
   }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .butHolder {
     width: 70%;
   }
-}
+} */
