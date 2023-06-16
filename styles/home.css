@@ -97,12 +97,12 @@ iframe button {
 
 .Btn {
   font-size: 1.2rem;
-  width: 40%;
-  height: 56px;
+  height: 44px;
+  width: 312px;
   /* vinit */
   box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1),
     0 1px 2px -1px rgb(0 0 0 / 0.1);
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   border: none !important;
   outline: none !important;
   transform: scale(1);
