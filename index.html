@@ -68,6 +68,7 @@
     <link rel="stylesheet" href="./styles/wihts.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/venue.css" async />
+    <link rel="stylesheet" href="./styles/schedule.css" />
     <link rel="stylesheet" href="./styles/sponser.css" />
     <link rel="stylesheet" href="./styles/organiser.css" />
     <link rel="stylesheet" href="./styles/why_sponser.css" />
@@ -97,6 +98,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
   </head>
 
   <body id="body">
@@ -146,6 +148,7 @@
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#">Tracks</a>
+          <a href="#schedule">Schedule</a>
           <!-- <a href="#">Prizes</a> -->
           <a href="#sponsers">Sponsors</a>
           <a href="#faqs">FAQs</a>
@@ -221,6 +224,7 @@
           <a href="#about">About</a>
           <a href="#">Tracks</a>
           <!-- <a href="#">Prizes</a> -->
+          <a href="#schedule">Schedule</a>
           <a href="#sponsers">Sponsors</a>
           <a href="#faqs">FAQs</a>
           <a href="#contact">Contact</a>
@@ -775,6 +779,54 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
           <p class="team-para">Thanks to all who worked for it</p>
         </div>
       </article>-->
+      </section>
+
+      <!------------------------ Schedule ------------------------>
+      <section id="schedule" class="section schedule-section">
+        <h2 class="section-title">Schedule</h2>
+        <div class="container">
+          <div id="myCanvas"></div>
+          <h3 class="schedule-title">Day-1</h3>
+          <div class="schedule-container">
+            <div class="time-container-left">
+              <div class="planet">
+                <img src="./assets/About/planet.webp" alt="planet" />
+              </div>
+              <div class="time">
+                <p class="time-text">9:00 AM - 10:00 AM</p>
+                <p class="time-text">Opening Ceremony</p>
+              </div>
+            </div>
+
+            <div class="time-container-right">
+              <div class="planet">
+                <img src="./assets/About/planet.webp" alt="planet" />
+              </div>
+              <div class="time">
+                <p class="time-text">9:00 AM - 10:00 AM</p>
+                <p class="time-text">Opening Ceremony</p>
+              </div>
+            </div>
+            <div class="time-container-left">
+              <div class="planet">
+                <img src="./assets/About/planet.webp" alt="planet" />
+              </div>
+              <div class="time">
+                <p class="time-text">9:00 AM - 10:00 AM</p>
+                <p class="time-text">Opening Ceremony</p>
+              </div>
+            </div>
+            <div class="time-container-right">
+              <div class="planet">
+                <img src="./assets/About/planet.webp" alt="planet" />
+              </div>
+              <div class="time">
+                <p class="time-text">9:00 AM - 10:00 AM</p>
+                <p class="time-text">Opening Ceremony</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!------------------------ Sponsers ------------------------>
@@ -1369,6 +1421,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
     <script src="./js/navbar.js"></script>
     <script src="./js/faqs.js"></script>
     <script src="./js/organiser.js"></script>
+    <script src="./js/schedule.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

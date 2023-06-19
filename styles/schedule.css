@@ -1,0 +1,169 @@
+#myCanvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 687px;
+  width: 100%;
+}
+
+.schedule-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.schedule-section .container {
+  margin: 2rem 0;
+  text-align: center;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #b741dd 47.2%, #7d00f2 90.1%) 1;
+  padding: 2rem;
+  width: 40rem;
+  height: 500px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.schedule-section .container::-webkit-scrollbar {
+  display: none;
+}
+.schedule-section .container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.schedule-section .schedule-title {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  text-align: center;
+  /* color: var(--primary-blue); */
+  color: #fff;
+}
+
+.schedule-section .schedule-container .time-container-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 40px 20px;
+}
+
+.schedule-section .schedule-container .time-container-right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 20px;
+}
+
+.planet img {
+  width: 110px;
+  height: 100px;
+  animation: rotate 7s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(25deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.schedule-section .time-container-left .time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.schedule-section .time-container-right .time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.time-text {
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 800px) {
+  #myCanvas {
+    height: 36.688rem;
+    width: 100%;
+  }
+
+  .schedule-section .schedule-title {
+    font-size: 1.2rem;
+  }
+
+  .schedule-section .container {
+    width: 80%;
+    height: 400px;
+  }
+
+  .schedule-section .schedule-container .time-container-left {
+    margin: 20px 10px;
+  }
+
+  .schedule-section .schedule-container .time-container-right {
+    margin: 0px 10px;
+  }
+
+  .planet img {
+    width: 85px;
+    height: 80px;
+  }
+
+  .time-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #myCanvas {
+    height: 28.688rem;
+    width: 100%;
+  }
+
+  .schedule-section .schedule-title {
+    font-size: 1rem;
+  }
+
+  .schedule-section .container {
+    width: 90%;
+    height: 300px;
+  }
+
+  .schedule-section .schedule-container .time-container-left {
+    margin: 10px 5px;
+  }
+
+  .schedule-section .schedule-container .time-container-right {
+    margin: 0px 5px;
+  }
+
+  .planet img {
+    width: 75px;
+    height: 70px;
+  }
+
+  .time-text {
+    font-size: 0.7rem;
+  }
+}
