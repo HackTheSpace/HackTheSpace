@@ -145,14 +145,12 @@
       <div class="mobile-nav">
         <div class="mobile-nav-links" id="mobile-nav-links">
           <!--  -->
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#">Tracks</a>
-          <a href="#schedule">Schedule</a>
-          <!-- <a href="#">Prizes</a> -->
-          <a href="#sponsers">Sponsors</a>
-          <a href="#faqs">FAQs</a>
-          <a href="#contact">Contact</a>
+          <a href="#home" onclick="closeNavbarMenu();" class="active">Home</a>
+          <a href="#about" onclick="closeNavbarMenu();">About</a>
+          <a href="#" onclick="closeNavbarMenu();">Tracks</a>
+          <a href="#sponsers" onclick="closeNavbarMenu();">Sponsors</a>
+          <a href="#faqs" onclick="closeNavbarMenu();">FAQs</a>
+          <a href="#contact" onclick="closeNavbarMenu();">Contact</a>
         </div>
 
         <div
@@ -171,6 +169,7 @@
               xmlns="http://www.w3.org/2000/svg"
               class="ionicon show icon"
               viewBox="0 0 512 512"
+              onclick="toggleNavbarMenu()"
             >
               <path
                 fill="none"
@@ -1472,6 +1471,53 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <script>
       new WOW().init();
+
+
+      function closeNavbarMenu() {
+        var navbarMenu = document.getElementById("mobile-nav-links");
+        navbarMenu.style.display='none';
+        var closeMobileNavBtnEl = document.getElementById("close-mobile-nav");
+        var openMobileNavBtnEl = document.getElementById("open-mobile-nav");
+        var mobileNavLinksEl = document.getElementById("mobile-nav-links");
+        mobileNavLinksEl.addEventListener("click", () => {
+          // hide close btn
+          closeMobileNavBtnEl.classList.remove("show");
+          closeMobileNavBtnEl.classList.add("hidden");
+        
+          // show burger
+          openMobileNavBtnEl.classList.remove("hidden");
+          openMobileNavBtnEl.classList.add("show");
+        
+          // hide the sidebar
+          mobileNavLinksEl.style.transform = `translate(100%, 0)`;
+          
+          
+        
+})
+      
+    }
+      function toggleNavbarMenu() {
+        var navbarMenu = document.getElementById("mobile-nav-links");
+        navbarMenu.style.display='flex';
+        
+        navbarMenu.style.transform = `translate(0, 0)`;
+        navbarMenu.style.transition = `all 1s ease-in-out`;
+      
+      }
+
+        
+      
+      var navLinks = document.querySelectorAll("nav a");
+        navLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+          navLinks.forEach(link => {
+          link.classList.remove("active");
+        });
+        this.classList.add("active");
+        
+      });
+    });
+
     </script>
   </body>
 </html>
