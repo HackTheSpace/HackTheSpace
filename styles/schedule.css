@@ -13,8 +13,21 @@
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
+  position: relative;
 }
 
+.aconst2 {
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+  /* height: 10%; */
+}
+.aconst2 img{
+  height: 120px;
+  opacity: 1;
+}
 .schedule-section .container {
   margin: 2rem 0;
   text-align: center;

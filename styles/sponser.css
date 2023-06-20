@@ -6,6 +6,21 @@
   padding: 0 2rem;
   /* padding: 2rem; */
   /* margin: 3rem 0; */
+  position: relative;
+}
+
+.aconst7{
+  position: absolute;
+  bottom: 5%;
+  right: 12%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+
+.aconst7 img{
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
 }
 
 .sponser-section .sponser-container {
