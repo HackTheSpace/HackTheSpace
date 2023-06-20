@@ -4,7 +4,36 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  position: relative;
 }
+
+.pattern1 {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+  /* height: 10%; */
+}
+.pattern1 img{
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+}
+.aconst7{
+  position: absolute;
+  top: 75%;
+  right: 12%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+
+.aconst7 img{
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+}
+
 
 .organiser-section .card {
   display: flex;
@@ -98,6 +127,35 @@
   .organiser-section .container {
     width: 55%;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .pattern1 {
+    top: 35%;
+    left: 5%;
+    z-index: -1;
+    animation: floatx 3.2s linear infinite;
+    /* height: 10%; */
+  }
+  .pattern1 img{
+    height: 120px;
+    width: 120px;
+    opacity: 0.8;
+  }
+  .aconst7{
+    position: absolute;
+    top: 70%;
+    right: 6%;
+    z-index: -1;
+    animation: floatx 3.2s linear infinite;
+  }
+  
+  .aconst7 img{
+    height: 120px;
+    width: 120px;
+    opacity: 0.8;
+  }
+  
 }
 
 /*------------------ Core-Team-------------------------------- */
