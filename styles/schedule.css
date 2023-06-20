@@ -146,6 +146,18 @@
   .time-text {
     font-size: 0.8rem;
   }
+  .aconst2 {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    z-index: -1;
+    animation: floatx 3.2s linear infinite;
+    /* height: 10%; */
+  }
+  .aconst2 img{
+    height: 120px;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 500px) {
