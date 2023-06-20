@@ -2,8 +2,18 @@
 let containerHeight = document.getElementById("myCanvas").offsetHeight;
 let containerWidth = document.getElementById("myCanvas").offsetWidth;
 
-let firstAnchorX = 100;
-let firstAnchorY = 0;
+let leftContainerTop =
+  document.querySelector(".time-container-left").offsetTop + 50;
+let rightContainerTop =
+  document.querySelector(".time-container-right").offsetTop + 50;
+let leftContainerLeft =
+  document.querySelector(".time-container-left").offsetLeft + 30;
+
+let Height = rightContainerTop - leftContainerTop;
+let Width = document.querySelector(".time-container-left").offsetWidth;
+
+let noOfLeftToRight = 2;
+let noOfRightToLeft = 1;
 
 function setup() {
   let myCanvas = createCanvas(containerWidth, containerHeight);
@@ -17,71 +27,70 @@ function setup() {
 function draw() {
   background(0);
   setLineDash([8, 8]);
-
-  bezier(
-    firstAnchorX,
-    firstAnchorY,
-    -containerWidth / 5,
-    containerHeight / 1.7,
-    containerWidth,
-    containerHeight / 10,
-    containerWidth + 20 - firstAnchorX,
-    containerHeight / 2.2
+  curve(
+    leftContainerLeft,
+    rightContainerTop,
+    leftContainerLeft + 20,
+    0,
+    leftContainerLeft,
+    leftContainerTop,
+    Width,
+    0
   );
 
-  if (containerHeight < 600 && containerWidth < 644) {
+  for (let i = 0, j = -1; i < noOfLeftToRight; i++, j += 2) {
     bezier(
-      containerWidth + 30 - firstAnchorX,
-      containerHeight / 2.5,
-      containerWidth + 20 - firstAnchorX,
-      containerHeight / 1.5,
-      firstAnchorX - 30,
-      containerHeight / 2.9,
-      firstAnchorX - 30,
-      containerHeight / 1.6
-    );
-    bezier(
-      firstAnchorX - 40,
-      containerHeight / 1.8,
-      firstAnchorX - 20,
-      containerHeight - 20,
-      containerWidth + 70,
-      containerHeight / 2.5,
-      containerWidth - firstAnchorX,
-      containerHeight
-    );
-  } else {
-    bezier(
-      containerWidth + 30 - firstAnchorX,
-      containerHeight / 2.5,
-      containerWidth + 20 - firstAnchorX,
-      containerHeight / 1.4,
-      firstAnchorX - 20,
-      containerHeight / 2.7,
-      firstAnchorX - 20,
-      containerHeight / 1.6
-    );
-    bezier(
-      firstAnchorX - 20,
-      containerHeight / 1.6,
-      firstAnchorX - 20,
-      containerHeight - 20,
-      containerWidth,
-      containerHeight / 2,
-      containerWidth - firstAnchorX,
-      containerHeight
+      leftContainerLeft,
+      rightContainerTop + Height * j,
+      leftContainerLeft,
+      rightContainerTop + Height * 2 * i,
+      Width,
+      rightContainerTop + Height * j,
+      Width,
+      rightContainerTop + Height * 2 * i
     );
   }
+
+  for (let i = 0, j = -2; i < noOfRightToLeft; i++, j += 2) {
+    bezier(
+      Width,
+      rightContainerTop + Height * 2 * i,
+      Width,
+      rightContainerTop + Height * (3 + j),
+      leftContainerLeft,
+      rightContainerTop + Height * 2 * i,
+      leftContainerLeft,
+      rightContainerTop + Height * (3 + j)
+    );
+  }
+
+  curve(
+    leftContainerLeft,
+    rightContainerTop,
+    Width,
+    rightContainerTop + Height * 2,
+    Width - 200,
+    containerHeight,
+    Width,
+    0
+  );
 }
 
 function windowResized() {
   containerHeight = document.getElementById("myCanvas").offsetHeight;
   containerWidth = document.getElementById("myCanvas").offsetWidth;
 
-  resizeCanvas(containerWidth, containerHeight);
+  leftContainerTop =
+    document.querySelector(".time-container-left").offsetTop + 50;
+  rightContainerTop =
+    document.querySelector(".time-container-right").offsetTop + 50;
+  leftContainerLeft =
+    document.querySelector(".time-container-left").offsetLeft + 30;
 
-  firstAnchorX = 100;
-  firstAnchorY = 0;
+  Height = rightContainerTop - leftContainerTop;
+  Width = document.querySelector(".time-container-left").offsetWidth;
+
+  resizeCanvas(containerWidth, containerHeight);
 }
 
 function setLineDash(list) {
