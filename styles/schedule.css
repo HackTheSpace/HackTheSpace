@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   z-index: -1;
-  height: 687px;
+  height: 1868px;
   width: 100%;
 }
 
@@ -24,7 +24,7 @@
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
 }
-.aconst2 img{
+.aconst2 img {
   height: 120px;
   opacity: 1;
 }
@@ -54,8 +54,11 @@
   font-size: 1.4rem;
   line-height: 2.3rem;
   text-align: center;
-  /* color: var(--primary-blue); */
-  color: #fff;
+  text-shadow: 0px 0px 20px var(--primary-blue);
+}
+
+.schedule-section h5 {
+  text-shadow: 0px 0px 20px var(--primary-blue);
 }
 
 .schedule-section .schedule-container .time-container-left {
@@ -66,6 +69,10 @@
   margin: 40px 20px;
 }
 
+.schedule-section .schedule-container .time-container-left .time .time-text {
+  text-align: left;
+}
+
 .schedule-section .schedule-container .time-container-right {
   display: flex;
   flex-direction: row-reverse;
@@ -74,8 +81,12 @@
   margin: 0 20px;
 }
 
+.schedule-section .schedule-container .time-container-right .time .time-text {
+  text-align: left;
+}
+
 .planet img {
-  width: 110px;
+  width: 100px;
   height: 100px;
   animation: rotate 7s infinite;
 }
@@ -115,9 +126,13 @@
   font-size: 0.9rem;
 }
 
+#Day2 h5 {
+  margin-bottom: 80px;
+}
+
 @media screen and (max-width: 800px) {
   #myCanvas {
-    height: 36.688rem;
+    height: 1398px;
     width: 100%;
   }
 
@@ -154,15 +169,19 @@
     animation: floatx 3.2s linear infinite;
     /* height: 10%; */
   }
-  .aconst2 img{
+  .aconst2 img {
     height: 120px;
     opacity: 1;
+  }
+
+  #Day2 h5 {
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #myCanvas {
-    height: 28.688rem;
+    height: 1174px;
     width: 100%;
   }
 
@@ -183,6 +202,11 @@
     margin: 0px 5px;
   }
 
+  .schedule-section .schedule-container .time-container-right .time {
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+
   .planet img {
     width: 75px;
     height: 70px;
@@ -190,5 +214,9 @@
 
   .time-text {
     font-size: 0.7rem;
+  }
+
+  #Day2 h5 {
+    margin-bottom: 35px;
   }
 }

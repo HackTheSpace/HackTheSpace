@@ -12,8 +12,8 @@ let leftContainerLeft =
 let Height = rightContainerTop - leftContainerTop;
 let Width = document.querySelector(".time-container-left").offsetWidth;
 
-let noOfLeftToRight = 2;
-let noOfRightToLeft = 1;
+let noOfLeftToRight = 6;
+let noOfRightToLeft = 5;
 
 function setup() {
   let myCanvas = createCanvas(containerWidth, containerHeight);
@@ -68,8 +68,8 @@ function draw() {
     leftContainerLeft,
     rightContainerTop,
     Width,
-    rightContainerTop + Height * 2,
-    Width - 200,
+    rightContainerTop + Height * 10,
+    Width - 400,
     containerHeight,
     Width,
     0
