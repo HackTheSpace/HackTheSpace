@@ -18,6 +18,9 @@ done:
 - css variable
 - scrollbar
 - faq
+- footer me planet hts ke logo chipkana hai
+- footer me made with love wala tagline
+- rocket page ( how hts was built )
 
 -----------------todo---------------
 
@@ -25,24 +28,20 @@ done:
 Unassigned
 
 - speaker
-- rocket page ( how hts was built )
-- constellation ko failana h
-
 - rocket animation in loading screen
-- footer me planet hts ke logo chipkana hai
-- footer me made with love wala tagline
 - prizes
-- tracks +
-- schedule ++
+- tracks
 
 =========================================
 
 Lead todo
 
-- sponser prizes ++
+- sponser prizes
 
 =========================================
 
 core team todo
 
 - navbar mobile
+- schedule
+- constellation ko failana h
