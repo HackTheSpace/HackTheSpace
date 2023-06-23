@@ -145,14 +145,12 @@
       <div class="mobile-nav">
         <div class="mobile-nav-links" id="mobile-nav-links">
           <!--  -->
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#">Tracks</a>
-          <a href="#schedule">Schedule</a>
-          <!-- <a href="#">Prizes</a> -->
-          <a href="#sponsers">Sponsors</a>
-          <a href="#faqs">FAQs</a>
-          <a href="#contact">Contact</a>
+          <a href="#home" onclick="closeNavbarMenu();" class="active">Home</a>
+          <a href="#about" onclick="closeNavbarMenu();">About</a>
+          <a href="#" onclick="closeNavbarMenu();">Tracks</a>
+          <a href="#sponsers" onclick="closeNavbarMenu();">Sponsors</a>
+          <a href="#faqs" onclick="closeNavbarMenu();">FAQs</a>
+          <a href="#contact" onclick="closeNavbarMenu();">Contact</a>
         </div>
 
         <div
@@ -171,6 +169,7 @@
               xmlns="http://www.w3.org/2000/svg"
               class="ionicon show icon"
               viewBox="0 0 512 512"
+              onclick="toggleNavbarMenu()"
             >
               <path
                 fill="none"
@@ -345,7 +344,7 @@
           />
         </div>
         <div class="aconst2">
-          <img style="width: 70%" src="./assets/aconst2.webp" alt="*" />
+          <!-- <img style="width: 70%" src="./assets/aconst2.webp" alt="*" /> -->
         </div>
         <div class="aconst3">
           <img
@@ -412,6 +411,9 @@
             alt="Hack the space Hackathon Constellation"
           />
         </div>
+        <div class="pattern2">
+          <img src="./assets/pattern2.png" alt="hack the space const" />
+        </div>
       </section>
 
       <!------------------------How HackTheSpace Built------------------------->
@@ -455,6 +457,18 @@
             </div>
           </div>
         </div>
+        <div class="stars">
+          <img src="./assets/stars.png" alt="hack the space const" />
+        </div>
+
+        <div class="pattern3">
+          <img src="./assets/pattern3.png" alt="hack the space const" />
+        </div>
+
+        <div class="pattern4">
+          <img src="./assets/pattern4.png" alt="hack the space const" />
+        </div>
+
       </section>
 
       <!------------------------ Venue ------------------------>
@@ -507,7 +521,11 @@
             ></iframe>
           </div>
         </div>
+        <div class="aconst6">
+          <img src="./assets/aconst6.png" alt="hack the space const" class="opaque8"/>
+        </div>
       </section>
+
 
       <!------------------------ Organisers ------------------------>
       <section
@@ -575,7 +593,9 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
             </a>
           </div> -->
           </div>
-
+          <div class="pattern1">
+            <img src="./assets/pattern1.png" alt="hack the space const" />
+          </div>
           <div class="card">
             <div class="organiser-image">
               <img
@@ -779,6 +799,11 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
           <p class="team-para">Thanks to all who worked for it</p>
         </div>
       </article>-->
+
+      <div class="aconst7">
+        <img src="./assets/aconst7.png" alt="hack the space const" class="opaque8" />
+      </div>
+      
       </section>
 
       <!------------------------ Schedule ------------------------>
@@ -826,6 +851,15 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
             </div>
           </div>
+        </div>
+        <div class="aconst3">
+          <!-- <img src="./assets/aconst3.png" alt="hack the space const" /> -->
+        </div>
+        <div class="aconst2">
+          <img
+            src="./assets/aconst2.webp"
+            alt="Hack the space Hackathon Constellation"
+          />
         </div>
       </section>
 
@@ -972,6 +1006,9 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
             </div>
           </div> -->
+        </div>
+        <div class="aconst7">
+          <img src="./assets/aconst7.png" alt="hack the space const" class="opaque8"/>
         </div>
       </section>
 
@@ -1198,6 +1235,15 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
             </a>
           </button>
         </div>
+        <div class="aconst3">
+          <img src="./assets/aconst3.png" alt="hack the space const" class="opaque8"/>
+        </div>
+        <div class="aconst4">
+          <img src="./assets/aconst4.png" alt="hack the space const" class="opaque8"/>
+        </div>
+        <div class="aconst5">
+          <img src="./assets/aconst5.png" alt="hack the space const" class="opaque8"/>
+        </div>
       </section>
 
       <!------------------------ Faqs ------------------------>
@@ -1322,8 +1368,15 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
             </div>
           </div>
         </div>
+        <div class="planet1">
+          <img src="./assets/planet1.png" alt="hack the space const" />
+        </div>
+        <div class="planet2">
+          <img src="./assets/planet2.png" alt="hack the space const" />
+        </div>
+      </main>
       </section>
-    </main>
+      
 
     <!------------------------ Footer  ------------------------>
     <footer id="contact" class="footer-section" style="color: #fff">
@@ -1448,6 +1501,55 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <script>
       new WOW().init();
+
+
+      function closeNavbarMenu() {
+        var navbarMenu = document.getElementById("mobile-nav-links");
+        navbarMenu.style.display='none';
+        var closeMobileNavBtnEl = document.getElementById("close-mobile-nav");
+        var openMobileNavBtnEl = document.getElementById("open-mobile-nav");
+        var mobileNavLinksEl = document.getElementById("mobile-nav-links");
+        mobileNavLinksEl.addEventListener("click", () => {
+          // hide close btn
+          closeMobileNavBtnEl.classList.remove("show");
+          closeMobileNavBtnEl.classList.add("hidden");
+        
+          // show burger
+          openMobileNavBtnEl.classList.remove("hidden");
+          openMobileNavBtnEl.classList.add("show");
+        
+          // hide the sidebar
+          mobileNavLinksEl.style.transform = `translate(100%, 0)`;
+
+
+          
+          
+        
+})
+      
+    }
+      function toggleNavbarMenu() {
+        var navbarMenu = document.getElementById("mobile-nav-links");
+        navbarMenu.style.display='flex';
+        
+        navbarMenu.style.transform = `translate(0, 0)`;
+        navbarMenu.style.transition = `all 1s ease-in-out`;
+      
+      }
+
+        
+      
+      var navLinks = document.querySelectorAll("nav a");
+        navLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+          navLinks.forEach(link => {
+          link.classList.remove("active");
+        });
+        this.classList.add("active");
+        
+      });
+    });
+
     </script>
   </body>
 </html>
