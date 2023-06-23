@@ -13,16 +13,16 @@
 }
 .pattern2 {
   position: absolute;
-  bottom: -40%;
-  left: 25%;
+  bottom: -2%;
+  left: 2%;
   z-index: -1;
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
 }
 .pattern2 img{
-  height: 120px;
-  width: 120px;
-  opacity: 0.8;
+  height: 80px;
+  width: 80px;
+  /* opacity: 0.8; */
 }
 .frm {
   position: absolute;
@@ -92,11 +92,16 @@
   }
   .pattern2 {
     position: absolute;
-    bottom: -20%;
-    left: 15%;
+    bottom: -12%;
+    right: 1%;
     z-index: -1;
     animation: floatx 3.2s linear infinite;
     /* height: 10%; */
+  }
+  .pattern2 img{
+    height: 60px;
+    width: 60px;
+    opacity: 0.8;
   }
 }
 

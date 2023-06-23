@@ -156,15 +156,17 @@ nav .mobile-nav {
     font-size: 1rem;
     font-weight: bold;
     position: relative;
+    text-align:center;
     
    transition: all 0.3s ease-in;
     /* align-items: self-start; */
 
   }
   .active{
+    position: absolute;
     /* color: blue; */
     border-bottom: 5px solid rgb(102, 7, 165);
-    
+
   }
 
 

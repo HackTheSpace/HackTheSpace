@@ -9,8 +9,8 @@
 }
 .aconst6 {
   position: absolute;
-  top: 5%;
-  left: 20%;
+  top: 50%;
+  left: 4%;
   z-index: -1;
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
@@ -111,4 +111,15 @@
   .venue-section .venue-wrapper .extra-info {
     width: 65%;
   }
+}
+@media screen and (max-width: 1700px) {
+  .aconst6 img{
+    display: none;
+  }
+}
+
+.aconst6 img{
+  height: 150px;
+  width: 120px;
+  opacity: 0.8;
 }
