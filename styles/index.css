@@ -3,6 +3,7 @@
   margin: 0;
   /* font-family: "Montserrat", sans-serif; */
   font-family: "Poppins", sans-serif;
+  /* overflow-x:clip; */
 }
 
 :root {
@@ -179,4 +180,8 @@ a {
 
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+.opaque8{
+  opacity: 0.8;
 }
