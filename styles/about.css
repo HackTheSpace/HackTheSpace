@@ -158,3 +158,10 @@
     width: 44%;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .frm.about-frm,
+  .frm {
+    right: -15%;
+  }
+}
