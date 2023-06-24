@@ -96,7 +96,6 @@ nav .mobile-nav {
 }
 
 @media screen and (max-width: 1000px) {
-  
   nav .mlh-flag {
     top: 0%;
   }
@@ -112,11 +111,8 @@ nav .mobile-nav {
   nav .mobile-nav {
     display: block;
     transition: all 0.5s ease-in;
-    
-
-   
   }
-  
+
   nav .mobile-nav-links {
     transition: all 0.5s ease-in;
     z-index: 1000;
@@ -126,12 +122,11 @@ nav .mobile-nav {
     display: flex;
     flex-direction: column;
     /* align-items:center; */
-    justify-content:center;
+    justify-content: center;
     padding-top: 15%;
     right: 0;
     /* top: 20px; */
     box-sizing: border-box;
-    
 
     /* background-color:#00121f; */
     transform: translate(100%, 0);
@@ -139,16 +134,13 @@ nav .mobile-nav {
     height: 100%;
     background-color: rgb(0, 18, 31);
     /* backdrop-filter: blur(10px);  */
-    border-radius: 10px; 
+    border-radius: 10px;
     padding: 20px;
-     
-    /* animation: gradientAnimation 5s infinite alternate; */
-   
-    
 
+    /* animation: gradientAnimation 5s infinite alternate; */
   }
 
-  nav .mobile-nav-links a{
+  nav .mobile-nav-links a {
     /* top: 20px; */
     color: var(--white);
     text-decoration: none;
@@ -156,30 +148,26 @@ nav .mobile-nav {
     font-size: 1rem;
     font-weight: bold;
     position: relative;
-    text-align:center;
-    
-   transition: all 0.3s ease-in;
-    /* align-items: self-start; */
+    text-align: center;
 
+    transition: all 0.3s ease-in;
+    /* align-items: self-start; */
   }
-  .active{
+
+  nav .mobile-nav-links a.active {
     position: absolute;
     /* color: blue; */
     border-bottom: 5px solid rgb(102, 7, 165);
-
   }
 
-
-
-  
-  nav .mobile-nav-links a:hover{
+  nav .mobile-nav-links a:hover {
     color: var(--primary-blue);
-  text-shadow: -0.25px -0.25px 0 var(--primary-blue),
-    0.25px 0.25px var(--primary-blue);
+    text-shadow: -0.25px -0.25px 0 var(--primary-blue),
+      0.25px 0.25px var(--primary-blue);
   }
 
-  nav .mobile-nav-links a::after{
-    content: '';
+  nav .mobile-nav-links a::after {
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -191,7 +179,7 @@ nav .mobile-nav {
     transition: transform 0.5s ease-out;
     margin-top: 6px;
   }
-  nav .mobile-nav-links a:hover::after{
+  nav .mobile-nav-links a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
     transition: transform 0.5s ease-out;
@@ -205,8 +193,6 @@ nav .mobile-nav {
     font-size: 2.5rem;
     cursor: pointer;
     z-index: 1000;
-    
-  
   }
 }
 
