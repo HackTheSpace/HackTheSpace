@@ -3,11 +3,11 @@ let containerHeight = document.getElementById("myCanvas").offsetHeight;
 let containerWidth = document.getElementById("myCanvas").offsetWidth;
 
 let leftContainerTop =
-  document.querySelector(".time-container-left").offsetTop + 50;
+  document.querySelector(".time-container-left").offsetTop + 80;
 let rightContainerTop =
-  document.querySelector(".time-container-right").offsetTop + 50;
+  document.querySelector(".time-container-right").offsetTop + 80;
 let leftContainerLeft =
-  document.querySelector(".time-container-left").offsetLeft + 30;
+  document.querySelector(".time-container-left").offsetLeft + 50;
 
 let Height = rightContainerTop - leftContainerTop;
 let Width = document.querySelector(".time-container-left").offsetWidth;
@@ -80,13 +80,21 @@ function windowResized() {
   containerHeight = document.getElementById("myCanvas").offsetHeight;
   containerWidth = document.getElementById("myCanvas").offsetWidth;
 
-  leftContainerTop =
-    document.querySelector(".time-container-left").offsetTop + 50;
-  rightContainerTop =
-    document.querySelector(".time-container-right").offsetTop + 50;
-  leftContainerLeft =
-    document.querySelector(".time-container-left").offsetLeft + 30;
-
+  if (containerWidth > 653) {
+    leftContainerTop =
+      document.querySelector(".time-container-left").offsetTop + 80;
+    rightContainerTop =
+      document.querySelector(".time-container-right").offsetTop + 80;
+    leftContainerLeft =
+      document.querySelector(".time-container-left").offsetLeft + 50;
+  } else {
+    leftContainerTop =
+      document.querySelector(".time-container-left").offsetTop + 60;
+    rightContainerTop =
+      document.querySelector(".time-container-right").offsetTop + 60;
+    leftContainerLeft =
+      document.querySelector(".time-container-left").offsetLeft + 35;
+  }
   Height = rightContainerTop - leftContainerTop;
   Width = document.querySelector(".time-container-left").offsetWidth;
 
