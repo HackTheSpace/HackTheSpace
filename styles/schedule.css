@@ -216,6 +216,10 @@
     font-size: 0.7rem;
   }
 
+  .schedule-section .schedule-container .time-container-right .time .time-text {
+    text-align: right;
+  }
+
   #Day2 h5 {
     margin-bottom: 35px;
   }
