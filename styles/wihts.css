@@ -11,10 +11,40 @@
   justify-content: space-between;
   position: relative;
 }
+
+.aconst1{
+  position: absolute;
+  bottom: 5%;
+  right: 12%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+
+.aconst1 img{
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+}
+
+.aconst3{
+  position: absolute;
+  bottom: 5%;
+  right: 12%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+}
+
+.aconst3 img{
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+}
+
+
 .pattern2 {
   position: absolute;
   bottom: -2%;
-  left: 2%;
+  left: 5%;
   z-index: -1;
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
