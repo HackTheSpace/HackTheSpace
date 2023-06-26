@@ -49,7 +49,7 @@
   margin: 1rem;
   position: relative;
 }
-
+.sponser-section .sponser.inkind .wrapper .card::after,
 .sponser-section .sponser.silver .wrapper .card::after,
 .sponser-section .sponser.bronze .wrapper .card::after {
   content: "";
@@ -80,12 +80,12 @@
 .sponser-section .sponser.silver .wrapper .card::after {
   background: linear-gradient(
     60deg,
-    /* #70706f, */ rgba(112, 112, 111, 0.3),
-    rgba(125, 125, 122, 0.3),
-    rgba(142, 141, 141, 0.3),
-    rgba(161, 162, 163, 0.3),
-    rgba(179, 182, 181, 0.3),
-    rgba(190, 192, 194, 0.3)
+    rgba(112, 112, 111, 0.4),
+    rgba(125, 125, 122, 0.4),
+    rgba(142, 141, 141, 0.4),
+    rgba(161, 162, 163, 0.4),
+    rgba(179, 182, 181, 0.4),
+    rgba(190, 192, 194, 0.4)
   );
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 3s ease alternate infinite;
@@ -103,6 +103,19 @@
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
+}
+
+.sponser-section .sponser.inkind .wrapper .card::after {
+  background: linear-gradient(
+    60deg,
+    rgba(112, 112, 111, 0.1),
+    rgba(125, 125, 122, 0.1),
+    rgba(142, 141, 141, 0.1),
+    rgba(161, 162, 163, 0.1),
+    rgba(179, 182, 181, 0.1),
+    rgba(190, 192, 194, 0.1)
+  );
+
 }
 
 @keyframes animatedgradient {
