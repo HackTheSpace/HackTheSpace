@@ -1,4 +1,9 @@
 /* Home */
+* {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .home {
   display: flex;
@@ -251,7 +256,7 @@ iframe button {
 @media screen and (max-width: 1000px) {
   .Btn {
     height: 44px;
-  width: 312px;
+    width: 312px;
   }
 }
 
