@@ -154,11 +154,7 @@ nav .mobile-nav {
     /* align-items: self-start; */
   }
 
-  nav .mobile-nav-links a.active {
-    position: absolute;
-    /* color: blue; */
-    border-bottom: 5px solid rgb(102, 7, 165);
-  }
+ 
 
   nav .mobile-nav-links a:hover {
     color: var(--primary-blue);
