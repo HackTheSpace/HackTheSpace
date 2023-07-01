@@ -76,29 +76,35 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/faqs.css" async />
     <link rel="stylesheet" href="./styles/built.css" async />
+    <link rel="stylesheet" href="./styles/animated.css" />
 
     <!-- 3rd party js libraries -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"
-      async
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preconnect"
+      href="https://apply.devfolio.co/v2/sdk.js"
+      crossorigin
+    />
+    <link
+      rel="dns-prefetch"
+      href="https://apply.devfolio.co/v2/sdk.js"
+      crossorigin
+    />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"
+    ></script>
   </head>
 
   <body id="body">
@@ -147,7 +153,7 @@
           <!--  -->
           <a href="#home" onclick="closeNavbarMenu();" class="active">Home</a>
           <a href="#about" onclick="closeNavbarMenu();">About</a>
-          <a href="#" onclick="closeNavbarMenu();">Tracks</a>
+          <!-- <a href="#" onclick="closeNavbarMenu();">Tracks</a> -->
           <a href="#schedule" onclick="closeNavbarMenu()">Schedule</a>
           <a href="#sponsers" onclick="closeNavbarMenu();">Sponsors</a>
           <a href="#faqs" onclick="closeNavbarMenu();">FAQs</a>
@@ -222,7 +228,7 @@
         <div class="links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#">Tracks</a>
+          <!-- <a href="#">Tracks</a> -->
           <!-- <a href="#">Prizes</a> -->
           <a href="#schedule">Schedule</a>
           <a href="#sponsers">Sponsors</a>
@@ -349,9 +355,13 @@
         </div>
         <div class="aconst3">
           <img
-            src="./assets/aconst2.webp"
-            alt="Hack the space Hackathon Constellation"
+            src="./assets/aconst7.png"
+            alt="hack the space const"
+            class="opaque8"
           />
+        </div>
+        <div class="pattern7">
+          <img src="./assets/pattern4.png" alt="hack the space const" />
         </div>
       </section>
 
@@ -396,24 +406,22 @@
 
         <div class="aconst1">
           <img
-            src="./assets/aconst1.webp"
-            alt="Hack the space Hackathon Constellation"
+            src="./assets/aconst5.svg"
+            alt="hack the space const"
+            class="opaque8"
           />
         </div>
         <div class="aconst2">
-          <img
+          <!-- <img
             src="./assets/aconst2.webp"
             alt="Hack the space Hackathon Constellation"
-          />
+          /> -->
         </div>
         <div class="aconst3">
-          <img
-            src="./assets/aconst2.webp"
-            alt="Hack the space Hackathon Constellation"
-          />
+          <!-- <img src="./assets/aconst4.png" alt="hack the space const" class="opaque8"/> -->
         </div>
         <div class="pattern2">
-          <img src="./assets/pattern2.png" alt="hack the space const" />
+          <img src="./assets/pattern6.png" alt="hack the space const" />
         </div>
       </section>
 
@@ -469,7 +477,6 @@
         <div class="pattern4">
           <img src="./assets/pattern4.png" alt="hack the space const" />
         </div>
-
       </section>
 
       <!------------------------ Venue ------------------------>
@@ -523,10 +530,13 @@
           </div>
         </div>
         <div class="aconst6">
-          <img src="./assets/aconst6.png" alt="hack the space const" class="opaque8"/>
+          <img
+            src="./assets/aconst6.svg"
+            alt="hack the space const"
+            class="opaque8"
+          />
         </div>
       </section>
-
 
       <!------------------------ Organisers ------------------------>
       <section
@@ -801,14 +811,21 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
         </div>
       </article>-->
 
-      <div class="aconst7">
-        <img src="./assets/Constillations/Group.png" alt="hack the space const" class="opaque8" />
-      </div>
-      
+        <div class="aconst7">
+          <img
+            src="./assets/aconst7.png"
+            alt="hack the space const"
+            class="opaque8"
+          />
+        </div>
       </section>
 
       <!------------------------ Schedule ------------------------>
-      <section id="schedule" class="section schedule-section">
+      <section
+        id="schedule"
+        class="section schedule-section wow animate__animated animate__fadeInUp"
+        data-wow-duration="1s"
+      >
         <h2 class="section-title">Schedule</h2>
         <div class="container">
           <div id="myCanvas"></div>
@@ -818,7 +835,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
             <div class="schedule-container">
               <div class="time-container-left">
                 <div class="planet">
-                  <img src="./assets/schedule/sun.png" alt="planet" />
+                  <img src="./assets/schedule/sun.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">9:00 AM</p>
@@ -827,7 +844,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
               <div class="time-container-right">
                 <div class="planet">
-                  <img src="./assets/schedule/mercury.png" alt="planet" />
+                  <img src="./assets/schedule/mercury.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">9:30 AM</p>
@@ -836,7 +853,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
               <div class="time-container-left">
                 <div class="planet">
-                  <img src="./assets/schedule/venus.png" alt="planet" />
+                  <img src="./assets/schedule/venus.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">10:00 AM</p>
@@ -845,7 +862,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
               <div class="time-container-right">
                 <div class="planet">
-                  <img src="./assets/schedule/earth.png" alt="planet" />
+                  <img src="./assets/schedule/earth.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">11:00 AM</p>
@@ -854,7 +871,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
               <div class="time-container-left">
                 <div class="planet">
-                  <img src="./assets/schedule/mars.png" alt="planet" />
+                  <img src="./assets/schedule/mars.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">2:00 PM</p>
@@ -864,7 +881,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
 
               <div class="time-container-right">
                 <div class="planet">
-                  <img src="./assets/schedule/jupiter.png" alt="planet" />
+                  <img src="./assets/schedule/jupiter.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">5:30 PM</p>
@@ -873,7 +890,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
               <div class="time-container-left">
                 <div class="planet">
-                  <img src="./assets/schedule/saturn.png" alt="planet" />
+                  <img src="./assets/schedule/saturn.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">8:30 PM</p>
@@ -888,7 +905,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
             <div class="schedule-container">
               <div class="time-container-left">
                 <div class="planet">
-                  <img src="./assets/schedule/uranus.png" alt="planet" />
+                  <img src="./assets/schedule/uranus.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">7:00 AM</p>
@@ -897,7 +914,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
               <div class="time-container-right">
                 <div class="planet">
-                  <img src="./assets/schedule/neptune.png" alt="planet" />
+                  <img src="./assets/schedule/neptune.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">9:00 AM</p>
@@ -906,7 +923,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
               <div class="time-container-left">
                 <div class="planet">
-                  <img src="./assets/schedule/mercury.png" alt="planet" />
+                  <img src="./assets/schedule/mercury.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">11:00 AM</p>
@@ -915,7 +932,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
               </div>
               <div class="time-container-right">
                 <div class="planet">
-                  <img src="./assets/schedule/venus.png" alt="planet" />
+                  <img src="./assets/schedule/venus.svg" alt="planet" />
                 </div>
                 <div class="time">
                   <p class="time-text">11:30 AM - 12:30 PM</p>
@@ -942,6 +959,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
       <section
         id="sponsers"
         class="section sponser-section wow animate__animated animate__fadeInUp"
+        data-wow-duration="1s"
       >
         <h2 class="section-title">Sponsors & partners</h2>
 
@@ -961,11 +979,13 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
           </div> -->
 
           <div class="sponser diamond">
-            <div class="Sponsor-name-container"> <img src="./assets/sponser/Star logo.png" alt="">
-              <h2 class="sponser-name name-star">STAR</h2> </div>
-            
-              <div class="wrapper">
-                <div class="card">
+            <div class="Sponsor-name-container">
+              <img src="./assets/sponser/Star logo.png" alt="" />
+              <h2 class="sponser-name name-star">STAR</h2>
+            </div>
+
+            <div class="wrapper">
+              <div class="card">
                 <div class="pic">
                   <img
                     src="./assets/sponser/Github_Logo.svg"
@@ -974,11 +994,13 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
 
           <div class="sponser silver">
-            <div class="Sponsor-name-container"> <img src="./assets/sponser/Planet logo.png" alt="">
-              <h2 class="sponser-name">PLANET</h2> </div>
+            <div class="Sponsor-name-container">
+              <img src="./assets/sponser/Planet logo.png" alt="" />
+              <h2 class="sponser-name">PLANET</h2>
+            </div>
             <div class="wrapper">
               <div class="card">
                 <div class="pic">
@@ -1008,8 +1030,10 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
           </div>
 
           <div class="sponser bronze">
-           <div class="Sponsor-name-container"> <img src="./assets/sponser/Comet logo.png" alt="">
-            <h2 class="sponser-name">COMET</h2> </div>
+            <div class="Sponsor-name-container">
+              <img src="./assets/sponser/Comet logo.png" alt="" />
+              <h2 class="sponser-name">COMET</h2>
+            </div>
             <div class="wrapper">
               <div class="card">
                 <div class="pic">
@@ -1039,8 +1063,14 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
           </div>
 
           <div class="sponser inkind">
-            <div class="Sponsor-name-container"> <img style="opacity: 0.5;" src="./assets/sponser/Meteor.png" alt="">
-              <h2 class="sponser-name name-inkind">SPONSORS</h2> </div>
+            <div class="Sponsor-name-container">
+              <img
+                style="opacity: 0.5"
+                src="./assets/sponser/Meteor.png"
+                alt=""
+              />
+              <h2 class="sponser-name name-inkind">SPONSORS</h2>
+            </div>
             <div class="wrapper">
               <div class="card">
                 <div class="pic">
@@ -1087,8 +1117,12 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
             </div>
           </div> -->
         </div>
-        <div class="aconst-sponsor">
-          <img src="./assets/Constillations/Group.png" alt="hack the space const" class="opaque8"/>
+        <div class="aconst7">
+          <img
+            src="./assets/aconst7.png"
+            alt="hack the space const"
+            class="opaque8"
+          />
         </div>
       </section>
 
@@ -1316,13 +1350,25 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
           </button>
         </div>
         <div class="aconst3">
-          <img src="./assets/aconst3.png" alt="hack the space const" class="opaque8"/>
+          <img
+            src="./assets/aconst3.png"
+            alt="hack the space const"
+            class="opaque8"
+          />
         </div>
         <div class="aconst4">
-          <img src="./assets/aconst4.png" alt="hack the space const" class="opaque8"/>
+          <img
+            src="./assets/aconst4.svg"
+            alt="hack the space const"
+            class="opaque8"
+          />
         </div>
         <div class="aconst5">
-          <img src="./assets/aconst5.png" alt="hack the space const" class="opaque8"/>
+          <img
+            src="./assets/aconst5.svg"
+            alt="hack the space const"
+            class="opaque8"
+          />
         </div>
       </section>
 
@@ -1330,6 +1376,7 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
       <section
         id="faqs"
         class="section faqs-section wow animate__animated animate__fadeInUp"
+        data-wow-duration="1s"
         style="color: #fff"
       >
         <h2 class="section-title">Faqs</h2>
@@ -1454,9 +1501,8 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
         <div class="planet2">
           <img src="./assets/planet2.png" alt="hack the space const" />
         </div>
-      </main>
       </section>
-      
+    </main>
 
     <!------------------------ Footer  ------------------------>
     <footer id="contact" class="footer-section" style="color: #fff">
@@ -1578,58 +1624,13 @@ name="logo-instagram" xmlns="http://www.w3.org/2000/svg" class="ionicon icon" vi
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <script>
       new WOW().init();
-
-
-      function closeNavbarMenu() {
-        var navbarMenu = document.getElementById("mobile-nav-links");
-        navbarMenu.style.display='none';
-        var closeMobileNavBtnEl = document.getElementById("close-mobile-nav");
-        var openMobileNavBtnEl = document.getElementById("open-mobile-nav");
-        var mobileNavLinksEl = document.getElementById("mobile-nav-links");
-        mobileNavLinksEl.addEventListener("click", () => {
-          // hide close btn
-          closeMobileNavBtnEl.classList.remove("show");
-          closeMobileNavBtnEl.classList.add("hidden");
-        
-          // show burger
-          openMobileNavBtnEl.classList.remove("hidden");
-          openMobileNavBtnEl.classList.add("show");
-        
-          // hide the sidebar
-          mobileNavLinksEl.style.transform = `translate(100%, 0)`;
-
-
-          
-          
-        
-})
-      
-    }
-      function toggleNavbarMenu() {
-        var navbarMenu = document.getElementById("mobile-nav-links");
-        navbarMenu.style.display='flex';
-        
-        navbarMenu.style.transform = `translate(0, 0)`;
-        navbarMenu.style.transition = `all 1s ease-in-out`;
-      
-      }
-
-        
-      
-      var navLinks = document.querySelectorAll("nav a");
-        navLinks.forEach(link => {
-        link.addEventListener("click", function(e) {
-          navLinks.forEach(link => {
-          link.classList.remove("active");
-        });
-        this.classList.add("active");
-        
-      });
-    });
-
     </script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"
+    ></script>
   </body>
 </html>

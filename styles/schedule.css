@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   z-index: -1;
-  height: 1868px;
+  height: 2454px;
   width: 100%;
 }
 
@@ -55,9 +55,11 @@
   line-height: 2.3rem;
   text-align: center;
   text-shadow: 0px 0px 20px var(--primary-blue);
+  text-transform: uppercase;
 }
 
 .schedule-section h5 {
+  text-transform: uppercase;
   text-shadow: 0px 0px 20px var(--primary-blue);
 }
 
@@ -86,8 +88,8 @@
 }
 
 .planet img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   animation: rotate 7s infinite;
 }
 
@@ -127,12 +129,12 @@
 }
 
 #Day2 h5 {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 
 @media screen and (max-width: 800px) {
   #myCanvas {
-    height: 1398px;
+    height: 1640px;
     width: 100%;
   }
 
@@ -154,8 +156,8 @@
   }
 
   .planet img {
-    width: 85px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .time-text {
@@ -175,13 +177,13 @@
   }
 
   #Day2 h5 {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #myCanvas {
-    height: 1174px;
+    height: 1569px;
     width: 100%;
   }
 
@@ -208,8 +210,8 @@
   }
 
   .planet img {
-    width: 75px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
   }
 
   .time-text {
@@ -220,7 +222,11 @@
     text-align: right;
   }
 
+  #Day1 h5 {
+    margin-bottom: 53px;
+  }
+
   #Day2 h5 {
-    margin-bottom: 35px;
+    margin-bottom: 60px;
   }
 }

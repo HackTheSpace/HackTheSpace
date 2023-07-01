@@ -2,9 +2,8 @@
   /* margin-top: 2rem; */
   padding: 1rem 2rem;
   display: block;
-  
 }
-.venue-section-container{
+.venue-section-container {
   position: relative;
 }
 .aconst6 {
@@ -15,9 +14,9 @@
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
 }
-.aconst6 img{
+.aconst6 img {
   height: 150px;
-  width: 120px;
+  width: 150px;
   opacity: 0.8;
 }
 .venue-section .venue-wrapper {
@@ -113,13 +112,7 @@
   }
 }
 @media screen and (max-width: 1700px) {
-  .aconst6 img{
+  .aconst6 img {
     display: none;
   }
-}
-
-.aconst6 img{
-  height: 150px;
-  width: 120px;
-  opacity: 0.8;
 }

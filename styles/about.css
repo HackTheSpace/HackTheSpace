@@ -82,6 +82,19 @@
   z-index: -1;
   animation: floatx 3.2s linear infinite;
 }
+.pattern7 {
+  position: absolute;
+  bottom: -30%;
+  left: 40%;
+  z-index: -1;
+  animation: floatx 3.2s linear infinite;
+  /
+}
+.pattern7 img{
+  height: 60px;
+  width: 60px;
+  /* opacity: 0.8; */
+}
 
 .frm.about-frm {
   bottom: -12%;
@@ -127,10 +140,19 @@
   }
 
   .aconst1 {
-    top: 10%;
-    right: 0%;
+  display: none;
   }
-
+  .aconst1 img{
+    width: 50px;
+    height: 50px;
+  }
+  .aconst3 {
+    display: none;
+    }
+    .aconst3 img{
+      width: 50px;
+      height: 50px;
+    }
   .aconst2 {
     display: none;
   }
@@ -156,5 +178,20 @@
   }
   .frm.about-frm img {
     width: 44%;
+  }
+  .pattern7 {
+    position: absolute;
+    bottom: -10%;
+    left: 40%;
+    z-index: -1;
+    animation: floatx 3.2s linear infinite;
+    /
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .frm.about-frm,
+  .frm {
+    right: -15%;
   }
 }
