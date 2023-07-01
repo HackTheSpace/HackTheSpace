@@ -53,6 +53,7 @@
   position: relative;
 }
 .sponser-section .sponser.diamond .wrapper .card::after,
+.sponser-section .sponser.gold .wrapper .card::after,
 .sponser-section .sponser.inkind .wrapper .card::after,
 .sponser-section .sponser.silver .wrapper .card::after,
 .sponser-section .sponser.bronze .wrapper .card::after {
@@ -74,8 +75,8 @@
 }
 
 .sponser-section .sponser.gold .wrapper .card::after {
-  background: linear-gradient(60deg, #ebd197, #b48811, #a2790d, #bb9b49);
-  box-shadow: 0 0 15px #bb9b49;
+  background: linear-gradient(60deg, rgba(235, 209, 151,0.4), rgba(180, 136, 17,0.4), rgba(162, 121, 13,0.4), rgba(187, 155, 73,0.4));
+  box-shadow: 0 0 10px #bb9b49;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
@@ -171,7 +172,7 @@ width: 140px;
   right: 43.5%;
 }
 .name-star{
-  right:46.5%
+  right:46.5%;
 }
 @media only screen and (max-width: 768px){
   .sponser-name{
