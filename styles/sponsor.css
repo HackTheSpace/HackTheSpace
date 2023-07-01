@@ -1,4 +1,4 @@
-.sponser-section {
+.sponsor-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,22 +26,22 @@
   opacity: 0.8;
 }
 
-.sponser-section .sponser-container {
+.sponsor-section .sponsor-container {
   /* margin: 0 0 2rem; */
   text-align: center;
 }
 
-.sponser-section .sponser {
+.sponsor-section .sponsor {
   margin: 3rem 0;
 }
 
-.sponser-section .sponser h2 {
+.sponsor-section .sponsor h2 {
   font-size: 2rem;
   line-height: 2.3rem;
   margin-bottom: 1rem;
 }
 
-.sponser-section .sponser .wrapper .card {
+.sponsor-section .sponsor .wrapper .card {
   /* background: rgba(217, 217, 217, 0.18); */
   background: transparent;
   padding: 2rem;
@@ -52,11 +52,11 @@
   margin: 1rem;
   position: relative;
 }
-.sponser-section .sponser.diamond .wrapper .card::after,
-.sponser-section .sponser.gold .wrapper .card::after,
-.sponser-section .sponser.inkind .wrapper .card::after,
-.sponser-section .sponser.silver .wrapper .card::after,
-.sponser-section .sponser.bronze .wrapper .card::after {
+.sponsor-section .sponsor.diamond .wrapper .card::after,
+.sponsor-section .sponsor.gold .wrapper .card::after,
+.sponsor-section .sponsor.inkind .wrapper .card::after,
+.sponsor-section .sponsor.silver .wrapper .card::after,
+.sponsor-section .sponsor.bronze .wrapper .card::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -66,7 +66,7 @@
   z-index: -1;
 }
 
-.sponser-section .sponser.diamond .wrapper .card::after {
+.sponsor-section .sponsor.diamond .wrapper .card::after {
   background: linear-gradient(60deg, rgba(183, 241, 253,0.7), rgba(208, 248, 255,0.7), rgba(183, 241, 253,0.7), rgba(223, 252, 255,0.7));
   box-shadow: 0 0 5px #b7f1fd;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
@@ -74,7 +74,7 @@
   background-size: 300% 300%;
 }
 
-.sponser-section .sponser.gold .wrapper .card::after {
+.sponsor-section .sponsor.gold .wrapper .card::after {
   background: linear-gradient(60deg, rgba(235, 209, 151,0.4), rgba(180, 136, 17,0.4), rgba(162, 121, 13,0.4), rgba(187, 155, 73,0.4));
   box-shadow: 0 0 10px #bb9b49;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
@@ -82,7 +82,7 @@
   background-size: 300% 300%;
 }
 
-.sponser-section .sponser.silver .wrapper .card::after {
+.sponsor-section .sponsor.silver .wrapper .card::after {
   background: linear-gradient(
     60deg,
     rgba(112, 112, 111, 0.4),
@@ -97,7 +97,7 @@
   background-size: 300% 300%;
 }
 
-.sponser-section .sponser.bronze .wrapper .card::after {
+.sponsor-section .sponsor.bronze .wrapper .card::after {
   background: linear-gradient(
     60deg,
     rgba(128, 74, 0, 0.3),
@@ -110,7 +110,7 @@
   background-size: 300% 300%;
 }
 
-.sponser-section .sponser.inkind .wrapper .card::after {
+.sponsor-section .sponsor.inkind .wrapper .card::after {
   background: linear-gradient(
     60deg,
     rgba(112, 112, 111, 0.1),
@@ -135,20 +135,20 @@
   }
 }
 
-.sponser-section .sponser .pic {
+.sponsor-section .sponsor .pic {
   width: 150px;
   height: 40px; /*237*/
   /* border-radius: 20px; */
   overflow: hidden;
 }
 
-.sponser-section .sponser .pic img {
+.sponsor-section .sponsor .pic img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.sponser-section .sponser .wrapper {
+.sponsor-section .sponsor .wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -156,7 +156,7 @@
   flex-wrap: wrap;
 }
 
-.sponser-name{
+.sponsor-name{
   position: absolute;
   top: 37%;
   right: 45%;
@@ -175,7 +175,7 @@ width: 140px;
   right:46.5%;
 }
 @media only screen and (max-width: 768px){
-  .sponser-name{
+  .sponsor-name{
     right: 32%;
   }
   .name-inkind{

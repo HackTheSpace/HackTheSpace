@@ -1,4 +1,4 @@
-.why-sponser-section {
+.why-sponsor-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,11 +48,11 @@
   /* opacity: 0.5; */
 }
 
-.why-sponser-section .container {
+.why-sponsor-section .container {
   margin: 0rem 0 2rem;
 }
 
-.why-sponser-section .card {
+.why-sponsor-section .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,12 +66,12 @@
   transition: all 0.3s linear;
 }
 
-.why-sponser-section .card:hover {
+.why-sponsor-section .card:hover {
   box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 36px 0px,
     rgba(255, 255, 255, 0.07) 0px 0px 0px 1px;
 }
 
-.why-sponser-section .card .card-title {
+.why-sponsor-section .card .card-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,7 +82,7 @@
   margin: 0 auto;
 }
 
-.why-sponser-section .card h2 {
+.why-sponsor-section .card h2 {
   font-size: 1.43rem;
   line-height: 2rem;
   font-weight: 600;
@@ -90,14 +90,14 @@
   color: var(--primary-blue);
 }
 
-.why-sponser-section .card .icon {
+.why-sponsor-section .card .icon {
   font-size: 2rem;
   border-radius: 50%;
   padding: 1rem;
   color: var(--primary-blue);
 }
 
-.why-sponser-section .card p {
+.why-sponsor-section .card p {
   font-size: 1.1rem;
   line-height: 1.6rem;
   letter-spacing: 0.08em;
@@ -106,7 +106,7 @@
   text-align: center;
 }
 
-.why-sponser-section .btn-container {
+.why-sponsor-section .btn-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -117,13 +117,13 @@
 }
 
 @media screen and (min-width: 500px) {
-  .why-sponser-section .btn-container {
+  .why-sponsor-section .btn-container {
     width: 50%;
     gap: 1rem;
   }
 }
 @media screen and (min-width: 800px) {
-  .why-sponser-section .container {
+  .why-sponsor-section .container {
     padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -131,62 +131,62 @@
     justify-content: space-between;
   }
 
-  .why-sponser-section .card {
+  .why-sponsor-section .card {
     width: 37%;
     height: 320px;
     justify-content: flex-start;
     margin: 1rem 0;
   }
 
-  .why-sponser-section .btn-container {
+  .why-sponsor-section .btn-container {
     width: 40%;
     gap: 1rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .why-sponser-section .container {
+  .why-sponsor-section .container {
     padding: 0 2rem;
     justify-content: center;
   }
 
-  .why-sponser-section .container {
+  .why-sponsor-section .container {
     margin: 1rem 0 2rem;
   }
 
-  .why-sponser-section .card {
+  .why-sponsor-section .card {
     height: 300px;
     width: 35%;
     margin: 1rem;
   }
-  .why-sponser-section .btn-container {
+  .why-sponsor-section .btn-container {
     width: 60%;
     gap: 2rem;
   }
 }
 
 @media screen and (min-width: 1215px) {
-  .why-sponser-section .card {
+  .why-sponsor-section .card {
     width: 30%;
   }
 
-  .why-sponser-section .btn-container {
+  .why-sponsor-section .btn-container {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1500px) {
-  .why-sponser-section .container {
+  .why-sponsor-section .container {
     width: 60%;
   }
 
-  .why-sponser-section .card {
+  .why-sponsor-section .card {
     width: 38%;
   }
 }
 
 @media screen and (min-width: 1800px) {
-  .why-sponser-section .container {
+  .why-sponsor-section .container {
     width: 50%;
   }
 }

@@ -1,29 +1,29 @@
-.sponser-prizes {
+.sponsor-prizes {
   margin: 0;
 }
 
-.sponser-prizes .card {
+.sponsor-prizes .card {
   height: -moz-fit-content;
   height: fit-content;
   padding: 1rem;
 }
 
-.sponser-prizes .card .pic {
+.sponsor-prizes .card .pic {
   width: auto;
   height: 70px;
 }
 
-.sponser-prizes .card .pic img {
+.sponsor-prizes .card .pic img {
   width: 100%;
   height: 100%;
 }
 
-.sponser-prizes .card h2 {
+.sponsor-prizes .card h2 {
   margin-top: 1rem;
   color: var(--white);
 }
 
-.sponser-prizes .card .text {
+.sponsor-prizes .card .text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,11 +31,11 @@
   gap: 0.5rem;
 }
 
-.sponser-prizes .card .text .icon {
+.sponsor-prizes .card .text .icon {
   padding: 0;
 }
 
-.sponser-prizes .card .text p {
+.sponsor-prizes .card .text p {
   align-self: flex-end;
   margin: 0;
 }
