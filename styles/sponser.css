@@ -9,15 +9,15 @@
   position: relative;
 }
 
-.aconst7{
+.aconst-sponsor{
   position: absolute;
-  bottom: 5%;
+  bottom: 25%;
   right: 12%;
   z-index: -1;
   animation: floatx 3.2s linear infinite;
 }
 
-.aconst7 img{
+.aconst-sponsor img{
   height: 120px;
   width: 120px;
   opacity: 0.8;
@@ -49,6 +49,7 @@
   margin: 1rem;
   position: relative;
 }
+.sponser-section .sponser.diamond .wrapper .card::after,
 .sponser-section .sponser.inkind .wrapper .card::after,
 .sponser-section .sponser.silver .wrapper .card::after,
 .sponser-section .sponser.bronze .wrapper .card::after {
@@ -62,8 +63,8 @@
 }
 
 .sponser-section .sponser.diamond .wrapper .card::after {
-  background: linear-gradient(60deg, #b7f1fd, #d0f8ff, #b7f1fd, #dffcff);
-  box-shadow: 0 0 15px #b7f1fd;
+  background: linear-gradient(60deg, rgba(183, 241, 253,0.7), rgba(208, 248, 255,0.7), rgba(183, 241, 253,0.7), rgba(223, 252, 255,0.7));
+  box-shadow: 0 0 5px #b7f1fd;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
@@ -149,4 +150,34 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.sponser-name{
+  position: absolute;
+  top: 37%;
+  right: 45%;
+}
+.Sponsor-name-container{
+  position: relative;
+  text-align: center;
+}
+.Sponsor-name-container img{
+width: 140px;
+}
+.name-inkind{
+  right: 43.5%;
+}
+.name-star{
+  right:46.5%
+}
+@media only screen and (max-width: 768px){
+  .sponser-name{
+    right: 32%;
+  }
+  .name-inkind{
+    right: 23.5%;
+  }
+  .name-star{
+    right:36.5% ;
+  }
 }
