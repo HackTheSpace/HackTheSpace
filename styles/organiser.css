@@ -162,8 +162,8 @@
 .marquee {
   width: 70%;
   margin: 0;
-  --duration: 15s;
-  --gap: 5px;
+  --duration: 25s;
+  --gap: 2rem;
 
   display: flex;
   overflow: hidden;
@@ -201,6 +201,7 @@
   justify-content: space-around;
   gap: var(--gap);
   min-width: 100%;
+  min-height: 100px;
   animation: scroll var(--duration) linear infinite;
 }
 
@@ -266,7 +267,7 @@ a {
   width: 300px;
 }
 
-.team-akash {
+.team-core {
   z-index: 999;
 }
 
