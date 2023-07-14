@@ -12,6 +12,15 @@
   position: relative;
 }
 
+.wihts a{
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.wihts a:hover{
+  text-decoration: underline !important;
+}
+
 .aconst1{
   position: absolute;
   bottom: 5%;
