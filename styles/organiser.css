@@ -15,12 +15,12 @@
   animation: floatx 3.2s linear infinite;
   /* height: 10%; */
 }
-.pattern1 img{
+.pattern1 img {
   height: 120px;
   width: 120px;
   opacity: 0.8;
 }
-.aconst7{
+.aconst7 {
   position: absolute;
   top: 75%;
   right: 12%;
@@ -28,12 +28,11 @@
   animation: floatx 3.2s linear infinite;
 }
 
-.aconst7 img{
+.aconst7 img {
   height: 120px;
   width: 120px;
   opacity: 0.8;
 }
-
 
 .organiser-section .card {
   display: flex;
@@ -137,25 +136,24 @@
     animation: floatx 3.2s linear infinite;
     /* height: 10%; */
   }
-  .pattern1 img{
+  .pattern1 img {
     height: 120px;
     width: 120px;
     opacity: 0.8;
   }
-  .aconst7{
+  .aconst7 {
     position: absolute;
     top: 70%;
     right: 6%;
     z-index: -1;
     animation: floatx 3.2s linear infinite;
   }
-  
-  .aconst7 img{
+
+  .aconst7 img {
     height: 120px;
     width: 120px;
     opacity: 0.8;
   }
-  
 }
 
 /*------------------ Core-Team-------------------------------- */
@@ -238,11 +236,17 @@ a {
   }
 }
 
+.marquee .marquee__group .links {
+  transition: all 0.1s ease-in;
+  border: 3px solid transparent;
+}
+
 .marquee .marquee__group .links:hover {
   transform: scale(1.1) !important;
   -webkit-transform: scale(1.1) !important;
   opacity: 0.9;
   cursor: pointer;
+  border: 3px solid var(--primary-pink);
 }
 
 .marquee:hover .marquee__group {
